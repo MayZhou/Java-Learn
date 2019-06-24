@@ -1,6 +1,7 @@
 package com.mayzhou.lambda;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Date;
@@ -24,10 +25,25 @@ public class LambdaTest {
         sort(planets);
         System.out.println(Arrays.toString(planets));
         System.out.println("Sorted by length");
-        sort(planets,(first,second)-> -(first.length()-second.length()));
+        sort(planets, (first,second)-> {
+            return -(first.length() - second.length());
+        });
         System.out.println(Arrays.toString(planets));
         sort(planets,(first,second)-> first.length()-second.length());
         System.out.println(Arrays.toString(planets));
-        Timer t = new Timer(1000,event ->System.out.println("The time is "+ new Date()));
+        sort(planets, Comparator.<String>comparingInt(String::length));
+        System.out.println(Arrays.toString(planets));
+        Timer t1 = new Timer(1000,event -> {
+            System.out.printf("The time is %s%n", new Date());
+        });
+        Timer t2 = new Timer(1000, LambdaTest::actionPerformed);
+        t1.start();
+        t2.start();
+        JOptionPane.showMessageDialog(null,"Quit program");
+        System.exit(0);
+    }
+
+    private static void actionPerformed(ActionEvent event) {
+        System.out.printf("The time is %s%n", new Date());
     }
 }

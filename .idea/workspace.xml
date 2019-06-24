@@ -1,81 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b5adfae-924c-4db7-8906-c176ef2eaa70" name="Default Changelist" comment="" />
+    <list default="true" id="1b5adfae-924c-4db7-8906-c176ef2eaa70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stream/Stream.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Stream/Stream.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/lambda/LambdaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/lambda/LambdaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/CountLongWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/CountLongWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stream/target/classes/com/mayzhou/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stream/target/classes/com/mayzhou/lambda/LambdaTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stream/target/classes/gutenberg/alice30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stream/target/classes/gutenberg/crsto10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stream/target/test-classes/com/mayzhou/AppTest.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/Stream/target/" />
+    <ignored path="$PROJECT_DIR$/springframework51x/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-aspects/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-beans/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-framework-bom/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-context-indexer/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-jcl/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-jms/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-orm/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-core/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-instrument/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-expression/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-jdbc/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-messaging/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-test/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-context-support/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-oxm/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-context/target/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-aspects/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-aspects/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-aspects/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-beans/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-beans/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-beans/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/buildSrc/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/buildSrc/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/buildSrc/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-context/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-context/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-context/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-context-indexer/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-context-indexer/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-context-indexer/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-context-support/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-context-support/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-context-support/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-core/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-core/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-core/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-expression/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-expression/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-expression/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-framework-bom/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-framework-bom/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-framework-bom/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-instrument/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-instrument/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-instrument/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-jcl/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-jcl/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-jcl/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-jdbc/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-jdbc/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-jdbc/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-jms/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-jms/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-jms/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-messaging/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-messaging/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-messaging/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-orm/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-orm/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-orm/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-oxm/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-oxm/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-oxm/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-test/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-test/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-test/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-tx/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-tx/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-tx/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-web/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-web/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-web/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-webflux/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-webflux/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-webflux/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-webmvc/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-webmvc/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-webmvc/out/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-websocket/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-websocket/build/" />
+    <ignored path="$PROJECT_DIR$/spring-framework-5.1.x/spring-websocket/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/spring-framework-5.1.x">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stream/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/CountLongWords.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/lambda/LambdaTest.java">
+        <entry file="file://$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/OptionalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+            <state relative-caret-position="285">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/awt/event/ActionListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/util/Arrays.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="1430" column="27" selection-start-line="1430" selection-start-column="27" selection-end-line="1430" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/nio/file/Files.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="3150" column="25" selection-start-line="3150" selection-start-column="25" selection-end-line="3150" selection-end-column="25" />
-              <folding>
-                <element signature="e#115258#115259#0" expanded="true" />
-                <element signature="e#115319#115320#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,8 +172,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Stream/pom.xml" />
-        <option value="$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/CountLongWords.java" />
         <option value="$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/lambda/LambdaTest.java" />
+        <option value="$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/CountLongWords.java" />
+        <option value="$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/CreatingStreams.java" />
+        <option value="$PROJECT_DIR$/springframework51x/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-aspects/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-context/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-context-indexer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-context-support/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-core/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-expression/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-framework-bom/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-instrument/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-jcl/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-jms/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-messaging/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-orm/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-oxm/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/spring-test/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-5.1.x/build.gradle" />
+        <option value="$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/OptionalTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -126,18 +218,21 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="603" />
-    <option name="y" value="112" />
-    <option name="width" value="1057" />
-    <option name="height" value="1082" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="91" />
+    <option name="y" value="-23" />
+    <option name="width" value="1756" />
+    <option name="height" value="917" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,6 +243,11 @@
             <path>
               <item name="JavaLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-framework-5.1.x" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaLearn" type="462c0819:PsiDirectoryNode" />
               <item name="Stream" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -195,62 +295,43 @@
               <item name="JavaLearn" type="462c0819:PsiDirectoryNode" />
               <item name="Stream" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="Stream" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="Stream" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="Stream" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="mayzhou" type="462c0819:PsiDirectoryNode" />
+              <item name="streams" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561366945117" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561414437256" />
+    <property name="editor.config.ad.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/spring-framework-5.1.x/spring-framework-5.1.x" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="gradle.experimental" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\item3\JavaLearn\spring-framework-5.1.x\spring-test" />
+      <recent name="D:\item3\JavaLearn\spring-framework-5.1.x\spring-oxm" />
+      <recent name="D:\item3\JavaLearn\spring-framework-5.1.x\spring-orm" />
+      <recent name="D:\item3\JavaLearn\spring-framework-5.1.x\spring-messaging" />
+      <recent name="D:\item3\JavaLearn\spring-framework-5.1.x\spring-jms" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\item3\JavaLearn\Stream\src\main\resources\gutenberg" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\item3\JavaLearn\Stream\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -265,7 +346,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LambdaTest">
+  <component name="RunManager" selected="Application.CreatingStreams">
+    <configuration name="CountLongWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mayzhou.streams.CountLongWords" />
+      <module name="Stream" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mayzhou.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatingStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mayzhou.streams.CreatingStreams" />
+      <module name="Stream" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mayzhou.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LambdaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mayzhou.lambda.LambdaTest" />
       <module name="Stream" />
@@ -297,6 +404,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CreatingStreams" />
+        <item itemvalue="Application.CountLongWords" />
         <item itemvalue="Application.LambdaTest" />
         <item itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
       </list>
@@ -312,7 +421,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561347408318</updated>
-      <workItem from="1561347416953" duration="5365000" />
+      <workItem from="1561347416953" duration="18256000" />
+      <workItem from="1561407107916" duration="3507000" />
+      <workItem from="1561411734823" duration="2592000" />
     </task>
     <servers />
   </component>
@@ -322,131 +433,306 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5365000" />
+    <option name="totallyTimeSpent" value="24355000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49888888" visible="true" weight="0.36417112" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49888888" visible="true" weight="0.1973262" />
       <window_info id="Structure" order="1" sideWeight="0.5011111" side_tool="true" weight="0.254529" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.31922197" />
-      <window_info anchor="bottom" id="SonarLint" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Build" sideWeight="0.49946523" weight="0.39183673" />
+      <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32951945" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946523" visible="true" weight="0.30091533" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41796407" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" weight="0.32938564" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="BPMNPalette" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32951945" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005348" side_tool="true" weight="0.32951945" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.31516588" />
+      <window_info anchor="bottom" id="SonarLint" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Spring" order="14" />
+      <window_info anchor="right" id="JSF" />
+      <window_info anchor="right" id="Gradle" weight="0.2529412" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.30053475" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="BPMNPalette" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info id="Designer" order="0" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49888888" visible="true" weight="0.3642785" />
-      <window_info id="Structure" order="6" sideWeight="0.5011111" side_tool="true" weight="0.254529" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32" />
-      <window_info anchor="bottom" id="SonarLint" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="right" id="Maven" order="0" weight="0.32938564" />
-      <window_info anchor="right" id="Palette" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="BPMNPalette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49888888" visible="true" weight="0.28639054" />
+      <window_info id="Structure" order="1" sideWeight="0.5011111" side_tool="true" weight="0.254529" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="0" sideWeight="0.49946523" weight="0.39183673" />
+      <window_info anchor="bottom" id="Java Enterprise" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49946523" visible="true" weight="0.30091533" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.41796407" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005348" side_tool="true" weight="0.32951945" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.31516588" />
+      <window_info anchor="bottom" id="SonarLint" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Spring" order="16" />
+      <window_info anchor="right" id="JSF" order="0" />
+      <window_info anchor="right" id="Gradle" order="1" weight="0.2529412" />
+      <window_info anchor="right" id="Bean Validation" order="2" />
+      <window_info anchor="right" id="Commander" order="3" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.30053475" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="BPMNPalette" order="9" />
+      <window_info anchor="right" id="Database" order="10" />
+      <window_info anchor="right" id="Palette&#9;" order="11" />
+      <window_info anchor="right" id="Theme Preview" order="12" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/CreatingStreams.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/CreatingStreams.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Stream/pom.xml">
+    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/util/regex/Pattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stream/src/test/java/com/mayzhou/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="142">
+          <caret line="1018" column="7" lean-forward="true" selection-start-line="1018" selection-start-column="7" selection-end-line="1018" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#48487#48488#0" expanded="true" />
+            <element signature="e#48531#48532#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Stream/src/main/resources/gutenberg/alice30.txt">
+    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/util/Objects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2700" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk/jre/lib/rt.jar!/sun/nio/fs/WindowsFileSystem.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-621">
-          <caret line="149" column="22" selection-start-line="149" selection-start-column="22" selection-end-line="149" selection-end-column="22" />
+        <state relative-caret-position="214">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/nio/file/FileSystem.java">
+    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/util/stream/StreamSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="294" column="25" selection-start-line="294" selection-start-column="25" selection-end-line="294" selection-end-column="25" />
+        <state relative-caret-position="189">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="1051" selection-start-line="1051" selection-end-line="1051" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/CreatingStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-framework-5.1.x.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/src/main/java/org/aopalliance/aop/AspectException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#AspectException#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/src/main/java/org/aopalliance/aop/Advice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/src/main/java/org/aopalliance/intercept/ConstructorInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/src/main/java/org/aopalliance/intercept/ConstructorInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/src/main/java/org/aopalliance/intercept/Interceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/src/main/java/org/springframework/aop/aspectj/AspectInstanceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/src/main/resources/META-INF/spring.schemas">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/src/test/resources/log4j2-test.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/src/test/java/test/aop/Lockable.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-aop/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-aspects/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-context/.springBeans">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-aspects/src/main/java/org/springframework/beans/factory/aspectj/ConfigurableObject.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-context/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-context-indexer/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-core/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-expression/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-framework-bom/spring-framework-bom.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-framework-bom/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-instrument/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-jcl/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-jdbc/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-jms/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-messaging/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-orm/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-oxm/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-test/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-context-support/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-context/src/main/kotlin/org/springframework/context/annotation/AnnotationConfigApplicationContextExtensions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-oxm/src/test/castor/castorbuilder.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-test/src/test/webapp/WEB-INF/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/src/idea/spring-framework.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/src/checkstyle/checkstyle.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1702" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-core/src/main/kotlin/org/springframework/core/env/PropertyResolverExtensions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/spring-beans/src/main/groovy/org/springframework/beans/factory/groovy/GroovyDynamicElementReader.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1350">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/develop/wrapper/dists/gradle-4.10.3-all/81msde2dx9p4vji0mjgtvxkcb/gradle-4.10.3/src/core-api/org/gradle/api/artifacts/DependencyResolveDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="82" column="56" selection-start-line="82" selection-start-column="56" selection-end-line="82" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/net/URI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="463" column="19" selection-start-line="463" selection-start-column="19" selection-end-line="463" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/nio/file/Paths.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+        <state relative-caret-position="234">
+          <caret line="130" column="29" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="29" />
           <folding>
             <element signature="e#2673#2674#0" expanded="true" />
             <element signature="e#2741#2742#0" expanded="true" />
@@ -454,75 +740,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/nio/file/Files.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="3150" column="25" selection-start-line="3150" selection-start-column="25" selection-end-line="3150" selection-end-column="25" />
-          <folding>
-            <element signature="e#115258#115259#0" expanded="true" />
-            <element signature="e#115319#115320#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="513" column="11" selection-start-line="513" selection-start-column="11" selection-end-line="513" selection-end-column="11" />
-          <folding>
-            <element signature="e#18781#18782#0" expanded="true" />
-            <element signature="e#18834#18835#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/awt/event/ActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/javax/swing/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="203" column="11" selection-start-line="203" selection-start-column="11" selection-end-line="203" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="1430" column="27" selection-start-line="1430" selection-start-column="27" selection-end-line="1430" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/util/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="212" column="69" selection-start-line="212" selection-start-column="69" selection-end-line="212" selection-end-column="69" />
-          <folding>
-            <element signature="docComment;method#compare#0;class#Comparator#0" />
-            <element signature="docComment;method#equals#0;class#Comparator#0" />
-            <element signature="docComment;method#reversed#0;class#Comparator#0" />
-            <element signature="docComment;method#thenComparing#0;class#Comparator#0" />
-            <element signature="method#thenComparing#0;class#Comparator#0" />
-            <element signature="docComment;method#thenComparing#1;class#Comparator#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/CountLongWords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="252">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/lambda/LambdaTest.java">
+    <entry file="jar://C:/Program Files/Java/jdk/src.zip!/java/util/Locale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+        <state relative-caret-position="234">
+          <caret line="1843" column="24" selection-start-line="1843" selection-start-column="24" selection-end-line="1843" selection-end-column="24" />
+          <folding>
+            <element signature="e#75824#75825#0" expanded="true" />
+            <element signature="e#75891#75892#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-5.1.x/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="8" lean-forward="true" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stream/src/main/java/com/mayzhou/streams/OptionalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -605,6 +861,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: junit:junit:4.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

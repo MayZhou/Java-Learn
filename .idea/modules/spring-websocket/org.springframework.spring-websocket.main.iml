@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":spring-websocket:main" external.linked.project.path="$MODULE_DIR$/../../../spring-framework-5.1.x/spring-websocket" external.root.project.path="$MODULE_DIR$/../../../spring-framework-5.1.x" external.system.id="GRADLE" external.system.module.group="org.springframework" external.system.module.type="sourceSet" external.system.module.version="5.1.9.BUILD-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.8" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xjsr305=strict" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../spring-framework-5.1.x/spring-websocket/build/classes/kotlin/main" />
+          <option name="classpath" value="D:/develop/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-server/9.4.19.v20190610/3991f745a06168793d6f897853b4fde9fa93f9b2/websocket-server-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-servlet/9.4.19.v20190610/261de0b06c2fde533b40ed5498697b8923295311/websocket-servlet-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-webapp/9.4.19.v20190610/945fc0c0fa69504c194e32c5330afa1df0be9574/jetty-webapp-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.19.v20190610/89e25610b3199fdf34a831c1b306f7e765928959/jetty-servlet-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.19.v20190610/bfe96e1e78719bdd446e063c3f45c132010237ce/jetty-security-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.19.v20190610/55786f6e6649bd49425a7da1ac72cd85b8dd4bef/jetty-server-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/4.0.1/a27082684a2ff0bf397666c3943496c44541d1ca/javax.servlet-api-4.0.1.jar;D:/develop/caches/modules-2/files-2.1/org.glassfish.tyrus/tyrus-container-servlet/1.13.1/ef9fdb1634f254af002032fd2059e9548d39b975/tyrus-container-servlet-1.13.1.jar;D:/develop/caches/modules-2/files-2.1/org.glassfish.tyrus/tyrus-server/1.13.1/8a35435414ba4b589f5d43523e4ece5eaf93089d/tyrus-server-1.13.1.jar;D:/develop/caches/modules-2/files-2.1/org.glassfish.tyrus/tyrus-container-grizzly-client/1.13.1/7b56d6edd127118cc883a92edd8d30221ffe0abb/tyrus-container-grizzly-client-1.13.1.jar;D:/develop/caches/modules-2/files-2.1/org.glassfish.tyrus/tyrus-client/1.13.1/7e975f40a525ebf6e55d9e8cbc6445b0ee13ab1d/tyrus-client-1.13.1.jar;D:/develop/caches/modules-2/files-2.1/org.glassfish.tyrus/tyrus-core/1.13.1/c271eacf7a13ef4e7fc661c3952dcba176e3436e/tyrus-core-1.13.1.jar;D:/develop/caches/modules-2/files-2.1/org.glassfish.tyrus/tyrus-spi/1.13.1/d33259bbdfe5914d1fd2bd036b2c4e181ce572e/tyrus-spi-1.13.1.jar;D:/develop/caches/modules-2/files-2.1/javax.websocket/javax.websocket-api/1.1/13b8cb26dfb76ac8c28294b06b4b8419e22e9ea1/javax.websocket-api-1.1.jar;D:/develop/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-websocket/9.0.21/b4d53deae533ab16ee573cffb61d52b67a96e11e/tomcat-websocket-9.0.21.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-client/9.4.19.v20190610/eb2d40e928f58ebbb3b7b84f343cfc220137c0e6/websocket-client-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-client/9.4.19.v20190610/4386c1f243042e0f78f2e4c3c6cd239967410d6e/jetty-client-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/io.undertow/undertow-websockets-jsr/2.0.22.Final/4b9c985ef0003cd696b49f45eed89d93f30cb57a/undertow-websockets-jsr-2.0.22.Final.jar;D:/develop/caches/modules-2/files-2.1/io.undertow/undertow-servlet/2.0.22.Final/172363ff298d388a2c9b3e7a3cd84d3bbda19d94/undertow-servlet-2.0.22.Final.jar;D:/develop/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.9/d6eb9817d9c7289a91f043ac5ee02a6b3cc86238/jackson-databind-2.9.9.jar;D:/develop/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-util/9.0.21/18b47e1970596ee6c723a5694b5db0bdc251bf6/tomcat-util-9.0.21.jar;D:/develop/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/9.0.21/55a4c01e19059ac4dddec84ea10f406abec1d56a/tomcat-juli-9.0.21.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-xml/9.4.19.v20190610/d25e67fbe0809cae777065b75b10ecfb5c1bd749/jetty-xml-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-common/9.4.19.v20190610/5553f761460bc40affef94fd02872b3f062fea/websocket-common-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.19.v20190610/b59ff8ecb0cf5d6234958f2404eabf0b72464e14/jetty-http-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.19.v20190610/7eb9a6be62d84e1691e5fdc99223e632485619a8/jetty-io-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.19.v20190610/2fd3cd40279280e8c56241f753d2c52d8d446d19/jetty-util-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/io.undertow/undertow-core/2.0.22.Final/61b403d76eb06b4ec40b2dacf26aa0daddb9ce5f/undertow-core-2.0.22.Final.jar;D:/develop/caches/modules-2/files-2.1/org.jboss.spec.javax.servlet/jboss-servlet-api_4.0_spec/1.0.0.Final/322892a664ab868bd3ec8561028111f1f928a3f0/jboss-servlet-api_4.0_spec-1.0.0.Final.jar;D:/develop/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar;D:/develop/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.9/bfff5af9fb8347d26bbb7959cb9b4fe9a2b0ca5e/jackson-core-2.9.9.jar;D:/develop/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-api/9.4.19.v20190610/b3193ef2560a2175c0df100402f89a065028b303/websocket-api-9.4.19.v20190610.jar;D:/develop/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.4.0.Final/b225692a59f7dc3a789d2c85edc06041914e97e7/jboss-logging-3.4.0.Final.jar;D:/develop/caches/modules-2/files-2.1/org.jboss.xnio/xnio-nio/3.3.8.Final/8dafaf230666e526c53e544ab6a9d6ecfcbab4ee/xnio-nio-3.3.8.Final.jar;D:/develop/caches/modules-2/files-2.1/org.jboss.xnio/xnio-api/3.3.8.Final/7942ba8330c91a12006c912e040d25a77a58c525/xnio-api-3.3.8.Final.jar;D:/develop/caches/modules-2/files-2.1/org.jboss.spec.javax.annotation/jboss-annotations-api_1.2_spec/1.0.2.Final/d6b20c0e95c5b38f313cc2ab1a55560cedabe1f/jboss-annotations-api_1.2_spec-1.0.2.Final.jar;D:/develop/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-server/2.3.25/57ba5baba3643c27c89aa15fdf3f784de25f27f/grizzly-http-server-2.3.25.jar;D:/develop/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http/2.3.25/3f2a3756d9382930304e35a2575088eba8cb9ca2/grizzly-http-2.3.25.jar;D:/develop/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-framework/2.3.25/fb2ca754df8d4522d3945dbb180478f8f4682ad8/grizzly-framework-2.3.25.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="spring-websocket" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.1" />
+          <option name="apiVersion" value="1.1" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="coroutinesState" value="warn" />
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../spring-framework-5.1.x/spring-websocket/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../spring-framework-5.1.x/spring-websocket/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../spring-framework-5.1.x/spring-websocket/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../spring-framework-5.1.x/spring-websocket/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="org.springframework.spring-webmvc.main" scope="PROVIDED" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-server:9.4.19.v20190610" level="project" />
+    <orderEntry type="module" module-name="org.springframework.spring-beans.main" scope="PROVIDED" />
+    <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-websocket:9.0.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.tyrus:tyrus-container-servlet:1.13.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.tyrus:tyrus-container-grizzly-client:1.13.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-webapp:9.4.19.v20190610" level="project" />
+    <orderEntry type="library" name="Gradle: io.undertow:undertow-core:2.0.22.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:websocket-server:9.4.19.v20190610" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:websocket-common:9.4.19.v20190610" level="project" />
+    <orderEntry type="library" name="Gradle: io.undertow:undertow-servlet:2.0.22.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-xml:9.4.19.v20190610" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../spring-framework-5.1.x/spring-core/build/libs/spring-objenesis-repack-3.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.9" level="project" />
+    <orderEntry type="module" module-name="org.springframework.spring-messaging.main" />
+    <orderEntry type="module" module-name="org.springframework.spring-core.main" scope="PROVIDED" />
+    <orderEntry type="library" name="Gradle: org.glassfish.tyrus:tyrus-server:1.13.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-servlet:9.4.19.v20190610" level="project" />
+    <orderEntry type="module" module-name="org.springframework.spring-jcl.main" scope="PROVIDED" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:websocket-client:9.4.19.v20190610" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.tyrus:tyrus-client:1.13.1" level="project" />
+    <orderEntry type="module" module-name="org.springframework.spring-context.main" />
+    <orderEntry type="module" module-name="org.springframework.spring-messaging.main" scope="PROVIDED" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-security:9.4.19.v20190610" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.tyrus:tyrus-core:1.13.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-http-server:2.3.25" level="project" />
+    <orderEntry type="module" module-name="org.springframework.spring-webmvc.main" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-http:9.4.19.v20190610" level="project" />
+    <orderEntry type="module" module-name="org.springframework.spring-web.main" />
+    <orderEntry type="module" module-name="org.springframework.spring-aop.main" />
+    <orderEntry type="module" module-name="org.springframework.spring-expression.main" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../spring-framework-5.1.x/spring-core/build/libs/spring-cglib-repack-3.2.11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:websocket-servlet:9.4.19.v20190610" level="project" />
+    <orderEntry type="library" name="Gradle: javax.servlet:javax.servlet-api:4.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.tyrus:tyrus-spi:1.13.1" level="project" />
+    <orderEntry type="library" name="Gradle: javax.websocket:javax.websocket-api:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-client:9.4.19.v20190610" level="project" />
+    <orderEntry type="library" name="Gradle: io.undertow:undertow-websockets-jsr:2.0.22.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-util:9.0.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-juli:9.0.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-io:9.4.19.v20190610" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-util:9.4.19.v20190610" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss.spec.javax.servlet:jboss-servlet-api_4.0_spec:1.0.0.Final" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.9" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:websocket-api:9.4.19.v20190610" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss.logging:jboss-logging:3.4.0.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss.xnio:xnio-nio:3.3.8.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss.xnio:xnio-api:3.3.8.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec:1.0.2.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-http:2.3.25" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-framework:2.3.25" level="project" />
+  </component>
+</module>
