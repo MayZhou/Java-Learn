@@ -40,3 +40,5 @@ atlassian-ide-plugin.xml
 .gradletasknamecache
 /.idea/
 /Stream/Stream.iml
+/Design-Pattern/Design-Pattern.iml
+/Design-Pattern/target/

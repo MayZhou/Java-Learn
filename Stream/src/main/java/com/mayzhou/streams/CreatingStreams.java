@@ -14,11 +14,11 @@ import java.util.stream.Stream;
 import static java.lang.System.*;
 
 /**
- * @Auther: MayZhou
- * @Date: 19/6/25 01:08
- * @Description:
- * @copyright:
- * @version:
+ * @auther MayZhou
+ * @date 19/6/25 01:08
+ * @description
+ * @copyright
+ * @version
  */
 public class CreatingStreams {
     public static void main(String[] args) throws IOException {
