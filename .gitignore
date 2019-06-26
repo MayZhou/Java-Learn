@@ -42,3 +42,5 @@ atlassian-ide-plugin.xml
 /Stream/Stream.iml
 /Design-Pattern/Design-Pattern.iml
 /Design-Pattern/target/
+/spring-framework-5.1.x/spring-framework-5.1.x.iml
+!/Design-Pattern/pom.xml
