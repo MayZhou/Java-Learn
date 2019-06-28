@@ -66,7 +66,7 @@ import org.springframework.util.function.SupplierUtils;
  * <p>Subclasses are responsible for calling relevant methods in the correct order.
  *
  * <p>Uses the <b>Strategy</b> design pattern. A {@link CacheOperationSource} is
- * used for determining caching operations, a {@link KeyGenerator} will build the
+ * used for determining caching operations, a {@link KeyGenerator} will builder the
  * cache keys, and a {@link CacheResolver} will resolve the actual cache(s) to use.
  *
  * <p>Note: A cache aspect is serializable but does not perform any actual caching

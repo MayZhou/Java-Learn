@@ -145,7 +145,7 @@ public class EhCacheFactoryBean extends CacheConfiguration implements FactoryBea
 	/**
 	 * Set whether to use a blocking cache that lets read attempts block
 	 * until the requested element is created.
-	 * <p>If you intend to build a self-populating blocking cache,
+	 * <p>If you intend to builder a self-populating blocking cache,
 	 * consider specifying a {@link #setCacheEntryFactory CacheEntryFactory}.
 	 * @see net.sf.ehcache.constructs.blocking.BlockingCache
 	 * @see #setCacheEntryFactory

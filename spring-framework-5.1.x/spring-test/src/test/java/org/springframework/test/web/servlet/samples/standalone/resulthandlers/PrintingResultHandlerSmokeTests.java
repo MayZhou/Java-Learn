@@ -40,14 +40,14 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
  * various output streams.
  *
  * <p><strong>NOTE</strong>: this <em>smoke test</em> is not intended to be
- * executed with the build. To run this test, comment out the {@code @Ignore}
+ * executed with the builder. To run this test, comment out the {@code @Ignore}
  * declaration and inspect the output manually.
  *
  * @author Rossen Stoyanchev
  * @author Sam Brannen
  * @see org.springframework.test.web.servlet.result.PrintingResultHandlerTests
  */
-@Ignore("Not intended to be executed with the build. Comment out this line to inspect the output manually.")
+@Ignore("Not intended to be executed with the builder. Comment out this line to inspect the output manually.")
 public class PrintingResultHandlerSmokeTests {
 
 	@Test

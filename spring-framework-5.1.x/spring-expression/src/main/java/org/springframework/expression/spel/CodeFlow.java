@@ -976,7 +976,7 @@ public class CodeFlow implements Opcodes {
 	}
 
 	/**
-	 * Produce the correct bytecode to build an array. The opcode to use and the
+	 * Produce the correct bytecode to builder an array. The opcode to use and the
 	 * signature to pass along with the opcode can vary depending on the signature
 	 * of the array type.
 	 * @param mv the methodvisitor into which code should be inserted

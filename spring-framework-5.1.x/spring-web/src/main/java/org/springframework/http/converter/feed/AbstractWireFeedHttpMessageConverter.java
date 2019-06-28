@@ -42,7 +42,7 @@ import org.springframework.util.StringUtils;
  * <a href="https://github.com/rometools/rome">ROME tools</a> project.
  *
  * <p><b>NOTE: As of Spring 4.1, this is based on the {@code com.rometools}
- * variant of ROME, version 1.5. Please upgrade your build dependency.</b>
+ * variant of ROME, version 1.5. Please upgrade your builder dependency.</b>
  *
  * @author Arjen Poutsma
  * @since 3.0.2

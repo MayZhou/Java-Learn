@@ -78,13 +78,13 @@ import org.springframework.util.StringUtils;
  * MessageBuilder builder = MessageBuilder.withPayload("payload").setHeaders(accessor);
  *
  * accessor.setHeader("foo", "bar1");
- * Message message1 = builder.build();
+ * Message message1 = builder.builder();
  *
  * accessor.setHeader("foo", "bar2");
- * Message message2 = builder.build();
+ * Message message2 = builder.builder();
  *
  * accessor.setHeader("foo", "bar3");
- * Message  message3 = builder.build();
+ * Message  message3 = builder.builder();
  * </pre>
  *
  * <p>However note that with the above style, the header accessor is shared and
@@ -155,7 +155,7 @@ public class MessageHeaderAccessor {
 
 	/**
 	 * Build a 'nested' accessor for the given message.
-	 * @param message the message to build a new accessor for
+	 * @param message the message to builder a new accessor for
 	 * @return the nested accessor (typically a specific subclass)
 	 */
 	protected MessageHeaderAccessor createAccessor(Message<?> message) {

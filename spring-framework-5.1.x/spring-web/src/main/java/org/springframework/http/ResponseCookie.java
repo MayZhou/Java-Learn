@@ -25,7 +25,7 @@ import org.springframework.util.StringUtils;
 
 /**
  * An {@code HttpCookie} subclass with the additional attributes allowed in
- * the "Set-Cookie" response header. To build an instance use the {@link #from}
+ * the "Set-Cookie" response header. To builder an instance use the {@link #from}
  * static method.
  *
  * @author Rossen Stoyanchev

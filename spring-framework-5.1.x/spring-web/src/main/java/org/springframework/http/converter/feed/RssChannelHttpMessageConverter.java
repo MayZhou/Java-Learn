@@ -26,7 +26,7 @@ import org.springframework.http.MediaType;
  * objects from the <a href="https://github.com/rometools/rome">ROME</a> project.
  *
  * <p>><b>NOTE: As of Spring 4.1, this is based on the {@code com.rometools}
- * variant of ROME, version 1.5. Please upgrade your build dependency.</b>
+ * variant of ROME, version 1.5. Please upgrade your builder dependency.</b>
  *
  * <p>By default, this converter reads and writes the media type ({@code application/rss+xml}).
  * This can be overridden through the {@link #setSupportedMediaTypes supportedMediaTypes} property.

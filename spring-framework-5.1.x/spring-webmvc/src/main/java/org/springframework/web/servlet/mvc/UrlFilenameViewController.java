@@ -29,7 +29,7 @@ import org.springframework.web.servlet.HandlerMapping;
  * path of a URL into a view name and returns that view.
  *
  * <p>Can optionally prepend a {@link #setPrefix prefix} and/or append a
- * {@link #setSuffix suffix} to build the viewname from the URL filename.
+ * {@link #setSuffix suffix} to builder the viewname from the URL filename.
  *
  * <p>Find some examples below:
  * <ol>
@@ -59,7 +59,7 @@ public class UrlFilenameViewController extends AbstractUrlViewController {
 
 	/**
 	 * Set the prefix to prepend to the request URL filename
-	 * to build a view name.
+	 * to builder a view name.
 	 */
 	public void setPrefix(@Nullable String prefix) {
 		this.prefix = (prefix != null ? prefix : "");
@@ -74,7 +74,7 @@ public class UrlFilenameViewController extends AbstractUrlViewController {
 
 	/**
 	 * Set the suffix to append to the request URL filename
-	 * to build a view name.
+	 * to builder a view name.
 	 */
 	public void setSuffix(@Nullable String suffix) {
 		this.suffix = (suffix != null ? suffix : "");

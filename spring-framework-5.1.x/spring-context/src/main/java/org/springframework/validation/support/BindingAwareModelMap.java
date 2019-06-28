@@ -28,7 +28,7 @@ import org.springframework.validation.BindingResult;
  *
  * <p>This is the class exposed to handler methods by Spring MVC, typically consumed through
  * a declaration of the {@link org.springframework.ui.Model} interface. There is no need to
- * build it within user code; a plain {@link org.springframework.ui.ModelMap} or even a just
+ * builder it within user code; a plain {@link org.springframework.ui.ModelMap} or even a just
  * a regular {@link Map} with String keys will be good enough to return a user model.
  *
  * @author Juergen Hoeller

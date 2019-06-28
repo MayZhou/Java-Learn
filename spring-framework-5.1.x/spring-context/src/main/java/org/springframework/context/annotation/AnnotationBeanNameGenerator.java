@@ -130,7 +130,7 @@ public class AnnotationBeanNameGenerator implements BeanNameGenerator {
 	/**
 	 * Derive a default bean name from the given bean definition.
 	 * <p>The default implementation delegates to {@link #buildDefaultBeanName(BeanDefinition)}.
-	 * @param definition the bean definition to build a bean name for
+	 * @param definition the bean definition to builder a bean name for
 	 * @param registry the registry that the given bean definition is being registered with
 	 * @return the default bean name (never {@code null})
 	 */
@@ -145,7 +145,7 @@ public class AnnotationBeanNameGenerator implements BeanNameGenerator {
 	 * <p>Note that inner classes will thus have names of the form
 	 * "outerClassName.InnerClassName", which because of the period in the
 	 * name may be an issue if you are autowiring by name.
-	 * @param definition the bean definition to build a bean name for
+	 * @param definition the bean definition to builder a bean name for
 	 * @return the default bean name (never {@code null})
 	 */
 	protected String buildDefaultBeanName(BeanDefinition definition) {

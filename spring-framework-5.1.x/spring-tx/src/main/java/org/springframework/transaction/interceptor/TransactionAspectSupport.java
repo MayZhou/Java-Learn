@@ -199,7 +199,7 @@ public abstract class TransactionAspectSupport implements BeanFactoryAware, Init
 
 	/**
 	 * Set multiple transaction attribute sources which are used to find transaction
-	 * attributes. Will build a CompositeTransactionAttributeSource for the given sources.
+	 * attributes. Will builder a CompositeTransactionAttributeSource for the given sources.
 	 * @see CompositeTransactionAttributeSource
 	 * @see MethodMapTransactionAttributeSource
 	 * @see NameMatchTransactionAttributeSource

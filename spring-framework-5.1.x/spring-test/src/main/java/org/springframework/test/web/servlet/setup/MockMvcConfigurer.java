@@ -34,7 +34,7 @@ import org.springframework.web.context.WebApplicationContext;
  *
  * // ...
  *
- * MockMvcBuilders.webAppContextSetup(context).apply(mySetup("foo","bar")).build();
+ * MockMvcBuilders.webAppContextSetup(context).apply(mySetup("foo","bar")).builder();
  * </pre>
  *
  * @author Rossen Stoyanchev

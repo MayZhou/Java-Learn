@@ -334,7 +334,7 @@ public class UriComponentsBuilder implements UriBuilder, Cloneable {
 	// Encode methods
 
 	/**
-	 * Request to have the URI template pre-encoded at build time, and
+	 * Request to have the URI template pre-encoded at builder time, and
 	 * URI variables encoded separately when expanded.
 	 * <p>In comparison to {@link UriComponents#encode()}, this method has the
 	 * same effect on the URI template, i.e. each URI component is encoded by
@@ -445,13 +445,13 @@ public class UriComponentsBuilder implements UriBuilder, Cloneable {
 	 * <p>Effectively, a shortcut for building, encoding, and returning the
 	 * String representation:
 	 * <pre class="code">
-	 * String uri = builder.build().encode().toUriString()
+	 * String uri = builder.builder().encode().toUriString()
 	 * </pre>
 	 * <p>However if {@link #uriVariables(Map) URI variables} have been provided
 	 * then the URI template is pre-encoded separately from URI variables (see
 	 * {@link #encode()} for details), i.e. equivalent to:
 	 * <pre>
-	 * String uri = builder.encode().build().toUriString()
+	 * String uri = builder.encode().builder().toUriString()
 	 * </pre>
 	 * @since 4.1
 	 * @see UriComponents#toUriString()
@@ -779,8 +779,8 @@ public class UriComponentsBuilder implements UriBuilder, Cloneable {
 	}
 
 	/**
-	 * Configure URI variables to be expanded at build time.
-	 * <p>The provided variables may be a subset of all required ones. At build
+	 * Configure URI variables to be expanded at builder time.
+	 * <p>The provided variables may be a subset of all required ones. At builder
 	 * time, the available ones are expanded, while unresolved URI placeholders
 	 * are left in place and can still be expanded later.
 	 * <p>In contrast to {@link UriComponents#expand(Map)} or

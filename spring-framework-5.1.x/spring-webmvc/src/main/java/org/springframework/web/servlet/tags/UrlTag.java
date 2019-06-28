@@ -87,7 +87,7 @@ import org.springframework.web.util.UriUtils;
  * <td>value</td>
  * <td>true</td>
  * <td>true</td>
- * <td>The URL to build. This value can include template {placeholders} that are
+ * <td>The URL to builder. This value can include template {placeholders} that are
  * replaced with the URL encoded value of the named parameter. Parameters
  * must be defined using the param tag inside the body of this tag.</td>
  * </tr>
@@ -308,7 +308,7 @@ public class UrlTag extends HtmlEscapingAwareTag implements ParamAware {
 	 * Build the query string from available parameters that have not already
 	 * been applied as template params.
 	 * <p>The names and values of parameters are URL encoded.
-	 * @param params the parameters to build the query string from
+	 * @param params the parameters to builder the query string from
 	 * @param usedParams set of parameter names that have been applied as
 	 * template params
 	 * @param includeQueryStringDelimiter true if the query string should start

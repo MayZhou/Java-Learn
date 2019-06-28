@@ -34,7 +34,7 @@ import org.springframework.web.server.adapter.WebHttpHandlerBuilder;
  *
  * WebTestClient.bindToController(new TestController())
  *     .apply(securitySetup("foo","bar"))
- *     .build();
+ *     .builder();
  * </pre>
  *
  * @author Rossen Stoyanchev

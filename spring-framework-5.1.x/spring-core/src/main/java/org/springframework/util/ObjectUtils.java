@@ -626,7 +626,7 @@ public abstract class ObjectUtils {
 	 * not {@code null}; otherwise returns an empty String.
 	 * <p>Differs from {@link #nullSafeToString(Object)} in that it returns
 	 * an empty String rather than "null" for a {@code null} value.
-	 * @param obj the object to build a display String for
+	 * @param obj the object to builder a display String for
 	 * @return a display String representation of {@code obj}
 	 * @see #nullSafeToString(Object)
 	 */
@@ -651,7 +651,7 @@ public abstract class ObjectUtils {
 	 * Return a String representation of the specified Object.
 	 * <p>Builds a String representation of the contents in case of an array.
 	 * Returns a {@code "null"} String if {@code obj} is {@code null}.
-	 * @param obj the object to build a String representation for
+	 * @param obj the object to builder a String representation for
 	 * @return a String representation of {@code obj}
 	 */
 	public static String nullSafeToString(@Nullable Object obj) {
@@ -698,7 +698,7 @@ public abstract class ObjectUtils {
 	 * enclosed in curly braces ({@code "{}"}). Adjacent elements are separated
 	 * by the characters {@code ", "} (a comma followed by a space).
 	 * Returns a {@code "null"} String if {@code array} is {@code null}.
-	 * @param array the array to build a String representation for
+	 * @param array the array to builder a String representation for
 	 * @return a String representation of {@code array}
 	 */
 	public static String nullSafeToString(@Nullable Object[] array) {
@@ -729,7 +729,7 @@ public abstract class ObjectUtils {
 	 * enclosed in curly braces ({@code "{}"}). Adjacent elements are separated
 	 * by the characters {@code ", "} (a comma followed by a space).
 	 * Returns a {@code "null"} String if {@code array} is {@code null}.
-	 * @param array the array to build a String representation for
+	 * @param array the array to builder a String representation for
 	 * @return a String representation of {@code array}
 	 */
 	public static String nullSafeToString(@Nullable boolean[] array) {
@@ -761,7 +761,7 @@ public abstract class ObjectUtils {
 	 * enclosed in curly braces ({@code "{}"}). Adjacent elements are separated
 	 * by the characters {@code ", "} (a comma followed by a space).
 	 * Returns a {@code "null"} String if {@code array} is {@code null}.
-	 * @param array the array to build a String representation for
+	 * @param array the array to builder a String representation for
 	 * @return a String representation of {@code array}
 	 */
 	public static String nullSafeToString(@Nullable byte[] array) {
@@ -792,7 +792,7 @@ public abstract class ObjectUtils {
 	 * enclosed in curly braces ({@code "{}"}). Adjacent elements are separated
 	 * by the characters {@code ", "} (a comma followed by a space).
 	 * Returns a {@code "null"} String if {@code array} is {@code null}.
-	 * @param array the array to build a String representation for
+	 * @param array the array to builder a String representation for
 	 * @return a String representation of {@code array}
 	 */
 	public static String nullSafeToString(@Nullable char[] array) {
@@ -823,7 +823,7 @@ public abstract class ObjectUtils {
 	 * enclosed in curly braces ({@code "{}"}). Adjacent elements are separated
 	 * by the characters {@code ", "} (a comma followed by a space).
 	 * Returns a {@code "null"} String if {@code array} is {@code null}.
-	 * @param array the array to build a String representation for
+	 * @param array the array to builder a String representation for
 	 * @return a String representation of {@code array}
 	 */
 	public static String nullSafeToString(@Nullable double[] array) {
@@ -855,7 +855,7 @@ public abstract class ObjectUtils {
 	 * enclosed in curly braces ({@code "{}"}). Adjacent elements are separated
 	 * by the characters {@code ", "} (a comma followed by a space).
 	 * Returns a {@code "null"} String if {@code array} is {@code null}.
-	 * @param array the array to build a String representation for
+	 * @param array the array to builder a String representation for
 	 * @return a String representation of {@code array}
 	 */
 	public static String nullSafeToString(@Nullable float[] array) {
@@ -887,7 +887,7 @@ public abstract class ObjectUtils {
 	 * enclosed in curly braces ({@code "{}"}). Adjacent elements are separated
 	 * by the characters {@code ", "} (a comma followed by a space).
 	 * Returns a {@code "null"} String if {@code array} is {@code null}.
-	 * @param array the array to build a String representation for
+	 * @param array the array to builder a String representation for
 	 * @return a String representation of {@code array}
 	 */
 	public static String nullSafeToString(@Nullable int[] array) {
@@ -918,7 +918,7 @@ public abstract class ObjectUtils {
 	 * enclosed in curly braces ({@code "{}"}). Adjacent elements are separated
 	 * by the characters {@code ", "} (a comma followed by a space).
 	 * Returns a {@code "null"} String if {@code array} is {@code null}.
-	 * @param array the array to build a String representation for
+	 * @param array the array to builder a String representation for
 	 * @return a String representation of {@code array}
 	 */
 	public static String nullSafeToString(@Nullable long[] array) {
@@ -949,7 +949,7 @@ public abstract class ObjectUtils {
 	 * enclosed in curly braces ({@code "{}"}). Adjacent elements are separated
 	 * by the characters {@code ", "} (a comma followed by a space).
 	 * Returns a {@code "null"} String if {@code array} is {@code null}.
-	 * @param array the array to build a String representation for
+	 * @param array the array to builder a String representation for
 	 * @return a String representation of {@code array}
 	 */
 	public static String nullSafeToString(@Nullable short[] array) {

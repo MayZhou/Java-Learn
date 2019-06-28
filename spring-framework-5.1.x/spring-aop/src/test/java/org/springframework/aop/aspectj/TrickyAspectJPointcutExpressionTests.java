@@ -126,7 +126,7 @@ public class TrickyAspectJPointcutExpressionTests {
 
 		/**
 		 * Create a new SimpleThrowawayClassLoader for the given class loader.
-		 * @param parent the ClassLoader to build a throwaway ClassLoader for
+		 * @param parent the ClassLoader to builder a throwaway ClassLoader for
 		 */
 		public SimpleThrowawayClassLoader(ClassLoader parent) {
 			super(parent);

@@ -60,7 +60,7 @@ public class CompoundComparator<T> implements Comparator<T>, Serializable {
 	 * Construct a CompoundComparator from the Comparators in the provided array.
 	 * <p>All Comparators will default to ascending sort order,
 	 * unless they are InvertibleComparators.
-	 * @param comparators the comparators to build into a compound comparator
+	 * @param comparators the comparators to builder into a compound comparator
 	 * @see InvertibleComparator
 	 */
 	@SuppressWarnings("unchecked")

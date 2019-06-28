@@ -73,7 +73,7 @@ public abstract class AbstractPdfView extends AbstractView {
 		// IE workaround: write into byte array first.
 		ByteArrayOutputStream baos = createTemporaryOutputStream();
 
-		// Apply preferences and build metadata.
+		// Apply preferences and builder metadata.
 		Document document = newDocument();
 		PdfWriter writer = newWriter(document, baos);
 		prepareWriter(model, writer, request);
@@ -167,7 +167,7 @@ public abstract class AbstractPdfView extends AbstractView {
 	}
 
 	/**
-	 * Subclasses must implement this method to build an iText PDF document,
+	 * Subclasses must implement this method to builder an iText PDF document,
 	 * given the model. Called between {@code Document.open()} and
 	 * {@code Document.close()} calls.
 	 * <p>Note that the passed-in HTTP response is just supposed to be used

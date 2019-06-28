@@ -42,7 +42,7 @@ public class SimpleInstrumentableClassLoader extends OverridingClassLoader {
 
 	/**
 	 * Create a new SimpleInstrumentableClassLoader for the given ClassLoader.
-	 * @param parent the ClassLoader to build an instrumentable ClassLoader for
+	 * @param parent the ClassLoader to builder an instrumentable ClassLoader for
 	 */
 	public SimpleInstrumentableClassLoader(@Nullable ClassLoader parent) {
 		super(parent);

@@ -296,7 +296,7 @@ public class ContentNegotiationManagerFactoryBean
 	}
 
 	/**
-	 * Actually build the {@link ContentNegotiationManager}.
+	 * Actually builder the {@link ContentNegotiationManager}.
 	 * @since 5.0
 	 */
 	public ContentNegotiationManager build() {

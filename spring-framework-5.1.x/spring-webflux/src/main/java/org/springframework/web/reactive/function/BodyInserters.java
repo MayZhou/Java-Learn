@@ -199,7 +199,7 @@ public abstract class BodyInserters {
 	 * Return a {@link MultipartInserter} to write the given
 	 * {@code MultiValueMap} as multipart data. Values in the map can be an
 	 * Object or an {@link HttpEntity}.
-	 * <p>Note that you can also build the multipart data externally with
+	 * <p>Note that you can also builder the multipart data externally with
 	 * {@link MultipartBodyBuilder}, and pass the resulting map directly to the
 	 * {@code syncBody(Object)} shortcut method in {@code WebClient}.
 	 * @param multipartData the form data to write to the output message
@@ -215,7 +215,7 @@ public abstract class BodyInserters {
 	 * Return a {@link MultipartInserter} to write the given parts,
 	 * as multipart data. Values in the map can be an Object or an
 	 * {@link HttpEntity}.
-	 * <p>Note that you can also build the multipart data externally with
+	 * <p>Note that you can also builder the multipart data externally with
 	 * {@link MultipartBodyBuilder}, and pass the resulting map directly to the
 	 * {@code syncBody(Object)} shortcut method in {@code WebClient}.
 	 * @param name the part name
@@ -231,7 +231,7 @@ public abstract class BodyInserters {
 	/**
 	 * Return a {@link MultipartInserter} to write the given asynchronous parts,
 	 * as multipart data.
-	 * <p>Note that you can also build the multipart data externally with
+	 * <p>Note that you can also builder the multipart data externally with
 	 * {@link MultipartBodyBuilder}, and pass the resulting map directly to the
 	 * {@code syncBody(Object)} shortcut method in {@code WebClient}.
 	 * @param name the part name
@@ -249,7 +249,7 @@ public abstract class BodyInserters {
 	 * Variant of {@link #fromMultipartAsyncData(String, Publisher, Class)} that
 	 * accepts a {@link ParameterizedTypeReference} for the element type, which
 	 * allows specifying generic type information.
-	 * <p>Note that you can also build the multipart data externally with
+	 * <p>Note that you can also builder the multipart data externally with
 	 * {@link MultipartBodyBuilder}, and pass the resulting map directly to the
 	 * {@code syncBody(Object)} shortcut method in {@code WebClient}.
 	 * @param name the part name

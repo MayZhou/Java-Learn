@@ -37,7 +37,7 @@ import org.springframework.lang.Nullable;
  * <p>Alternatively, consider subclassing
  * {@link org.springframework.jdbc.object.MappingSqlQuery} from the
  * {@code jdbc.object} package: Instead of working with separate
- * JdbcTemplate and RowMapper objects, you can build executable query
+ * JdbcTemplate and RowMapper objects, you can builder executable query
  * objects (containing row-mapping logic) in that style.
  *
  * @author Thomas Risberg

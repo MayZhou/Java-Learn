@@ -196,7 +196,7 @@ public class ResourceWebHandler implements WebHandler, InitializingBean {
 	}
 
 	/**
-	 * Set the {@link org.springframework.http.CacheControl} instance to build
+	 * Set the {@link org.springframework.http.CacheControl} instance to builder
 	 * the Cache-Control HTTP response header.
 	 */
 	public void setCacheControl(@Nullable CacheControl cacheControl) {
@@ -204,7 +204,7 @@ public class ResourceWebHandler implements WebHandler, InitializingBean {
 	}
 
 	/**
-	 * Return the {@link org.springframework.http.CacheControl} instance to build
+	 * Return the {@link org.springframework.http.CacheControl} instance to builder
 	 * the Cache-Control HTTP response header.
 	 */
 	@Nullable

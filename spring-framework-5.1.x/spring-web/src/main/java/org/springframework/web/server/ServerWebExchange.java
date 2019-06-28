@@ -252,7 +252,7 @@ public interface ServerWebExchange {
 		 *
 		 * ServerHttpRequest request = exchange.getRequest().mutate()
 		 *     .method(HttpMethod.PUT)
-		 *     .build();
+		 *     .builder();
 		 *
 		 * exchange.mutate().request(request);
 		 * </pre>

@@ -614,8 +614,8 @@ public class Jackson2ObjectMapperBuilder {
 
 	/**
 	 * Build a new {@link ObjectMapper} instance.
-	 * <p>Each build operation produces an independent {@link ObjectMapper} instance.
-	 * The builder's settings can get modified, with a subsequent build operation
+	 * <p>Each builder operation produces an independent {@link ObjectMapper} instance.
+	 * The builder's settings can get modified, with a subsequent builder operation
 	 * then producing a new {@link ObjectMapper} based on the most recent settings.
 	 * @return the newly built ObjectMapper
 	 */
@@ -826,7 +826,7 @@ public class Jackson2ObjectMapperBuilder {
 
 	/**
 	 * Obtain a {@link Jackson2ObjectMapperBuilder} instance in order to
-	 * build a regular JSON {@link ObjectMapper} instance.
+	 * builder a regular JSON {@link ObjectMapper} instance.
 	 */
 	public static Jackson2ObjectMapperBuilder json() {
 		return new Jackson2ObjectMapperBuilder();
@@ -834,7 +834,7 @@ public class Jackson2ObjectMapperBuilder {
 
 	/**
 	 * Obtain a {@link Jackson2ObjectMapperBuilder} instance in order to
-	 * build an {@link XmlMapper} instance.
+	 * builder an {@link XmlMapper} instance.
 	 */
 	public static Jackson2ObjectMapperBuilder xml() {
 		return new Jackson2ObjectMapperBuilder().createXmlMapper(true);
@@ -842,7 +842,7 @@ public class Jackson2ObjectMapperBuilder {
 
 	/**
 	 * Obtain a {@link Jackson2ObjectMapperBuilder} instance in order to
-	 * build a Smile data format {@link ObjectMapper} instance.
+	 * builder a Smile data format {@link ObjectMapper} instance.
 	 * @since 5.0
 	 */
 	public static Jackson2ObjectMapperBuilder smile() {
@@ -851,7 +851,7 @@ public class Jackson2ObjectMapperBuilder {
 
 	/**
 	 * Obtain a {@link Jackson2ObjectMapperBuilder} instance in order to
-	 * build a CBOR data format {@link ObjectMapper} instance.
+	 * builder a CBOR data format {@link ObjectMapper} instance.
 	 * @since 5.0
 	 */
 	public static Jackson2ObjectMapperBuilder cbor() {

@@ -1223,7 +1223,7 @@ public class Enhancer extends AbstractClassGenerator {
 			}
 			group.add(method);
 
-			// Optimization: build up a map of Class -> bridge methods in class
+			// Optimization: builder up a map of Class -> bridge methods in class
 			// so that we can look up all the bridge methods in one pass for a class.
 			if (TypeUtils.isBridge(actualMethod.getModifiers())) {
 				Set bridges = (Set) declToBridge.get(actualMethod.getDeclaringClass());

@@ -87,7 +87,7 @@ public class HandlerResultMatchers {
 	 *
 	 *     &#064;RequestMapping("/")
 	 *     public ResponseEntity&lt;Void&gt; handle() {
-	 *         return ResponseEntity.ok().build();
+	 *         return ResponseEntity.ok().builder();
 	 *     }
 	 * }
 	 * </pre>

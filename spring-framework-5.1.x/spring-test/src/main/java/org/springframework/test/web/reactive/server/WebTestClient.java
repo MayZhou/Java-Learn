@@ -149,10 +149,10 @@ public interface WebTestClient {
 	Builder mutate();
 
 	/**
-	 * Mutate the {@link WebTestClient}, apply the given configurer, and build
+	 * Mutate the {@link WebTestClient}, apply the given configurer, and builder
 	 * a new instance. Essentially a shortcut for:
 	 * <pre>
-	 * mutate().apply(configurer).build();
+	 * mutate().apply(configurer).builder();
 	 * </pre>
 	 * @param configurer the configurer to apply
 	 * @return the mutated test client
@@ -225,7 +225,7 @@ public interface WebTestClient {
 	 * <p><pre class="code">
 	 * WebTestClient client = WebTestClient.bindToServer()
 	 *         .baseUrl("http://localhost:8080")
-	 *         .build();
+	 *         .builder();
 	 * </pre>
 	 * @return chained API to customize client config
 	 */
@@ -238,7 +238,7 @@ public interface WebTestClient {
 	 * <p><pre class="code">
 	 * WebTestClient client = WebTestClient.bindToServer()
 	 *         .baseUrl("http://localhost:8080")
-	 *         .build();
+	 *         .builder();
 	 * </pre>
 	 * @return chained API to customize client config
 	 * @since 5.0.2
@@ -277,12 +277,12 @@ public interface WebTestClient {
 		<T extends B> T apply(MockServerConfigurer configurer);
 
 		/**
-		 * Proceed to configure and build the test client.
+		 * Proceed to configure and builder the test client.
 		 */
 		Builder configureClient();
 
 		/**
-		 * Shortcut to build the test client.
+		 * Shortcut to builder the test client.
 		 */
 		WebTestClient build();
 	}

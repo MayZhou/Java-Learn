@@ -523,7 +523,7 @@ public class TypeDescriptor implements Serializable {
 	 * <p>Use this factory method to introspect a source object before asking the
 	 * conversion system to convert it to some another type.
 	 * <p>If the provided object is {@code null}, returns {@code null}, else calls
-	 * {@link #valueOf(Class)} to build a TypeDescriptor from the object's class.
+	 * {@link #valueOf(Class)} to builder a TypeDescriptor from the object's class.
 	 * @param source the source object
 	 * @return the type descriptor
 	 */

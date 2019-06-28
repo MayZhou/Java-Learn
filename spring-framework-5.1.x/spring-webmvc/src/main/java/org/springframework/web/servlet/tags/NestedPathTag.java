@@ -103,7 +103,7 @@ public class NestedPathTag extends TagSupport implements TryCatchFinally {
 
 	@Override
 	public int doStartTag() throws JspException {
-		// Save previous nestedPath value, build and expose current nestedPath value.
+		// Save previous nestedPath value, builder and expose current nestedPath value.
 		// Use request scope to expose nestedPath to included pages too.
 		this.previousNestedPath =
 				(String) this.pageContext.getAttribute(NESTED_PATH_VARIABLE_NAME, PageContext.REQUEST_SCOPE);

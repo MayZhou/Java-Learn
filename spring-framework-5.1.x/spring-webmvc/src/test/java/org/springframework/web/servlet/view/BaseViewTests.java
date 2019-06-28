@@ -41,7 +41,7 @@ import static org.mockito.BDDMockito.*;
  * Base tests for {@link AbstractView}.
  *
  * <p>Not called {@code AbstractViewTests} since doing so would cause it
- * to be ignored in the Gradle build.
+ * to be ignored in the Gradle builder.
  *
  * @author Rod Johnson
  * @author Sam Brannen

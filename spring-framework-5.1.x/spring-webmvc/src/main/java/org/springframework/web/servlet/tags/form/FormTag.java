@@ -572,7 +572,7 @@ public class FormTag extends AbstractHtmlElementTag {
 		String modelAttribute = resolveModelAttribute();
 		this.pageContext.setAttribute(MODEL_ATTRIBUTE_VARIABLE_NAME, modelAttribute, PageContext.REQUEST_SCOPE);
 
-		// Save previous nestedPath value, build and expose current nestedPath value.
+		// Save previous nestedPath value, builder and expose current nestedPath value.
 		// Use request scope to expose nestedPath to included pages too.
 		this.previousNestedPath =
 				(String) this.pageContext.getAttribute(NESTED_PATH_VARIABLE_NAME, PageContext.REQUEST_SCOPE);

@@ -107,7 +107,7 @@ final class PersistenceUnitReader {
 
 
 	/**
-	 * Parse and build all persistence unit infos defined in the specified XML file(s).
+	 * Parse and builder all persistence unit infos defined in the specified XML file(s).
 	 * @param persistenceXmlLocation the resource location (can be a pattern)
 	 * @return the resulting PersistenceUnitInfo instances
 	 */
@@ -116,7 +116,7 @@ final class PersistenceUnitReader {
 	}
 
 	/**
-	 * Parse and build all persistence unit infos defined in the given XML files.
+	 * Parse and builder all persistence unit infos defined in the given XML files.
 	 * @param persistenceXmlLocations the resource locations (can be patterns)
 	 * @return the resulting PersistenceUnitInfo instances
 	 */

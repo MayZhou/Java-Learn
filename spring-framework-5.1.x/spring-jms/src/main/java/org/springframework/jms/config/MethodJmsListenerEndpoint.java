@@ -116,7 +116,7 @@ public class MethodJmsListenerEndpoint extends AbstractJmsListenerEndpoint imple
 	}
 
 	/**
-	 * Set the {@link MessageHandlerMethodFactory} to use to build the
+	 * Set the {@link MessageHandlerMethodFactory} to use to builder the
 	 * {@link InvocableHandlerMethod} responsible to manage the invocation
 	 * of this endpoint.
 	 */

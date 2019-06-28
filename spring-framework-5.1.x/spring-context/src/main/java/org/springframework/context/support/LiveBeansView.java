@@ -230,7 +230,7 @@ public class LiveBeansView implements LiveBeansViewMBean, ApplicationContextAwar
 	/**
 	 * Determine a resource description for the given bean definition and
 	 * apply basic JSON escaping (backslashes, double quotes) to it.
-	 * @param bd the bean definition to build the resource description for
+	 * @param bd the bean definition to builder the resource description for
 	 * @return the JSON-escaped resource description
 	 */
 	@Nullable

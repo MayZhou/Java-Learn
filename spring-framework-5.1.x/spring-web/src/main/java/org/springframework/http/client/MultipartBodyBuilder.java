@@ -60,7 +60,7 @@ import org.springframework.util.MultiValueMap;
  * builder.asyncPart("account", accountMono).header("foo", "bar");
  *
  * // Build and use
- * MultiValueMap&lt;String, HttpEntity&lt;?&gt;&gt; multipartBody = builder.build();
+ * MultiValueMap&lt;String, HttpEntity&lt;?&gt;&gt; multipartBody = builder.builder();
  *
  * Mono&lt;Void&gt; result = webClient.post()
  *     .uri("...")

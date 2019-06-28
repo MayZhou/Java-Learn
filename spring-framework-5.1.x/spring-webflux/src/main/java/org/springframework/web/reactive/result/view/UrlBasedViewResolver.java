@@ -270,7 +270,7 @@ public class UrlBasedViewResolver extends ViewResolverSupport
 	 * <p>Spring lifecycle methods as defined by the bean container do not have to
 	 * be called here: They will be automatically applied afterwards, provided
 	 * that an {@link #setApplicationContext ApplicationContext} is available.
-	 * @param viewName the name of the view to build
+	 * @param viewName the name of the view to builder
 	 * @return the View instance
 	 * @see #getViewClass()
 	 * @see #applyLifecycleMethods

@@ -154,7 +154,7 @@ public class LocalValidatorFactoryBean extends SpringValidatorAdapter
 	 * You may nevertheless use a different validation provider but Hibernate Validator's
 	 * {@link ResourceBundleMessageInterpolator} class must be accessible during configuration.
 	 * <p>Specify either this property or {@link #setMessageInterpolator "messageInterpolator"},
-	 * not both. If you would like to build a custom MessageInterpolator, consider deriving from
+	 * not both. If you would like to builder a custom MessageInterpolator, consider deriving from
 	 * Hibernate Validator's {@link ResourceBundleMessageInterpolator} and passing in a
 	 * Spring-based {@code ResourceBundleLocator} when constructing your interpolator.
 	 * <p>In order for Hibernate's default validation messages to be resolved still, your
@@ -303,7 +303,7 @@ public class LocalValidatorFactoryBean extends SpringValidatorAdapter
 
 		this.validationPropertyMap.forEach(configuration::addProperty);
 
-		// Allow for custom post-processing before we actually build the ValidatorFactory.
+		// Allow for custom post-processing before we actually builder the ValidatorFactory.
 		postProcessConfiguration(configuration);
 
 		this.validatorFactory = configuration.buildValidatorFactory();

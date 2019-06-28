@@ -33,7 +33,7 @@ import org.springframework.web.servlet.view.AbstractView;
  * <a href="https://github.com/rometools/rome">ROME</a> package.
  *
  * <p>><b>NOTE: As of Spring 4.1, this is based on the {@code com.rometools}
- * variant of ROME, version 1.5. Please upgrade your build dependency.</b>
+ * variant of ROME, version 1.5. Please upgrade your builder dependency.</b>
  *
  * <p>Application-specific view classes will typically extend from either
  * {@link AbstractRssFeedView} or {@link AbstractAtomFeedView} instead of from this class.
@@ -87,7 +87,7 @@ public abstract class AbstractFeedView<T extends WireFeed> extends AbstractView 
 	}
 
 	/**
-	 * Subclasses must implement this method to build feed entries, given the model.
+	 * Subclasses must implement this method to builder feed entries, given the model.
 	 * <p>Note that the passed-in HTTP response is just supposed to be used for
 	 * setting cookies or other HTTP headers. The built feed itself will automatically
 	 * get written to the response after this method returns.

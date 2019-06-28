@@ -1420,7 +1420,7 @@ class Frame {
           throw new AssertionError();
       }
     } else {
-      // Case of an array type, we need to build its descriptor first.
+      // Case of an array type, we need to builder its descriptor first.
       StringBuilder typeDescriptor = new StringBuilder();
       while (arrayDimensions-- > 0) {
         typeDescriptor.append('[');

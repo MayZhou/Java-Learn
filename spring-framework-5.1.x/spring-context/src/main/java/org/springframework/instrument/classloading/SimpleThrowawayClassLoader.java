@@ -36,7 +36,7 @@ public class SimpleThrowawayClassLoader extends OverridingClassLoader {
 
 	/**
 	 * Create a new SimpleThrowawayClassLoader for the given ClassLoader.
-	 * @param parent the ClassLoader to build a throwaway ClassLoader for
+	 * @param parent the ClassLoader to builder a throwaway ClassLoader for
 	 */
 	public SimpleThrowawayClassLoader(@Nullable ClassLoader parent) {
 		super(parent);

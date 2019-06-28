@@ -61,7 +61,7 @@ public abstract class RemoteInvocationBasedAccessor extends UrlBasedRemoteAccess
 	 * {@link #setRemoteInvocationFactory RemoteInvocationFactory}.
 	 * This can be overridden in subclasses in order to provide custom RemoteInvocation
 	 * subclasses, containing additional invocation parameters (e.g. user credentials).
-	 * <p>Note that it is preferable to build a custom RemoteInvocationFactory
+	 * <p>Note that it is preferable to builder a custom RemoteInvocationFactory
 	 * as a reusable strategy, instead of overriding this method.
 	 * @param methodInvocation the current AOP method invocation
 	 * @return the RemoteInvocation object

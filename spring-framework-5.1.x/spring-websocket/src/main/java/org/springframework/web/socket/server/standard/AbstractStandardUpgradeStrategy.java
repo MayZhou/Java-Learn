@@ -49,7 +49,7 @@ import org.springframework.web.socket.server.HandshakeFailureException;
 import org.springframework.web.socket.server.RequestUpgradeStrategy;
 
 /**
- * A base class for {@link RequestUpgradeStrategy} implementations that build
+ * A base class for {@link RequestUpgradeStrategy} implementations that builder
  * on the standard WebSocket API for Java (JSR-356).
  *
  * @author Rossen Stoyanchev

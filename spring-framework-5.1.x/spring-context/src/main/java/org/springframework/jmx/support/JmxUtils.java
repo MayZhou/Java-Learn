@@ -169,7 +169,7 @@ public abstract class JmxUtils {
 	 * Create a {@code String[]} representing the argument signature of a
 	 * method. Each element in the array is the fully qualified class name
 	 * of the corresponding argument in the methods signature.
-	 * @param method the method to build an argument signature for
+	 * @param method the method to builder an argument signature for
 	 * @return the signature as array of argument types
 	 */
 	public static String[] getMethodSignature(Method method) {

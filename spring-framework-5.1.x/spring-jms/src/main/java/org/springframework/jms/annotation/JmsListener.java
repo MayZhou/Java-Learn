@@ -28,7 +28,7 @@ import org.springframework.messaging.handler.annotation.MessageMapping;
 /**
  * Annotation that marks a method to be the target of a JMS message listener on the
  * specified {@link #destination}. The {@link #containerFactory} identifies the
- * {@link org.springframework.jms.config.JmsListenerContainerFactory} to use to build
+ * {@link org.springframework.jms.config.JmsListenerContainerFactory} to use to builder
  * the JMS listener container. If not set, a <em>default</em> container factory is
  * assumed to be available with a bean name of {@code jmsListenerContainerFactory}
  * unless an explicit default has been provided through configuration.

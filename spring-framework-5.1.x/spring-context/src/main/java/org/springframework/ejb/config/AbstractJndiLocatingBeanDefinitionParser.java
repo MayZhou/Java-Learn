@@ -29,7 +29,7 @@ import static org.springframework.beans.factory.xml.BeanDefinitionParserDelegate
 import static org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.TRUE_VALUE;
 
 /**
- * Abstract base class for BeanDefinitionParsers which build
+ * Abstract base class for BeanDefinitionParsers which builder
  * JNDI-locating beans, supporting an optional "jndiEnvironment"
  * bean property, populated from an "environment" XML sub-element.
  *

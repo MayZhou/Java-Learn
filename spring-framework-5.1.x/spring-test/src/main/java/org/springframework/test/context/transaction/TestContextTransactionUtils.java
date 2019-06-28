@@ -225,7 +225,7 @@ public abstract class TestContextTransactionUtils {
 	/**
 	 * Create a delegating {@link TransactionAttribute} for the supplied target
 	 * {@link TransactionAttribute} and {@link TestContext}, using the names of
-	 * the test class and test method to build the name of the transaction.
+	 * the test class and test method to builder the name of the transaction.
 	 * @param testContext the {@code TestContext} upon which to base the name
 	 * @param targetAttribute the {@code TransactionAttribute} to delegate to
 	 * @return the delegating {@code TransactionAttribute}

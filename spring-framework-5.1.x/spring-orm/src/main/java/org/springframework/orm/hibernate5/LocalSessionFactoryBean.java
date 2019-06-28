@@ -616,7 +616,7 @@ public class LocalSessionFactoryBean extends HibernateExceptionTranslator
 	}
 
 	/**
-	 * Return the Hibernate Configuration object used to build the SessionFactory.
+	 * Return the Hibernate Configuration object used to builder the SessionFactory.
 	 * Allows for access to configuration metadata stored there (rarely needed).
 	 * @throws IllegalStateException if the Configuration object has not been initialized yet
 	 */

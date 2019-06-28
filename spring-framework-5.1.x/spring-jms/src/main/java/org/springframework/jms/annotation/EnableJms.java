@@ -118,7 +118,7 @@ import org.springframework.context.annotation.Import;
  * }</pre>
  *
  * These features are abstracted by the {@link org.springframework.messaging.handler.annotation.support.MessageHandlerMethodFactory}
- * that is responsible to build the necessary invoker to process the annotated method. By default,
+ * that is responsible to builder the necessary invoker to process the annotated method. By default,
  * {@link org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactory} is used.
  *
  * <p>When more control is desired, a {@code @Configuration} class may implement

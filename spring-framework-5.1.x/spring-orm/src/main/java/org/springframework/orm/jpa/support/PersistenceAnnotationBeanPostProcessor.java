@@ -703,7 +703,7 @@ public class PersistenceAnnotationBeanPostProcessor
 			// Obtain EntityManager reference from JNDI?
 			EntityManager em = getPersistenceContext(this.unitName, false);
 			if (em == null) {
-				// No pre-built EntityManager found -> build one based on factory.
+				// No pre-built EntityManager found -> builder one based on factory.
 				// Obtain EntityManagerFactory from JNDI?
 				EntityManagerFactory emf = getPersistenceUnit(this.unitName);
 				if (emf == null) {
@@ -731,7 +731,7 @@ public class PersistenceAnnotationBeanPostProcessor
 			// Obtain EntityManager reference from JNDI?
 			EntityManager em = getPersistenceContext(this.unitName, true);
 			if (em == null) {
-				// No pre-built EntityManager found -> build one based on factory.
+				// No pre-built EntityManager found -> builder one based on factory.
 				// Obtain EntityManagerFactory from JNDI?
 				EntityManagerFactory emf = getPersistenceUnit(this.unitName);
 				if (emf == null) {

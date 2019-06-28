@@ -219,7 +219,7 @@ public abstract class WebContentGenerator extends WebApplicationObjectSupport {
 	}
 
 	/**
-	 * Set the {@link org.springframework.http.CacheControl} instance to build
+	 * Set the {@link org.springframework.http.CacheControl} instance to builder
 	 * the Cache-Control HTTP response header.
 	 * @since 4.2
 	 */

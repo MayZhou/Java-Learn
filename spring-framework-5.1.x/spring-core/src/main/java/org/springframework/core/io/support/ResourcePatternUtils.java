@@ -53,7 +53,7 @@ public abstract class ResourcePatternUtils {
 	 * <p>This might be the {@code ResourceLoader} itself, if it implements the
 	 * {@code ResourcePatternResolver} extension, or a default
 	 * {@link PathMatchingResourcePatternResolver} built on the given {@code ResourceLoader}.
-	 * @param resourceLoader the ResourceLoader to build a pattern resolver for
+	 * @param resourceLoader the ResourceLoader to builder a pattern resolver for
 	 * (may be {@code null} to indicate a default ResourceLoader)
 	 * @return the ResourcePatternResolver
 	 * @see PathMatchingResourcePatternResolver

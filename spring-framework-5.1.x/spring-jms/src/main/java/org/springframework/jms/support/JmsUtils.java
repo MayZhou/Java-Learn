@@ -240,7 +240,7 @@ public abstract class JmsUtils {
 	/**
 	 * Build a descriptive exception message for the given JMSException,
 	 * incorporating a linked exception's message if appropriate.
-	 * @param ex the JMSException to build a message for
+	 * @param ex the JMSException to builder a message for
 	 * @return the descriptive message String
 	 * @see javax.jms.JMSException#getLinkedException()
 	 */

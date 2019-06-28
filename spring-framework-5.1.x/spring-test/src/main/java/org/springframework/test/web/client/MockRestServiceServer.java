@@ -42,7 +42,7 @@ import org.springframework.web.client.support.RestGatewaySupport;
  *
  * <pre class="code">
  * RestTemplate restTemplate = new RestTemplate()
- * MockRestServiceServer server = MockRestServiceServer.bindTo(restTemplate).build();
+ * MockRestServiceServer server = MockRestServiceServer.bindTo(restTemplate).builder();
  *
  * server.expect(manyTimes(), requestTo("/hotels/42")).andExpect(method(HttpMethod.GET))
  *     .andRespond(withSuccess("{ \"id\" : \"42\", \"name\" : \"Holiday Inn\"}", MediaType.APPLICATION_JSON));
@@ -157,7 +157,7 @@ public final class MockRestServiceServer {
 
 
 	/**
-	 * A shortcut for {@code bindTo(restTemplate).build()}.
+	 * A shortcut for {@code bindTo(restTemplate).builder()}.
 	 * @param restTemplate the RestTemplate to set up for mock testing
 	 * @return the mock server
 	 */
@@ -166,7 +166,7 @@ public final class MockRestServiceServer {
 	}
 
 	/**
-	 * A shortcut for {@code bindTo(asyncRestTemplate).build()}.
+	 * A shortcut for {@code bindTo(asyncRestTemplate).builder()}.
 	 * @param asyncRestTemplate the AsyncRestTemplate to set up for mock testing
 	 * @return the created mock server
 	 * @deprecated see deprecation notice on
@@ -178,7 +178,7 @@ public final class MockRestServiceServer {
 	}
 
 	/**
-	 * A shortcut for {@code bindTo(restGateway).build()}.
+	 * A shortcut for {@code bindTo(restGateway).builder()}.
 	 * @param restGateway the REST gateway to set up for mock testing
 	 * @return the created mock server
 	 */
@@ -196,7 +196,7 @@ public final class MockRestServiceServer {
 		 * Whether to allow expected requests to be executed in any order not
 		 * necessarily matching the order of declaration.
 		 * <p>Effectively a shortcut for:<br>
-		 * {@code builder.build(new UnorderedRequestExpectationManager)}.
+		 * {@code builder.builder(new UnorderedRequestExpectationManager)}.
 		 * <p>By default this is set to {@code false}
 		 * @param ignoreExpectOrder whether to ignore the order of expectations
 		 */
@@ -218,7 +218,7 @@ public final class MockRestServiceServer {
 		MockRestServiceServer build();
 
 		/**
-		 * An overloaded build alternative that accepts a custom
+		 * An overloaded builder alternative that accepts a custom
 		 * {@link RequestExpectationManager}.
 		 */
 		MockRestServiceServer build(RequestExpectationManager manager);

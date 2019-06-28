@@ -325,7 +325,7 @@ import org.springframework.stereotype.Component;
  *     static class DatabaseConfig {
  *         &#064;Bean
  *         DataSource dataSource() {
- *             return new EmbeddedDatabaseBuilder().build();
+ *             return new EmbeddedDatabaseBuilder().builder();
  *         }
  *     }
  * }</pre>

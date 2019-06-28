@@ -170,7 +170,7 @@ public class DefaultWebClientTests {
 
 	@Test
 	public void mutateDoesCopy() {
-		// First, build the clients
+		// First, builder the clients
 
 		WebClient.Builder builder = WebClient.builder()
 				.filter((request, next) -> next.exchange(request))

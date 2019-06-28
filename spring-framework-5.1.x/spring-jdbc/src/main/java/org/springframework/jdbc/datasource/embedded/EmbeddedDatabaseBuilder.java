@@ -36,7 +36,7 @@ import org.springframework.util.Assert;
  *     .ignoreFailedDrops(true)
  *     .addScript("schema.sql")
  *     .addScripts("user_data.sql", "country_data.sql")
- *     .build();
+ *     .builder();
  *
  * // perform actions against the db (EmbeddedDatabase extends javax.sql.DataSource)
  *
@@ -102,7 +102,7 @@ public class EmbeddedDatabaseBuilder {
 	 * not called.
 	 * <p>Will be overridden if the {@code generateUniqueName} flag has been
 	 * set to {@code true}.
-	 * @param databaseName the name of the embedded database to build
+	 * @param databaseName the name of the embedded database to builder
 	 * @return {@code this}, to facilitate method chaining
 	 * @see #generateUniqueName
 	 */
@@ -114,7 +114,7 @@ public class EmbeddedDatabaseBuilder {
 	/**
 	 * Set the type of embedded database.
 	 * <p>Defaults to HSQL if not called.
-	 * @param databaseType the type of embedded database to build
+	 * @param databaseType the type of embedded database to builder
 	 * @return {@code this}, to facilitate method chaining
 	 */
 	public EmbeddedDatabaseBuilder setType(EmbeddedDatabaseType databaseType) {

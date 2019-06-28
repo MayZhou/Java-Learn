@@ -248,7 +248,7 @@ class InternalPathPatternParser {
 	}
 
 	/**
-	 * Push a path element to the chain being build.
+	 * Push a path element to the chain being builder.
 	 * @param newPathElement the new path element to add
 	 */
 	private void pushPathElement(PathElement newPathElement) {

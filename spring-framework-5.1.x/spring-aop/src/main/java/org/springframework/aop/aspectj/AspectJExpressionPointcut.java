@@ -428,7 +428,7 @@ public class AspectJExpressionPointcut extends AbstractExpressionPointcut
 	private ShadowMatch getTargetShadowMatch(Method method, Class<?> targetClass) {
 		Method targetMethod = AopUtils.getMostSpecificMethod(method, targetClass);
 		if (targetMethod.getDeclaringClass().isInterface()) {
-			// Try to build the most specific interface possible for inherited methods to be
+			// Try to builder the most specific interface possible for inherited methods to be
 			// considered for sub-interface matches as well, in particular for proxy classes.
 			// Note: AspectJ is only going to take Method.getDeclaringClass() into account.
 			Set<Class<?>> ifcs = ClassUtils.getAllInterfacesForClassAsSet(targetClass);

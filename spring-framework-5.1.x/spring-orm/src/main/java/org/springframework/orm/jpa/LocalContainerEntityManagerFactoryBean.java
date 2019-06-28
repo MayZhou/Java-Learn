@@ -101,7 +101,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 
 	/**
 	 * Set the PersistenceUnitManager to use for obtaining the JPA persistence unit
-	 * that this FactoryBean is supposed to build an EntityManagerFactory for.
+	 * that this FactoryBean is supposed to builder an EntityManagerFactory for.
 	 * <p>The default is to rely on the local settings specified on this FactoryBean,
 	 * such as "persistenceXmlLocation", "dataSource" and "loadTimeWeaver".
 	 * <p>For reuse of existing persistence unit configuration or more advanced forms

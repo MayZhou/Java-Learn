@@ -18,14 +18,14 @@ plugins {
 
 ext {
 	linkHomepage = "https://projects.spring.io/spring-framework"
-	linkCi = "https://build.spring.io/browse/SPR"
+	linkCi = "https://builder.spring.io/browse/SPR"
 	linkIssue = "https://github.com/spring-projects/spring-framework/issues"
 	linkScmUrl = "https://github.com/spring-projects/spring-framework"
 	linkScmConnection = "scm:git:git://github.com/spring-projects/spring-framework.git"
 	linkScmDevConnection = "scm:git:ssh://git@github.com:spring-projects/spring-framework.git"
 
 	moduleProjects = subprojects.findAll {
-		!it.name.equals("spring-build-src") && !it.name.equals("spring-framework-bom")
+		!it.name.equals("spring-builder-src") && !it.name.equals("spring-framework-bom")
 	}
 
 	aspectjVersion       = "1.9.4"
@@ -76,7 +76,7 @@ configure(allprojects) { project ->
 	}
 
 	configurations.all {
-		// Check for updates every build
+		// Check for updates every builder
 		resolutionStrategy.cacheChangingModulesFor 0, "seconds"
 
 		// Consistent slf4j version (e.g. clashes between slf4j versions)
@@ -196,7 +196,7 @@ configure(allprojects) { project ->
 	] as String[]
 }
 
-configure(subprojects - project(":spring-build-src")) { subproject ->
+configure(subprojects - project(":spring-builder-src")) { subproject ->
 	apply from: "${gradleScriptDir}/publish-maven.gradle"
 
 	jar {
@@ -305,7 +305,7 @@ configure(rootProject) {
 
 /*
  * Support publication of artifacts versioned by topic branch.
- * CI builds supply `-P BRANCH_NAME=<TOPIC>` to gradle at build time.
+ * CI builds supply `-P BRANCH_NAME=<TOPIC>` to gradle at builder time.
  * If <TOPIC> starts with 'SPR-', change version
  *     from BUILD-SNAPSHOT => <TOPIC>-SNAPSHOT
  *     e.g. 3.2.1.BUILD-SNAPSHOT => 3.2.1.SPR-1234-SNAPSHOT

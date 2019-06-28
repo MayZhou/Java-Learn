@@ -316,7 +316,7 @@ public abstract class RouterFunctions {
 		 * RouterFunction&lt;ServerResponse&gt; route =
 		 *   RouterFunctions.route()
 		 *     .GET("/user", RequestPredicates.accept(MediaType.APPLICATION_JSON), userController::listUsers)
-		 *     .build();
+		 *     .builder();
 		 * </pre>
 		 * @param pattern the pattern to match to
 		 * @param predicate additional predicate to match
@@ -367,7 +367,7 @@ public abstract class RouterFunctions {
 		 * RouterFunction&lt;ServerResponse&gt; route =
 		 *   RouterFunctions.route()
 		 *     .POST("/user", RequestPredicates.contentType(MediaType.APPLICATION_JSON), userController::addUser)
-		 *     .build();
+		 *     .builder();
 		 * </pre>
 		 * @param pattern the pattern to match to
 		 * @param predicate additional predicate to match
@@ -396,7 +396,7 @@ public abstract class RouterFunctions {
 		 * RouterFunction&lt;ServerResponse&gt; route =
 		 *   RouterFunctions.route()
 		 *     .PUT("/user", RequestPredicates.contentType(MediaType.APPLICATION_JSON), userController::editUser)
-		 *     .build();
+		 *     .builder();
 		 * </pre>
 		 * @param pattern the pattern to match to
 		 * @param predicate additional predicate to match
@@ -425,7 +425,7 @@ public abstract class RouterFunctions {
 		 * RouterFunction&lt;ServerResponse&gt; route =
 		 *   RouterFunctions.route()
 		 *     .PATCH("/user", RequestPredicates.contentType(MediaType.APPLICATION_JSON), userController::editUser)
-		 *     .build();
+		 *     .builder();
 		 * </pre>
 		 * @param pattern the pattern to match to
 		 * @param predicate additional predicate to match
@@ -490,7 +490,7 @@ public abstract class RouterFunctions {
 		 *   RouterFunctions.route()
 		 *     .GET("/users", userController::listUsers)
 		 *     .add(orderController.routerFunction());
-		 *     .build();
+		 *     .builder();
 		 * </pre>
 		 * @param routerFunction the router function to be added
 		 * @return this builder
@@ -534,8 +534,8 @@ public abstract class RouterFunctions {
 		 *       RouterFunctions.route()
 		 *         .GET(this::listUsers)
 		 *         .POST(this::createUser)
-		 *         .build())
-		 *     .build();
+		 *         .builder())
+		 *     .builder();
 		 * </pre>
 		 * @param predicate the predicate to test
 		 * @param routerFunctionSupplier supplier for the nested router function to delegate to if
@@ -558,7 +558,7 @@ public abstract class RouterFunctions {
 		 *     .nest(RequestPredicates.path("/user"), builder ->
 		 *       builder.GET(this::listUsers)
 		 *              .POST(this::createUser))
-		 *     .build();
+		 *     .builder();
 		 * </pre>
 		 * @param predicate the predicate to test
 		 * @param builderConsumer consumer for a {@code Builder} that provides the nested router
@@ -581,7 +581,7 @@ public abstract class RouterFunctions {
 		 *   RouterFunctions.route()
 		 *     .path("/user", userController::routerFunction)
 		 *     .path("/order", orderController::routerFunction)
-		 *     .build();
+		 *     .builder();
 		 * </pre>
 		 * @param pattern the pattern to match to
 		 * @param routerFunctionSupplier supplier for the nested router function to delegate to if
@@ -603,7 +603,7 @@ public abstract class RouterFunctions {
 		 *     .path("/user", builder ->
 		 *       builder.GET(this::listUsers)
 		 *              .POST(this::createUser))
-		 *     .build();
+		 *     .builder();
 		 * </pre>
 		 * @param pattern the pattern to match to
 		 * @param builderConsumer consumer for a {@code Builder} that provides the nested router
@@ -628,10 +628,10 @@ public abstract class RouterFunctions {
 		 *         return next.handle(request);
 		 *       }
 		 *       else {
-		 *         return ServerResponse.status(HttpStatus.UNAUTHORIZED).build();
+		 *         return ServerResponse.status(HttpStatus.UNAUTHORIZED).builder();
 		 *       }
 		 *     })
-		 *     .build();
+		 *     .builder();
 		 * </pre>
 		 * @param filterFunction the function to filter all routes built by this builder
 		 * @return this builder
@@ -652,7 +652,7 @@ public abstract class RouterFunctions {
 		 *       log(request);
 		 *       return request;
 		 *     })
-		 *     .build();
+		 *     .builder();
 		 * </pre>
 		 * @param requestProcessor a function that transforms the request
 		 * @return this builder
@@ -673,7 +673,7 @@ public abstract class RouterFunctions {
 		 *       log(response);
 		 *       return response;
 		 *     })
-		 *     .build();
+		 *     .builder();
 		 * </pre>
 		 * @param responseProcessor a function that transforms the response
 		 * @return this builder
@@ -690,8 +690,8 @@ public abstract class RouterFunctions {
 		 *   RouterFunctions.route()
 		 *     .GET("/user", this::listUsers)
 		 *     .onError(e -> e instanceof IllegalStateException,
-		 *       (e, request) -> ServerResponse.status(HttpStatus.INTERNAL_SERVER_ERROR).build())
-		 *     .build();
+		 *       (e, request) -> ServerResponse.status(HttpStatus.INTERNAL_SERVER_ERROR).builder())
+		 *     .builder();
 		 * </pre>
 		 * @param predicate the type of exception to filter
 		 * @param responseProvider a function that creates a response
@@ -710,8 +710,8 @@ public abstract class RouterFunctions {
 		 *   RouterFunctions.route()
 		 *     .GET("/user", this::listUsers)
 		 *     .onError(IllegalStateException.class,
-		 *       (e, request) -> ServerResponse.status(HttpStatus.INTERNAL_SERVER_ERROR).build())
-		 *     .build();
+		 *       (e, request) -> ServerResponse.status(HttpStatus.INTERNAL_SERVER_ERROR).builder())
+		 *     .builder();
 		 * </pre>
 		 * @param exceptionType the type of exception to filter
 		 * @param responseProvider a function that creates a response

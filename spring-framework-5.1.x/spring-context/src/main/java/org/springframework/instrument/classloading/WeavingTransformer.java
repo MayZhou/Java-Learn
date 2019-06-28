@@ -48,7 +48,7 @@ public class WeavingTransformer {
 
 	/**
 	 * Create a new WeavingTransformer for the given class loader.
-	 * @param classLoader the ClassLoader to build a transformer for
+	 * @param classLoader the ClassLoader to builder a transformer for
 	 */
 	public WeavingTransformer(@Nullable ClassLoader classLoader) {
 		this.classLoader = classLoader;

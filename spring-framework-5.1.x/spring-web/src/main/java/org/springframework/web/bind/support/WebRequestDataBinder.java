@@ -40,7 +40,7 @@ import org.springframework.web.multipart.MultipartRequest;
  * property editors.
  *
  * <p>Can also used for manual data binding in custom web controllers or interceptors
- * that build on Spring's {@link org.springframework.web.context.request.WebRequest}
+ * that builder on Spring's {@link org.springframework.web.context.request.WebRequest}
  * abstraction: e.g. in a {@link org.springframework.web.context.request.WebRequestInterceptor}
  * implementation. Simply instantiate a WebRequestDataBinder for each binding
  * process, and invoke {@code bind} with the current WebRequest as argument:

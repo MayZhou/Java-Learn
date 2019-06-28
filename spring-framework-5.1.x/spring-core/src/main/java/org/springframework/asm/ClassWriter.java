@@ -722,7 +722,7 @@ public class ClassWriter extends ClassVisitor {
   // -----------------------------------------------------------------------------------------------
 
   /**
-   * Adds a number or string constant to the constant pool of the class being build. Does nothing if
+   * Adds a number or string constant to the constant pool of the class being builder. Does nothing if
    * the constant pool already contains a similar item. <i>This method is intended for {@link
    * Attribute} sub classes, and is normally not needed by class generators or adapters.</i>
    *
@@ -735,7 +735,7 @@ public class ClassWriter extends ClassVisitor {
   }
 
   /**
-   * Adds an UTF8 string to the constant pool of the class being build. Does nothing if the constant
+   * Adds an UTF8 string to the constant pool of the class being builder. Does nothing if the constant
    * pool already contains a similar item. <i>This method is intended for {@link Attribute} sub
    * classes, and is normally not needed by class generators or adapters.</i>
    *
@@ -748,7 +748,7 @@ public class ClassWriter extends ClassVisitor {
   }
 
   /**
-   * Adds a class reference to the constant pool of the class being build. Does nothing if the
+   * Adds a class reference to the constant pool of the class being builder. Does nothing if the
    * constant pool already contains a similar item. <i>This method is intended for {@link Attribute}
    * sub classes, and is normally not needed by class generators or adapters.</i>
    *
@@ -760,7 +760,7 @@ public class ClassWriter extends ClassVisitor {
   }
 
   /**
-   * Adds a method type reference to the constant pool of the class being build. Does nothing if the
+   * Adds a method type reference to the constant pool of the class being builder. Does nothing if the
    * constant pool already contains a similar item. <i>This method is intended for {@link Attribute}
    * sub classes, and is normally not needed by class generators or adapters.</i>
    *
@@ -772,7 +772,7 @@ public class ClassWriter extends ClassVisitor {
   }
 
   /**
-   * Adds a module reference to the constant pool of the class being build. Does nothing if the
+   * Adds a module reference to the constant pool of the class being builder. Does nothing if the
    * constant pool already contains a similar item. <i>This method is intended for {@link Attribute}
    * sub classes, and is normally not needed by class generators or adapters.</i>
    *
@@ -784,7 +784,7 @@ public class ClassWriter extends ClassVisitor {
   }
 
   /**
-   * Adds a package reference to the constant pool of the class being build. Does nothing if the
+   * Adds a package reference to the constant pool of the class being builder. Does nothing if the
    * constant pool already contains a similar item. <i>This method is intended for {@link Attribute}
    * sub classes, and is normally not needed by class generators or adapters.</i>
    *
@@ -796,7 +796,7 @@ public class ClassWriter extends ClassVisitor {
   }
 
   /**
-   * Adds a handle to the constant pool of the class being build. Does nothing if the constant pool
+   * Adds a handle to the constant pool of the class being builder. Does nothing if the constant pool
    * already contains a similar item. <i>This method is intended for {@link Attribute} sub classes,
    * and is normally not needed by class generators or adapters.</i>
    *
@@ -818,7 +818,7 @@ public class ClassWriter extends ClassVisitor {
   }
 
   /**
-   * Adds a handle to the constant pool of the class being build. Does nothing if the constant pool
+   * Adds a handle to the constant pool of the class being builder. Does nothing if the constant pool
    * already contains a similar item. <i>This method is intended for {@link Attribute} sub classes,
    * and is normally not needed by class generators or adapters.</i>
    *
@@ -842,7 +842,7 @@ public class ClassWriter extends ClassVisitor {
   }
 
   /**
-   * Adds a dynamic constant reference to the constant pool of the class being build. Does nothing
+   * Adds a dynamic constant reference to the constant pool of the class being builder. Does nothing
    * if the constant pool already contains a similar item. <i>This method is intended for {@link
    * Attribute} sub classes, and is normally not needed by class generators or adapters.</i>
    *
@@ -863,7 +863,7 @@ public class ClassWriter extends ClassVisitor {
   }
 
   /**
-   * Adds an invokedynamic reference to the constant pool of the class being build. Does nothing if
+   * Adds an invokedynamic reference to the constant pool of the class being builder. Does nothing if
    * the constant pool already contains a similar item. <i>This method is intended for {@link
    * Attribute} sub classes, and is normally not needed by class generators or adapters.</i>
    *
@@ -884,7 +884,7 @@ public class ClassWriter extends ClassVisitor {
   }
 
   /**
-   * Adds a field reference to the constant pool of the class being build. Does nothing if the
+   * Adds a field reference to the constant pool of the class being builder. Does nothing if the
    * constant pool already contains a similar item. <i>This method is intended for {@link Attribute}
    * sub classes, and is normally not needed by class generators or adapters.</i>
    *
@@ -898,7 +898,7 @@ public class ClassWriter extends ClassVisitor {
   }
 
   /**
-   * Adds a method reference to the constant pool of the class being build. Does nothing if the
+   * Adds a method reference to the constant pool of the class being builder. Does nothing if the
    * constant pool already contains a similar item. <i>This method is intended for {@link Attribute}
    * sub classes, and is normally not needed by class generators or adapters.</i>
    *
@@ -914,7 +914,7 @@ public class ClassWriter extends ClassVisitor {
   }
 
   /**
-   * Adds a name and type to the constant pool of the class being build. Does nothing if the
+   * Adds a name and type to the constant pool of the class being builder. Does nothing if the
    * constant pool already contains a similar item. <i>This method is intended for {@link Attribute}
    * sub classes, and is normally not needed by class generators or adapters.</i>
    *

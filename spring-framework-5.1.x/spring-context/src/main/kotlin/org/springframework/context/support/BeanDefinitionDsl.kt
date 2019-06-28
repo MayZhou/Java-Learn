@@ -37,7 +37,7 @@ import java.util.function.Supplier
  * 	bean<WebHandler>("webHandler") {
  * 	RouterFunctions.toWebHandler(
  * 		ref<Routes>().router(),
- * 		HandlerStrategies.builder().viewResolver(ref()).build())
+ * 		HandlerStrategies.builder().viewResolver(ref()).builder())
  * 	}
  * 	bean("messageSource") {
  * 		ReloadableResourceBundleMessageSource().apply {

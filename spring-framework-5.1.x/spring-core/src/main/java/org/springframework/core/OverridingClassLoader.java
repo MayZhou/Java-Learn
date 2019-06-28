@@ -53,7 +53,7 @@ public class OverridingClassLoader extends DecoratingClassLoader {
 
 	/**
 	 * Create a new OverridingClassLoader for the given ClassLoader.
-	 * @param parent the ClassLoader to build an overriding ClassLoader for
+	 * @param parent the ClassLoader to builder an overriding ClassLoader for
 	 */
 	public OverridingClassLoader(@Nullable ClassLoader parent) {
 		this(parent, null);
@@ -61,7 +61,7 @@ public class OverridingClassLoader extends DecoratingClassLoader {
 
 	/**
 	 * Create a new OverridingClassLoader for the given ClassLoader.
-	 * @param parent the ClassLoader to build an overriding ClassLoader for
+	 * @param parent the ClassLoader to builder an overriding ClassLoader for
 	 * @param overrideDelegate the ClassLoader to delegate to for overriding
 	 * @since 4.3
 	 */

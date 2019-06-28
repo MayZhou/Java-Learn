@@ -175,7 +175,7 @@ public class GroovyScriptFactory implements ScriptFactory, BeanFactoryAware, Bea
 
 	/**
 	 * Build a {@link GroovyClassLoader} for the given {@code ClassLoader}.
-	 * @param classLoader the ClassLoader to build a GroovyClassLoader for
+	 * @param classLoader the ClassLoader to builder a GroovyClassLoader for
 	 * @since 4.3.3
 	 */
 	protected GroovyClassLoader buildGroovyClassLoader(@Nullable ClassLoader classLoader) {

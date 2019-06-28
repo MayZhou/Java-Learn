@@ -108,7 +108,7 @@ import org.springframework.web.util.WebUtils;
  * <p>Passes a "contextConfigLocation" servlet init-param to the context instance,
  * parsing it into potentially multiple file paths which can be separated by any
  * number of commas and spaces, like "test-servlet.xml, myServlet.xml".
- * If not explicitly specified, the context implementation is supposed to build a
+ * If not explicitly specified, the context implementation is supposed to builder a
  * default location from the namespace of the servlet.
  *
  * <p>Note: In case of multiple config locations, later bean definitions will

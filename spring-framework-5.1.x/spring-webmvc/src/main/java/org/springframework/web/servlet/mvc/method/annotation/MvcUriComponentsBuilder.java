@@ -150,7 +150,7 @@ public class MvcUriComponentsBuilder {
 	 * contains multiple mappings, only the first one is used.
 	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
-	 * @param controllerType the controller to build a URI for
+	 * @param controllerType the controller to builder a URI for
 	 * @return a UriComponentsBuilder instance (never {@code null})
 	 */
 	public static UriComponentsBuilder fromController(Class<?> controllerType) {
@@ -166,7 +166,7 @@ public class MvcUriComponentsBuilder {
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param builder the builder for the base URL; the builder will be cloned
 	 * and therefore not modified and may be re-used for further calls.
-	 * @param controllerType the controller to build a URI for
+	 * @param controllerType the controller to builder a URI for
 	 * @return a UriComponentsBuilder instance (never {@code null})
 	 */
 	public static UriComponentsBuilder fromController(@Nullable UriComponentsBuilder builder,
@@ -348,7 +348,7 @@ public class MvcUriComponentsBuilder {
 	 * <p>Note that this is a shorthand version of {@link #controller(Class)} intended
 	 * for inline use (with a static import), for example:
 	 * <pre class="code">
-	 * MvcUriComponentsBuilder.fromMethodCall(on(FooController.class).getFoo(1)).build();
+	 * MvcUriComponentsBuilder.fromMethodCall(on(FooController.class).getFoo(1)).builder();
 	 * </pre>
 	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
@@ -415,7 +415,7 @@ public class MvcUriComponentsBuilder {
 	 * <pre class="code">
 	 * <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 	 *
-	 * &lt;a href="${s:mvcUrl('PC#getPerson').arg(0,"123").build()}"&gt;Get Person&lt;/a&gt;
+	 * &lt;a href="${s:mvcUrl('PC#getPerson').arg(0,"123").builder()}"&gt;Get Person&lt;/a&gt;
 	 * </pre>
 	 * <p>Note that it's not necessary to specify all arguments. Only the ones
 	 * required to prepare the URL, mainly {@code @RequestParam} and {@code @PathVariable}).

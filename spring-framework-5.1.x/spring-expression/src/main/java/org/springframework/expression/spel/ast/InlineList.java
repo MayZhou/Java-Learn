@@ -166,7 +166,7 @@ public class InlineList extends SpelNodeImpl {
 			}
 			// The children might be further lists if they are not constants. In this
 			// situation do not call back into generateCode() because it will register another clinit adder.
-			// Instead, directly build the list here:
+			// Instead, directly builder the list here:
 			if (this.children[c] instanceof InlineList) {
 				((InlineList)this.children[c]).generateClinitCode(clazzname, constantFieldName, mv, codeflow, true);
 			}

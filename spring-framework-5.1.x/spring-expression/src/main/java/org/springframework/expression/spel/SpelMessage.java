@@ -220,7 +220,7 @@ public enum SpelMessage {
 			"The array of type ''{0}'' cannot have an element of type ''{1}'' inserted"),
 
 	MULTIDIM_ARRAY_INITIALIZER_NOT_SUPPORTED(Kind.ERROR, 1062,
-			"Using an initializer to build a multi-dimensional array is not currently supported"),
+			"Using an initializer to builder a multi-dimensional array is not currently supported"),
 
 	MISSING_ARRAY_DIMENSION(Kind.ERROR, 1063,
 			"A required array dimension has not been specified"),

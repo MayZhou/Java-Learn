@@ -234,7 +234,7 @@ public abstract class SpelNodeImpl implements SpelNode, Opcodes {
 			}
 			else {
 				arrayType = arrayType.substring(1); // trim the leading '[', may leave other '['
-				// build array big enough to hold remaining arguments
+				// builder array big enough to hold remaining arguments
 				CodeFlow.insertNewArrayCode(mv, childCount - p, arrayType);
 				// Package up the remaining arguments into the array
 				int arrayindex = 0;

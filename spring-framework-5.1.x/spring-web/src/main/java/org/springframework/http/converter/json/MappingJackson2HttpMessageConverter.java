@@ -61,7 +61,7 @@ public class MappingJackson2HttpMessageConverter extends AbstractJackson2HttpMes
 
 	/**
 	 * Construct a new {@link MappingJackson2HttpMessageConverter} with a custom {@link ObjectMapper}.
-	 * You can use {@link Jackson2ObjectMapperBuilder} to build it easily.
+	 * You can use {@link Jackson2ObjectMapperBuilder} to builder it easily.
 	 * @see Jackson2ObjectMapperBuilder#json()
 	 */
 	public MappingJackson2HttpMessageConverter(ObjectMapper objectMapper) {

@@ -53,7 +53,7 @@ public class SimpleLoadTimeWeaver implements LoadTimeWeaver {
 	/**
 	 * Create a new {@code SimpleLoadTimeWeaver} for the given
 	 * {@code ClassLoader}.
-	 * @param classLoader the {@code ClassLoader} to build a simple
+	 * @param classLoader the {@code ClassLoader} to builder a simple
 	 * instrumentable {@code ClassLoader} on top of
 	 */
 	public SimpleLoadTimeWeaver(SimpleInstrumentableClassLoader classLoader) {

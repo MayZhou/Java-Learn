@@ -34,7 +34,7 @@ import org.springframework.web.context.WebApplicationContext;
  *
  * MockMvc mockMvc = MockMvcBuilders.standaloneSetup(new TestController())
  *         .apply(sharedHttpSession())
- *         .build();
+ *         .builder();
  *
  * // Use mockMvc to perform requests ...
  * </pre>

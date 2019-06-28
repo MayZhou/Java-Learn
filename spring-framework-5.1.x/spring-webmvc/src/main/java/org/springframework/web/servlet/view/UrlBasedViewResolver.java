@@ -539,7 +539,7 @@ public class UrlBasedViewResolver extends AbstractCachingViewResolver implements
 	 * <p>Subclasses will typically call {@code super.buildView(viewName)}
 	 * first, before setting further properties themselves. {@code loadView}
 	 * will then apply Spring lifecycle methods at the end of this process.
-	 * @param viewName the name of the view to build
+	 * @param viewName the name of the view to builder
 	 * @return the View instance
 	 * @throws Exception if the view couldn't be resolved
 	 * @see #loadView(String, java.util.Locale)

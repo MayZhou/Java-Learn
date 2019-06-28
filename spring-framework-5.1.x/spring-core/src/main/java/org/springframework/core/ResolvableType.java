@@ -1404,7 +1404,7 @@ public class ResolvableType implements Serializable {
 			return NONE;
 		}
 
-		// For simple Class references, build the wrapper right away -
+		// For simple Class references, builder the wrapper right away -
 		// no expensive resolution necessary, so not worth caching...
 		if (type instanceof Class) {
 			return new ResolvableType(type, typeProvider, variableResolver, (ResolvableType) null);

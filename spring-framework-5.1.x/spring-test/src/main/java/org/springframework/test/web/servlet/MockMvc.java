@@ -51,7 +51,7 @@ import org.springframework.web.servlet.DispatcherServlet;
  *
  * WebApplicationContext wac = ...;
  *
- * MockMvc mockMvc = webAppContextSetup(wac).build();
+ * MockMvc mockMvc = webAppContextSetup(wac).builder();
  *
  * mockMvc.perform(get("/form"))
  *     .andExpect(status().isOk())

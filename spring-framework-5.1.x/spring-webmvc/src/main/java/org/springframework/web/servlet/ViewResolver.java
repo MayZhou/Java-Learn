@@ -42,7 +42,7 @@ public interface ViewResolver {
 	 * <p>Note: To allow for ViewResolver chaining, a ViewResolver should
 	 * return {@code null} if a view with the given name is not defined in it.
 	 * However, this is not required: Some ViewResolvers will always attempt
-	 * to build View objects with the given name, unable to return {@code null}
+	 * to builder View objects with the given name, unable to return {@code null}
 	 * (rather throwing an exception when View creation failed).
 	 * @param viewName name of the view to resolve
 	 * @param locale the Locale in which to resolve the view.

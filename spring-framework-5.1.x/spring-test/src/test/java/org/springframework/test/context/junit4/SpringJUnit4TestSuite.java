@@ -54,7 +54,7 @@ import org.springframework.test.context.transaction.programmatic.ProgrammaticTxM
  * {@link Suite} runner.
  *
  * <p>Note that tests included in this suite will be executed at least twice if
- * run from an automated build process, test runner, etc. that is not configured
+ * run from an automated builder process, test runner, etc. that is not configured
  * to exclude tests based on a {@code "*TestSuite.class"} pattern match.
  *
  * @author Sam Brannen

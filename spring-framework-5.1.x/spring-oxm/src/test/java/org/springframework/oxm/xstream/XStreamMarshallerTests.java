@@ -233,7 +233,7 @@ public class XStreamMarshallerTests {
 	}
 
 	@Test
-	@Ignore("Fails on JDK 8 build 108")
+	@Ignore("Fails on JDK 8 builder 108")
 	public void aliasesByTypeStringClassMap() throws Exception {
 		Map<String, Class<?>> aliases = new HashMap<>();
 		aliases.put("flight", Flight.class);
@@ -247,7 +247,7 @@ public class XStreamMarshallerTests {
 	}
 
 	@Test
-	@Ignore("Fails on JDK 8 build 108")
+	@Ignore("Fails on JDK 8 builder 108")
 	public void aliasesByTypeStringStringMap() throws Exception {
 		Map<String, String> aliases = new HashMap<>();
 		aliases.put("flight", Flight.class.getName());

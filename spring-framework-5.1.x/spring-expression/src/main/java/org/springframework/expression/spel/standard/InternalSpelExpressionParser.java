@@ -92,7 +92,7 @@ class InternalSpelExpressionParser extends TemplateAwareExpressionParser {
 
 	private final SpelParserConfiguration configuration;
 
-	// For rules that build nodes, they are stacked here for return
+	// For rules that builder nodes, they are stacked here for return
 	private final Deque<SpelNodeImpl> constructedNodes = new ArrayDeque<>();
 
 	// The expression being parsed

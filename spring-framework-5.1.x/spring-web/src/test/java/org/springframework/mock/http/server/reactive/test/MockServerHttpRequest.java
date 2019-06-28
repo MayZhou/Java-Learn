@@ -369,14 +369,14 @@ public class MockServerHttpRequest extends AbstractServerHttpRequest {
 		BodyBuilder contentType(MediaType contentType);
 
 		/**
-		 * Set the body of the request and build it.
+		 * Set the body of the request and builder it.
 		 * @param body the body
 		 * @return the built request entity
 		 */
 		MockServerHttpRequest body(Publisher<? extends DataBuffer> body);
 
 		/**
-		 * Set the body of the request and build it.
+		 * Set the body of the request and builder it.
 		 * <p>The String is assumed to be UTF-8 encoded unless the request has a
 		 * "content-type" header with a charset attribute.
 		 * @param body the body as text

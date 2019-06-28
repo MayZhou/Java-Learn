@@ -24,7 +24,7 @@ import java.util.List;
  *
  * <p>A {@code TestContextBootstrapper} is used by the {@link TestContextManager} to
  * {@linkplain #getTestExecutionListeners get the TestExecutionListeners} for the
- * current test and to {@linkplain #buildTestContext build the TestContext} that
+ * current test and to {@linkplain #buildTestContext builder the TestContext} that
  * it manages.
  *
  * <h3>Configuration</h3>

@@ -311,7 +311,7 @@ public class ResourceBundleMessageSource extends AbstractResourceBasedMessageSou
 	 * fetching already generated MessageFormats from the cache.
 	 * @param bundle the ResourceBundle to work on
 	 * @param code the message code to retrieve
-	 * @param locale the Locale to use to build the MessageFormat
+	 * @param locale the Locale to use to builder the MessageFormat
 	 * @return the resulting MessageFormat, or {@code null} if no message
 	 * defined for the given code
 	 * @throws MissingResourceException if thrown by the ResourceBundle

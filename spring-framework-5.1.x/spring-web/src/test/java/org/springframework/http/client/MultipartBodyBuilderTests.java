@@ -103,7 +103,7 @@ public class MultipartBodyBuilderTests {
 		assertNotNull(entity);
 		assertEquals(PublisherEntity.class, entity.getClass());
 
-		// Now build a new MultipartBodyBuilder, as BodyInserters.fromMultipartData would do...
+		// Now builder a new MultipartBodyBuilder, as BodyInserters.fromMultipartData would do...
 
 		builder = new MultipartBodyBuilder();
 		builder.part("publisherClass", entity);

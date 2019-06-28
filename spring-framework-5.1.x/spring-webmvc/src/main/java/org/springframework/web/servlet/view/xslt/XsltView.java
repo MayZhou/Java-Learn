@@ -103,7 +103,7 @@ public class XsltView extends AbstractUrlBasedView {
 	/**
 	 * Specify the XSLT TransformerFactory class to use.
 	 * <p>The default constructor of the specified class will be called
-	 * to build the TransformerFactory for this view.
+	 * to builder the TransformerFactory for this view.
 	 */
 	public void setTransformerFactoryClass(Class<? extends TransformerFactory> transformerFactoryClass) {
 		this.transformerFactoryClass = transformerFactoryClass;

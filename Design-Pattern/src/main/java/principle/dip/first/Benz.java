@@ -5,6 +5,6 @@ package principle.dip.first;
  */
 public class Benz implements ICar {
     public void run() {
-        System.out.println("奔驰汽车开始运行...");
+        System.out.println("宝马汽车开始运行...");
     }
 }

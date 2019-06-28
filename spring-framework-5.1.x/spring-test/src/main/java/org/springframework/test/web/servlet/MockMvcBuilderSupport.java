@@ -30,7 +30,7 @@ import org.springframework.web.context.WebApplicationContext;
  * create a {@link MockMvc} instance.
  *
  * <p>{@link org.springframework.test.web.servlet.setup.DefaultMockMvcBuilder},
- * which derives from this class, provides a concrete {@code build} method,
+ * which derives from this class, provides a concrete {@code builder} method,
  * and delegates to abstract methods to obtain a {@link WebApplicationContext}.
  *
  * @author Rossen Stoyanchev

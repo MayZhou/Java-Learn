@@ -13,7 +13,7 @@ eclipse.jdt {
 // Replace classpath entries with project dependencies (GRADLE-1116)
 // https://issues.gradle.org/browse/GRADLE-1116
 eclipse.classpath.file.whenMerged { classpath ->
-	def regexp = /.*?\/([^\/]+)\/build\/([^\/]+\/)+(?:main|test)/ // only match those that end in main or test (avoids removing necessary entries like build/classes/jaxb)
+	def regexp = /.*?\/([^\/]+)\/builder\/([^\/]+\/)+(?:main|test)/ // only match those that end in main or test (avoids removing necessary entries like builder/classes/jaxb)
 	def projectOutputDependencies = classpath.entries.findAll { entry -> entry.path =~ regexp }
 	projectOutputDependencies.each { entry ->
 		def matcher = (entry.path =~ regexp)
@@ -28,7 +28,7 @@ eclipse.classpath.file.whenMerged { classpath ->
 			classpath.entries.remove(entry)
 		}
 	}
-	classpath.entries.removeAll { entry -> (entry.path =~ /(?!.*?repack.*\.jar).*?\/([^\/]+)\/build\/libs\/[^\/]+\.jar/) }
+	classpath.entries.removeAll { entry -> (entry.path =~ /(?!.*?repack.*\.jar).*?\/([^\/]+)\/builder\/libs\/[^\/]+\.jar/) }
 }
 
 
@@ -104,7 +104,7 @@ tasks["cleanEclipse"].dependsOn(cleanEclipseJdtUi)
 tasks["eclipse"].dependsOn(eclipseSettings, eclipseWstComponent)
 
 
-// Filter 'build' folder
+// Filter 'builder' folder
 eclipse.project.file.withXml {
 	def node = it.asNode()
 
@@ -118,5 +118,5 @@ eclipse.project.file.withXml {
 	filterNode.appendNode("type", "30")
 	def matcherNode = filterNode.appendNode("matcher")
 	matcherNode.appendNode("id", "org.eclipse.ui.ide.multiFilter")
-	matcherNode.appendNode("arguments", "1.0-projectRelativePath-matches-false-false-build")
+	matcherNode.appendNode("arguments", "1.0-projectRelativePath-matches-false-false-builder")
 }

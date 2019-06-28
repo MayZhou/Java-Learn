@@ -208,7 +208,7 @@ public abstract class CommonsFileUploadSupport {
 	/**
 	 * Factory method for a Commons FileUpload instance.
 	 * <p><b>To be implemented by subclasses.</b>
-	 * @param fileItemFactory the Commons FileItemFactory to build upon
+	 * @param fileItemFactory the Commons FileItemFactory to builder upon
 	 * @return the Commons FileUpload instance
 	 */
 	protected abstract FileUpload newFileUpload(FileItemFactory fileItemFactory);

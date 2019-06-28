@@ -390,7 +390,7 @@ public class RequestEntity<T> extends HttpEntity<T> {
 		BodyBuilder contentType(MediaType contentType);
 
 		/**
-		 * Set the body of the request entity and build the RequestEntity.
+		 * Set the body of the request entity and builder the RequestEntity.
 		 * @param <T> the type of the body
 		 * @param body the body of the request entity
 		 * @return the built request entity
@@ -398,7 +398,7 @@ public class RequestEntity<T> extends HttpEntity<T> {
 		<T> RequestEntity<T> body(T body);
 
 		/**
-		 * Set the body and type of the request entity and build the RequestEntity.
+		 * Set the body and type of the request entity and builder the RequestEntity.
 		 * @param <T> the type of the body
 		 * @param body the body of the request entity
 		 * @param type the type of the body, useful for generic type resolution

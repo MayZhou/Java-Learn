@@ -90,7 +90,7 @@ public class DefaultUriBuilderFactoryTests {
 		DefaultUriBuilderFactory factory = new DefaultUriBuilderFactory("http://{host}/v1");
 		factory.setDefaultUriVariables(singletonMap("host", "example.com"));
 		URI uri = factory.uriString("/bar").build();
-		assertEquals("Expected delegation to build(Map) method", "http://example.com/v1/bar", uri.toString());
+		assertEquals("Expected delegation to builder(Map) method", "http://example.com/v1/bar", uri.toString());
 	}
 
 	@Test

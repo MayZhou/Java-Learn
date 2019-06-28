@@ -63,7 +63,7 @@ public class BeanFactoryAspectJAdvisorsBuilder {
 	/**
 	 * Create a new BeanFactoryAspectJAdvisorsBuilder for the given BeanFactory.
 	 * @param beanFactory the ListableBeanFactory to scan
-	 * @param advisorFactory the AspectJAdvisorFactory to build each Advisor with
+	 * @param advisorFactory the AspectJAdvisorFactory to builder each Advisor with
 	 */
 	public BeanFactoryAspectJAdvisorsBuilder(ListableBeanFactory beanFactory, AspectJAdvisorFactory advisorFactory) {
 		Assert.notNull(beanFactory, "ListableBeanFactory must not be null");

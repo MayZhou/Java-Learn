@@ -30,7 +30,7 @@ import org.junit.runner.RunWith;
  *
  * <p>This class intentionally does not reside in the "jupiter" package
  * so that the entire "jupiter" package can be excluded from the Gradle
- * build. This class is therefore responsible for executing all JUnit
+ * builder. This class is therefore responsible for executing all JUnit
  * Jupiter based tests in Spring's official test suite.
  *
  * <h3>Logging Configuration</h3>

@@ -67,7 +67,7 @@ public class MockWebResponseBuilderTests {
 	}
 
 
-	// --- build
+	// --- builder
 
 	@Test
 	public void buildContent() throws Exception {

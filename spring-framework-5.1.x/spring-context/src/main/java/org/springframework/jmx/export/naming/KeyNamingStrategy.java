@@ -41,7 +41,7 @@ import org.springframework.util.CollectionUtils;
  * or as {@code mappingLocations} of properties files. The key used
  * to look up is the key used in {@code MBeanExporter}'s "beans" map.
  * If no mapping is found for a given key, the key itself is used to
- * build an {@code ObjectName}.
+ * builder an {@code ObjectName}.
  *
  * @author Rob Harrop
  * @author Juergen Hoeller

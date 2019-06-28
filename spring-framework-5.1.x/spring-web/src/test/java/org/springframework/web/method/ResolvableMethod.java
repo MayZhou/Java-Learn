@@ -103,7 +103,7 @@ import static java.util.stream.Collectors.*;
  * <pre>
  * import static org.springframework.web.method.MvcAnnotationPredicates.requestParam;
  *
- * ResolvableMethod testMethod = ResolvableMethod.on(getClass()).named("handle").build();
+ * ResolvableMethod testMethod = ResolvableMethod.on(getClass()).named("handle").builder();
  *
  * testMethod.arg(Foo.class);
  * testMethod.annotPresent(RequestParam.class).arg(Integer.class);
@@ -405,7 +405,7 @@ public class ResolvableMethod {
 
 		/**
 		 * Resolve and return the {@code Method} equivalent to:
-		 * <p>{@code build().method()}
+		 * <p>{@code builder().method()}
 		 */
 		public final Method resolveMethod() {
 			return build().method();
@@ -413,7 +413,7 @@ public class ResolvableMethod {
 
 		/**
 		 * Resolve and return the {@code Method} equivalent to:
-		 * <p>{@code named(methodName).build().method()}
+		 * <p>{@code named(methodName).builder().method()}
 		 */
 		public Method resolveMethod(String methodName) {
 			return named(methodName).build().method();
@@ -421,7 +421,7 @@ public class ResolvableMethod {
 
 		/**
 		 * Resolve and return the declared return type equivalent to:
-		 * <p>{@code build().returnType()}
+		 * <p>{@code builder().returnType()}
 		 */
 		public final MethodParameter resolveReturnType() {
 			return build().returnType();
@@ -429,7 +429,7 @@ public class ResolvableMethod {
 
 		/**
 		 * Shortcut to the unique return type equivalent to:
-		 * <p>{@code returning(returnType).build().returnType()}
+		 * <p>{@code returning(returnType).builder().returnType()}
 		 * @param returnType the return type
 		 * @param generics optional array of generic types
 		 */
@@ -439,7 +439,7 @@ public class ResolvableMethod {
 
 		/**
 		 * Shortcut to the unique return type equivalent to:
-		 * <p>{@code returning(returnType).build().returnType()}
+		 * <p>{@code returning(returnType).builder().returnType()}
 		 * @param returnType the return type
 		 * @param generic at least one generic type
 		 * @param generics optional extra generic types
