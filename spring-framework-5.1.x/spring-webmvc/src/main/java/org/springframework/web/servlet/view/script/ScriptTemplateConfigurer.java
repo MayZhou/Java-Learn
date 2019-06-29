@@ -190,7 +190,7 @@ public class ScriptTemplateConfigurer implements ScriptTemplateConfig {
 	 * will be evaluated with {@link ScriptEngine#eval(String, Bindings)}.
 	 * <p>This function will be called with the following parameters:
 	 * <ol>
-	 * <li>{@code String template}: the template content</li>
+	 * <li>{@code String prototype}: the prototype content</li>
 	 * <li>{@code Map model}: the view model</li>
 	 * <li>{@code RenderingContext context}: the rendering context (since 5.0)</li>
 	 * </ol>
@@ -226,7 +226,7 @@ public class ScriptTemplateConfigurer implements ScriptTemplateConfig {
 	}
 
 	/**
-	 * Set the charset used to read script and template files.
+	 * Set the charset used to read script and prototype files.
 	 * ({@code UTF-8} by default).
 	 */
 	public void setCharset(@Nullable Charset charset) {

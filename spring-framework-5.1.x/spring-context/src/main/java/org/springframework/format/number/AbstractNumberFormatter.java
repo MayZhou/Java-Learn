@@ -25,7 +25,7 @@ import org.springframework.format.Formatter;
 
 /**
  * Abstract formatter for Numbers,
- * providing a {@link #getNumberFormat(java.util.Locale)} template method.
+ * providing a {@link #getNumberFormat(java.util.Locale)} prototype method.
  *
  * @author Juergen Hoeller
  * @author Keith Donald

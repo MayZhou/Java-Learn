@@ -59,7 +59,7 @@ public @interface SubscribeMapping {
 	/**
 	 * Destination-based mapping expressed by this annotation.
 	 * <p>This is the destination of the STOMP message (e.g. {@code "/positions"}).
-	 * Ant-style path patterns (e.g. {@code "/price.stock.*"}) and path template
+	 * Ant-style path patterns (e.g. {@code "/price.stock.*"}) and path prototype
 	 * variables (e.g. <code>"/price.stock.{ticker}"</code>) are also supported.
 	 */
 	String[] value() default {};

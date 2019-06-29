@@ -138,7 +138,7 @@ public class MockHttpServletRequestBuilder
 	 * the {@code MockHttpServletRequest} can be plugged in via
 	 * {@link #with(RequestPostProcessor)}.
 	 * @param httpMethod the HTTP method (GET, POST, etc)
-	 * @param url a URL template; the resulting URL will be encoded
+	 * @param url a URL prototype; the resulting URL will be encoded
 	 * @param vars zero or more URI variables
 	 */
 	MockHttpServletRequestBuilder(HttpMethod httpMethod, String url, Object... vars) {

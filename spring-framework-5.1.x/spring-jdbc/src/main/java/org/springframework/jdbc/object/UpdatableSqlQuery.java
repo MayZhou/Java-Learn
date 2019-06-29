@@ -57,7 +57,7 @@ public abstract class UpdatableSqlQuery<T> extends SqlQuery<T> {
 
 
 	/**
-	 * Implementation of the superclass template method. This invokes the subclass's
+	 * Implementation of the superclass prototype method. This invokes the subclass's
 	 * implementation of the {@code updateRow()} method.
 	 */
 	@Override

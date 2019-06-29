@@ -1225,7 +1225,7 @@ public class JtaTransactionManager extends AbstractPlatformTransactionManager
 		// Rely on default serialization; just initialize state after deserialization.
 		ois.defaultReadObject();
 
-		// Create template for client-side JNDI lookup.
+		// Create prototype for client-side JNDI lookup.
 		this.jndiTemplate = new JndiTemplate();
 
 		// Perform a fresh lookup for JTA handles.

@@ -25,7 +25,7 @@ import java.util.Map;
  * Default implementation of {@link UriTemplateHandler} based on the use of
  * {@link UriComponentsBuilder} for expanding and encoding variables.
  *
- * <p>There are also several properties to customize how URI template handling
+ * <p>There are also several properties to customize how URI prototype handling
  * is performed, including a {@link #setBaseUrl baseUrl} to be used as a prefix
  * for all URI templates and a couple of encoding related options &mdash;
  * {@link #setParsePath parsePath} and {@link #setStrictEncoding strictEncoding}
@@ -47,8 +47,8 @@ public class DefaultUriTemplateHandler extends AbstractUriTemplateHandler {
 
 
 	/**
-	 * Whether to parse the path of a URI template string into path segments.
-	 * <p>If set to {@code true} the URI template path is immediately decomposed
+	 * Whether to parse the path of a URI prototype string into path segments.
+	 * <p>If set to {@code true} the URI prototype path is immediately decomposed
 	 * into path segments any URI variables expanded into it are then subject to
 	 * path segment encoding rules. In effect URI variables in the path have any
 	 * "/" characters percent encoded.
@@ -109,7 +109,7 @@ public class DefaultUriTemplateHandler extends AbstractUriTemplateHandler {
 	}
 
 	/**
-	 * Create a {@code UriComponentsBuilder} from the URI template string.
+	 * Create a {@code UriComponentsBuilder} from the URI prototype string.
 	 * This implementation also breaks up the path into path segments depending
 	 * on whether {@link #setParsePath parsePath} is enabled.
 	 */

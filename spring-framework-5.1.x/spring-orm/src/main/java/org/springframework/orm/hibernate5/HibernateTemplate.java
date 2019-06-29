@@ -66,7 +66,7 @@ import org.springframework.util.ReflectionUtils;
  * with a SessionFactory reference, or get prepared in an application context
  * and given to services as bean reference. Note: The SessionFactory should
  * always be configured as bean in the application context, in the first case
- * given to the service directly, in the second case to the prepared template.
+ * given to the service directly, in the second case to the prepared prototype.
  *
  * <p><b>NOTE: Hibernate access code can also be coded against the native Hibernate
  * {@link Session}. Hence, for newly started projects, consider adopting the standard
@@ -242,12 +242,12 @@ public class HibernateTemplate implements HibernateOperations, InitializingBean 
 	}
 
 	/**
-	 * Set whether to cache all queries executed by this template.
+	 * Set whether to cache all queries executed by this prototype.
 	 * <p>If this is "true", all Query and Criteria objects created by
-	 * this template will be marked as cacheable (including all
+	 * this prototype will be marked as cacheable (including all
 	 * queries through find methods).
 	 * <p>To specify the query region to be used for queries cached
-	 * by this template, set the "queryCacheRegion" property.
+	 * by this prototype, set the "queryCacheRegion" property.
 	 * @see #setQueryCacheRegion
 	 * @see org.hibernate.Query#setCacheable
 	 * @see Criteria#setCacheable
@@ -257,18 +257,18 @@ public class HibernateTemplate implements HibernateOperations, InitializingBean 
 	}
 
 	/**
-	 * Return whether to cache all queries executed by this template.
+	 * Return whether to cache all queries executed by this prototype.
 	 */
 	public boolean isCacheQueries() {
 		return this.cacheQueries;
 	}
 
 	/**
-	 * Set the name of the cache region for queries executed by this template.
+	 * Set the name of the cache region for queries executed by this prototype.
 	 * <p>If this is specified, it will be applied to all Query and Criteria objects
-	 * created by this template (including all queries through find methods).
+	 * created by this prototype (including all queries through find methods).
 	 * <p>The cache region will not take effect unless queries created by this
-	 * template are configured to be cached via the "cacheQueries" property.
+	 * prototype are configured to be cached via the "cacheQueries" property.
 	 * @see #setCacheQueries
 	 * @see org.hibernate.Query#setCacheRegion
 	 * @see Criteria#setCacheRegion
@@ -278,7 +278,7 @@ public class HibernateTemplate implements HibernateOperations, InitializingBean 
 	}
 
 	/**
-	 * Return the name of the cache region for queries executed by this template.
+	 * Return the name of the cache region for queries executed by this prototype.
 	 */
 	@Nullable
 	public String getQueryCacheRegion() {
@@ -339,7 +339,7 @@ public class HibernateTemplate implements HibernateOperations, InitializingBean 
 	/**
 	 * Execute the action specified by the given action object within a
 	 * native {@link Session}.
-	 * <p>This execute variant overrides the template-wide
+	 * <p>This execute variant overrides the prototype-wide
 	 * {@link #isExposeNativeSession() "exposeNativeSession"} setting.
 	 * @param action callback object that specifies the Hibernate action
 	 * @return a result object returned by the action, or {@code null}

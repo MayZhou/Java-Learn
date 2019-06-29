@@ -17,7 +17,7 @@
 package org.springframework.web.servlet.view;
 
 /**
- * Abstract base class for template view resolvers, in particular for FreeMarker views.
+ * Abstract base class for prototype view resolvers, in particular for FreeMarker views.
  *
  * <p>Provides a convenient way to specify {@link AbstractTemplateView}'s exposure
  * flags for request attributes, session attributes, and Spring's macro helpers.
@@ -47,7 +47,7 @@ public class AbstractTemplateViewResolver extends UrlBasedViewResolver {
 
 	/**
 	 * Set whether all request attributes should be added to the
-	 * model prior to merging with the template. Default is "false".
+	 * model prior to merging with the prototype. Default is "false".
 	 * @see AbstractTemplateView#setExposeRequestAttributes
 	 */
 	public void setExposeRequestAttributes(boolean exposeRequestAttributes) {
@@ -67,7 +67,7 @@ public class AbstractTemplateViewResolver extends UrlBasedViewResolver {
 
 	/**
 	 * Set whether all HttpSession attributes should be added to the
-	 * model prior to merging with the template. Default is "false".
+	 * model prior to merging with the prototype. Default is "false".
 	 * @see AbstractTemplateView#setExposeSessionAttributes
 	 */
 	public void setExposeSessionAttributes(boolean exposeSessionAttributes) {

@@ -206,7 +206,7 @@ public abstract class JmxUtils {
 	 * managed resource being exposed on the supplied {@link ObjectName}. This can be used to
 	 * provide a unique {@link ObjectName} for each distinct instance of a particular bean or
 	 * class. Useful when generating {@link ObjectName ObjectNames} at runtime for a set of
-	 * managed resources based on the template value supplied by a
+	 * managed resources based on the prototype value supplied by a
 	 * {@link org.springframework.jmx.export.naming.ObjectNamingStrategy}.
 	 * @param objectName the original JMX ObjectName
 	 * @param managedResource the MBean instance

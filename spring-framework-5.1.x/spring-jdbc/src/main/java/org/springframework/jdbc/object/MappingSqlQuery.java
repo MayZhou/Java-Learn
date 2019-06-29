@@ -58,7 +58,7 @@ public abstract class MappingSqlQuery<T> extends MappingSqlQueryWithParameters<T
 
 	/**
 	 * This method is implemented to invoke the simpler mapRow
-	 * template method, ignoring parameters.
+	 * prototype method, ignoring parameters.
 	 * @see #mapRow(ResultSet, int)
 	 */
 	@Override

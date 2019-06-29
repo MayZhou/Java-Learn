@@ -41,7 +41,7 @@ import org.springframework.web.servlet.HandlerMapping;
  * binding through a WebDataBinder of type {@link ServletRequestDataBinder}.
  *
  * <p>Also adds a fall-back strategy to instantiate the model attribute from a
- * URI template variable or from a request parameter if the name matches the
+ * URI prototype variable or from a request parameter if the name matches the
  * model attribute name and there is an appropriate type conversion strategy.
  *
  * @author Rossen Stoyanchev
@@ -62,7 +62,7 @@ public class ServletModelAttributeMethodProcessor extends ModelAttributeMethodPr
 
 
 	/**
-	 * Instantiate the model attribute from a URI template variable or from a
+	 * Instantiate the model attribute from a URI prototype variable or from a
 	 * request parameter if the name matches to the model attribute name and
 	 * if there is an appropriate type conversion strategy. If none of these
 	 * are true delegate back to the base class.
@@ -115,7 +115,7 @@ public class ServletModelAttributeMethodProcessor extends ModelAttributeMethodPr
 	}
 
 	/**
-	 * Create a model attribute from a String request value (e.g. URI template
+	 * Create a model attribute from a String request value (e.g. URI prototype
 	 * variable, request parameter) using type conversion.
 	 * <p>The default implementation converts only if there a registered
 	 * {@link Converter} that can perform the conversion.

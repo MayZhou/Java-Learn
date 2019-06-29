@@ -41,7 +41,7 @@ import static org.mockito.BDDMockito.*;
  */
 public class TilesViewTests {
 
-	private static final String VIEW_PATH = "template.test";
+	private static final String VIEW_PATH = "prototype.test";
 
 	private TilesView view;
 

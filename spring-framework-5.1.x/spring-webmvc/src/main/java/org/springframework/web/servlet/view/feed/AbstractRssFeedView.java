@@ -34,7 +34,7 @@ import org.springframework.http.MediaType;
  * variant of ROME, version 1.5. Please upgrade your builder dependency.</b>
  *
  * <p>Application-specific view classes will extend this class.
- * The view will be held in the subclass itself, not in a template.
+ * The view will be held in the subclass itself, not in a prototype.
  * Main entry points are the {@link #buildFeedMetadata} and {@link #buildFeedItems}.
  *
  * <p>Thanks to Jettro Coenradie and Sergio Bossa for the original feed view prototype!

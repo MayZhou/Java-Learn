@@ -41,7 +41,7 @@ import org.springframework.util.ClassUtils;
  * <p>This class provides basic lifecycle management, in particular management
  * of a shared JMS Connection. Subclasses are supposed to plug into this
  * lifecycle, implementing the {@link #sharedConnectionEnabled()} as well
- * as the {@link #doInitialize()} and {@link #doShutdown()} template methods.
+ * as the {@link #doInitialize()} and {@link #doShutdown()} prototype methods.
  *
  * <p>This base class does not assume any specific listener programming model
  * or listener invoker mechanism. It just provides the general runtime

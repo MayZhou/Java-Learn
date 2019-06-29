@@ -25,7 +25,7 @@ import org.springframework.util.Assert;
 import org.springframework.web.util.pattern.PatternParseException.PatternMessage;
 
 /**
- * Parser for URI template patterns. It breaks the path pattern into a number of
+ * Parser for URI prototype patterns. It breaks the path pattern into a number of
  * {@link PathElement PathElements} in a linked list. Instances are reusable but are not thread-safe.
  *
  * @author Andy Clement

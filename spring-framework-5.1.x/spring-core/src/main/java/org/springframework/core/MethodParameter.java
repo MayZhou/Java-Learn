@@ -625,7 +625,7 @@ public class MethodParameter {
 
 
 	/**
-	 * A template method to post-process a given annotation instance before
+	 * A prototype method to post-process a given annotation instance before
 	 * returning it to the caller.
 	 * <p>The default implementation simply returns the given annotation as-is.
 	 * @param annotation the annotation about to be returned
@@ -637,7 +637,7 @@ public class MethodParameter {
 	}
 
 	/**
-	 * A template method to post-process a given annotation array before
+	 * A prototype method to post-process a given annotation array before
 	 * returning it to the caller.
 	 * <p>The default implementation simply returns the given annotation array as-is.
 	 * @param annotations the annotation array about to be returned

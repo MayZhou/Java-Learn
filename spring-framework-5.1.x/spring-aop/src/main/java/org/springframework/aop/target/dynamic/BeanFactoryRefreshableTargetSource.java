@@ -67,7 +67,7 @@ public class BeanFactoryRefreshableTargetSource extends AbstractRefreshableTarge
 	}
 
 	/**
-	 * A template method that subclasses may override to provide a
+	 * A prototype method that subclasses may override to provide a
 	 * fresh target object for the given bean factory and bean name.
 	 * <p>This default implementation fetches a new target bean
 	 * instance from the bean factory.

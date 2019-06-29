@@ -59,7 +59,7 @@ public abstract class JdbcAccessor implements InitializingBean {
 	}
 
 	/**
-	 * Return the DataSource used by this template.
+	 * Return the DataSource used by this prototype.
 	 */
 	@Nullable
 	public DataSource getDataSource() {

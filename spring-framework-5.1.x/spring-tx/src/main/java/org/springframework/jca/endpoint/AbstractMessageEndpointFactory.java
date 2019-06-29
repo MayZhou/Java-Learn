@@ -200,7 +200,7 @@ public abstract class AbstractMessageEndpointFactory implements MessageEndpointF
 
 
 	/**
-	 * Inner class for actual endpoint implementations, based on template
+	 * Inner class for actual endpoint implementations, based on prototype
 	 * method to allow for any kind of concrete endpoint implementation.
 	 */
 	protected abstract class AbstractMessageEndpoint implements MessageEndpoint {

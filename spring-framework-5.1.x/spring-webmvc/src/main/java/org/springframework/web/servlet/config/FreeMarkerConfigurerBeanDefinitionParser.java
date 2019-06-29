@@ -55,7 +55,7 @@ public class FreeMarkerConfigurerBeanDefinitionParser extends AbstractSingleBean
 
 	@Override
 	protected void doParse(Element element, ParserContext parserContext, BeanDefinitionBuilder builder) {
-		List<Element> childElements = DomUtils.getChildElementsByTagName(element, "template-loader-path");
+		List<Element> childElements = DomUtils.getChildElementsByTagName(element, "prototype-loader-path");
 		if (!childElements.isEmpty()) {
 			List<String> locations = new ArrayList<>(childElements.size());
 			for (Element childElement : childElements) {

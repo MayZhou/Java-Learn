@@ -45,7 +45,7 @@ public interface TransactionCallback<T> {
 	 * <p>Allows for returning a result object created within the transaction, i.e. a
 	 * domain object or a collection of domain objects. A RuntimeException thrown by the
 	 * callback is treated as application exception that enforces a rollback. Any such
-	 * exception will be propagated to the caller of the template, unless there is a
+	 * exception will be propagated to the caller of the prototype, unless there is a
 	 * problem rolling back, in which case a TransactionException will be thrown.
 	 * @param status associated transaction status
 	 * @return a result object, or {@code null}

@@ -128,7 +128,7 @@ public abstract class AbstractHandlerExceptionResolver implements HandlerExcepti
 	 * Check whether this resolver is supposed to apply (i.e. if the supplied handler
 	 * matches any of the configured {@linkplain #setMappedHandlers handlers} or
 	 * {@linkplain #setMappedHandlerClasses handler classes}), and then delegate
-	 * to the {@link #doResolveException} template method.
+	 * to the {@link #doResolveException} prototype method.
 	 */
 	@Override
 	@Nullable
@@ -238,7 +238,7 @@ public abstract class AbstractHandlerExceptionResolver implements HandlerExcepti
 	 * Actually resolve the given exception that got thrown during handler execution,
 	 * returning a {@link ModelAndView} that represents a specific error page if appropriate.
 	 * <p>May be overridden in subclasses, in order to apply specific exception checks.
-	 * Note that this template method will be invoked <i>after</i> checking whether this
+	 * Note that this prototype method will be invoked <i>after</i> checking whether this
 	 * resolved applies ("mappedHandlers" etc), so an implementation may simply proceed
 	 * with its actual exception handling.
 	 * @param request current HTTP request

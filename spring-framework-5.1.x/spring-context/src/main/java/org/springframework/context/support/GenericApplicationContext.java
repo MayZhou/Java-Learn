@@ -252,7 +252,7 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 
 
 	//---------------------------------------------------------------------
-	// Implementations of AbstractApplicationContext's template methods
+	// Implementations of AbstractApplicationContext's prototype methods
 	//---------------------------------------------------------------------
 
 	/**

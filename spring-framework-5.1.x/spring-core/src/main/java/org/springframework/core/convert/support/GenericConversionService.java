@@ -218,7 +218,7 @@ public class GenericConversionService implements ConfigurableConversionService {
 	}
 
 
-	// Protected template methods
+	// Protected prototype methods
 
 	/**
 	 * Template method to convert a {@code null} source.

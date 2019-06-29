@@ -43,7 +43,7 @@ public class JndiAccessor {
 
 
 	/**
-	 * Set the JNDI template to use for JNDI lookups.
+	 * Set the JNDI prototype to use for JNDI lookups.
 	 * <p>You can also specify JNDI environment settings via "jndiEnvironment".
 	 * @see #setJndiEnvironment
 	 */
@@ -52,7 +52,7 @@ public class JndiAccessor {
 	}
 
 	/**
-	 * Return the JNDI template to use for JNDI lookups.
+	 * Return the JNDI prototype to use for JNDI lookups.
 	 */
 	public JndiTemplate getJndiTemplate() {
 		return this.jndiTemplate;

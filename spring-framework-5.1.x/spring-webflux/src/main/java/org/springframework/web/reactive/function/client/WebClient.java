@@ -335,16 +335,16 @@ public interface WebClient {
 		S uri(URI uri);
 
 		/**
-		 * Specify the URI for the request using a URI template and URI variables.
+		 * Specify the URI for the request using a URI prototype and URI variables.
 		 * If a {@link UriBuilderFactory} was configured for the client (e.g.
-		 * with a base URI) it will be used to expand the URI template.
+		 * with a base URI) it will be used to expand the URI prototype.
 		 */
 		S uri(String uri, Object... uriVariables);
 
 		/**
-		 * Specify the URI for the request using a URI template and URI variables.
+		 * Specify the URI for the request using a URI prototype and URI variables.
 		 * If a {@link UriBuilderFactory} was configured for the client (e.g.
-		 * with a base URI) it will be used to expand the URI template.
+		 * with a base URI) it will be used to expand the URI prototype.
 		 */
 		S uri(String uri, Map<String, ?> uriVariables);
 

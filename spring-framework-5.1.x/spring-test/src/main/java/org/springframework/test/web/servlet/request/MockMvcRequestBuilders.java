@@ -48,7 +48,7 @@ public abstract class MockMvcRequestBuilders {
 
 	/**
 	 * Create a {@link MockHttpServletRequestBuilder} for a GET request.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 */
 	public static MockHttpServletRequestBuilder get(String urlTemplate, Object... uriVars) {
@@ -66,7 +66,7 @@ public abstract class MockMvcRequestBuilders {
 
 	/**
 	 * Create a {@link MockHttpServletRequestBuilder} for a POST request.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 */
 	public static MockHttpServletRequestBuilder post(String urlTemplate, Object... uriVars) {
@@ -84,7 +84,7 @@ public abstract class MockMvcRequestBuilders {
 
 	/**
 	 * Create a {@link MockHttpServletRequestBuilder} for a PUT request.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 */
 	public static MockHttpServletRequestBuilder put(String urlTemplate, Object... uriVars) {
@@ -102,7 +102,7 @@ public abstract class MockMvcRequestBuilders {
 
 	/**
 	 * Create a {@link MockHttpServletRequestBuilder} for a PATCH request.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 */
 	public static MockHttpServletRequestBuilder patch(String urlTemplate, Object... uriVars) {
@@ -120,7 +120,7 @@ public abstract class MockMvcRequestBuilders {
 
 	/**
 	 * Create a {@link MockHttpServletRequestBuilder} for a DELETE request.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 */
 	public static MockHttpServletRequestBuilder delete(String urlTemplate, Object... uriVars) {
@@ -138,7 +138,7 @@ public abstract class MockMvcRequestBuilders {
 
 	/**
 	 * Create a {@link MockHttpServletRequestBuilder} for an OPTIONS request.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 */
 	public static MockHttpServletRequestBuilder options(String urlTemplate, Object... uriVars) {
@@ -156,7 +156,7 @@ public abstract class MockMvcRequestBuilders {
 
 	/**
 	 * Create a {@link MockHttpServletRequestBuilder} for a HEAD request.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 * @since 4.1
 	 */
@@ -176,7 +176,7 @@ public abstract class MockMvcRequestBuilders {
 	/**
 	 * Create a {@link MockHttpServletRequestBuilder} for a request with the given HTTP method.
 	 * @param method the HTTP method (GET, POST, etc)
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 */
 	public static MockHttpServletRequestBuilder request(HttpMethod method, String urlTemplate, Object... uriVars) {
@@ -205,7 +205,7 @@ public abstract class MockMvcRequestBuilders {
 
 	/**
 	 * Create a {@link MockMultipartHttpServletRequestBuilder} for a multipart request.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 * @since 5.0
 	 */
@@ -224,7 +224,7 @@ public abstract class MockMvcRequestBuilders {
 
 	/**
 	 * Create a {@link MockMultipartHttpServletRequestBuilder} for a multipart request.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 * @deprecated in favor of {@link #multipart(String, Object...)}
 	 */

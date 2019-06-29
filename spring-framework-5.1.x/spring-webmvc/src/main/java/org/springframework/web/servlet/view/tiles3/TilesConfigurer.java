@@ -72,7 +72,7 @@ import org.springframework.web.context.ServletContextAware;
  * Helper class to configure Tiles 3.x for the Spring Framework. See
  * <a href="https://tiles.apache.org">https://tiles.apache.org</a>
  * for more information about Tiles, which basically is a templating mechanism
- * for web applications using JSPs and other template engines.
+ * for web applications using JSPs and other prototype engines.
  *
  * <p>The TilesConfigurer simply configures a TilesContainer using a set of files
  * containing definitions, to be accessed by {@link TilesView} instances. This is a

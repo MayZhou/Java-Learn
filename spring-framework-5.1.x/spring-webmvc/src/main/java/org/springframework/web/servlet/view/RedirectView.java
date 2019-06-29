@@ -49,10 +49,10 @@ import org.springframework.web.util.WebUtils;
 
 /**
  * View that redirects to an absolute, context relative, or current request
- * relative URL. The URL may be a URI template in which case the URI template
+ * relative URL. The URL may be a URI prototype in which case the URI prototype
  * variables will be replaced with values available in the model. By default
  * all primitive model attributes (or collections thereof) are exposed as HTTP
- * query parameters (assuming they've not been used as URI template variables),
+ * query parameters (assuming they've not been used as URI prototype variables),
  * but this behavior can be changed by overriding the
  * {@link #isEligibleProperty(String, Object)} method.
  *
@@ -227,7 +227,7 @@ public class RedirectView extends AbstractUrlBasedView implements SmartView {
 	}
 
 	/**
-	 * Whether to treat the redirect URL as a URI template.
+	 * Whether to treat the redirect URL as a URI prototype.
 	 * Set this flag to {@code false} if the redirect URL contains open
 	 * and close curly braces "{", "}" and you don't want them interpreted
 	 * as URI variables.
@@ -315,7 +315,7 @@ public class RedirectView extends AbstractUrlBasedView implements SmartView {
 	}
 
 	/**
-	 * Create the target URL by checking if the redirect string is a URI template first,
+	 * Create the target URL by checking if the redirect string is a URI prototype first,
 	 * expanding it with the given model, and then optionally appending simple type model
 	 * attributes as query String parameters.
 	 */
@@ -364,7 +364,7 @@ public class RedirectView extends AbstractUrlBasedView implements SmartView {
 	}
 
 	/**
-	 * Replace URI template variables in the target URL with encoded model
+	 * Replace URI prototype variables in the target URL with encoded model
 	 * attributes or URI variables from the current request. Model attributes
 	 * referenced in the URL are removed from the model.
 	 * @param targetUrl the redirect URL

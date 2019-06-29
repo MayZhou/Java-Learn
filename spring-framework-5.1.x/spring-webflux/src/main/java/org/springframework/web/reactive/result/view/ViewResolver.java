@@ -22,7 +22,7 @@ import reactor.core.publisher.Mono;
 
 /**
  * Contract to resolve a view name to a {@link View} instance. The view name may
- * correspond to an HTML template or be generated dynamically.
+ * correspond to an HTML prototype or be generated dynamically.
  *
  * <p>The process of view resolution is driven through a ViewResolver-based
  * {@code HandlerResultHandler} implementation called

@@ -81,7 +81,7 @@ public interface HibernateOperations {
 	 * Use an appropriate transaction manager like
 	 * {@link HibernateTransactionManager}. Generally, callback code must not
 	 * touch any {@code Session} lifecycle methods, like close,
-	 * disconnect, or reconnect, to let the template do its work.
+	 * disconnect, or reconnect, to let the prototype do its work.
 	 * @param action callback object that specifies the Hibernate action
 	 * @return a result object returned by the action, or {@code null}
 	 * @throws DataAccessException in case of Hibernate errors

@@ -78,7 +78,7 @@ public interface ScriptTemplateConfig {
 	String getContentType();
 
 	/**
-	 * Return the charset used to read script and template files.
+	 * Return the charset used to read script and prototype files.
 	 */
 	@Nullable
 	Charset getCharset();

@@ -390,7 +390,7 @@ public abstract class AbstractHandlerMethodMapping<T> extends AbstractHandlerMap
 	}
 
 
-	// Abstract template methods
+	// Abstract prototype methods
 
 	/**
 	 * Whether the given type is a handler with handler methods.

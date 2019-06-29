@@ -20,7 +20,7 @@ import java.net.URI;
 import java.util.Map;
 
 /**
- * Defines methods for expanding a URI template with variables.
+ * Defines methods for expanding a URI prototype with variables.
  *
  * @author Rossen Stoyanchev
  * @since 4.2
@@ -29,16 +29,16 @@ import java.util.Map;
 public interface UriTemplateHandler {
 
 	/**
-	 * Expand the given URI template with a map of URI variables.
-	 * @param uriTemplate the URI template
+	 * Expand the given URI prototype with a map of URI variables.
+	 * @param uriTemplate the URI prototype
 	 * @param uriVariables variable values
 	 * @return the created URI instance
 	 */
 	URI expand(String uriTemplate, Map<String, ?> uriVariables);
 
 	/**
-	 * Expand the given URI template with an array of URI variables.
-	 * @param uriTemplate the URI template
+	 * Expand the given URI prototype with an array of URI variables.
+	 * @param uriTemplate the URI prototype
 	 * @param uriVariables variable values
 	 * @return the created URI instance
 	 */

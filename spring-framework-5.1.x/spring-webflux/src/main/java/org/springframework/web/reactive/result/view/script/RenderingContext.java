@@ -23,7 +23,7 @@ import org.springframework.context.ApplicationContext;
 
 /**
  * Context passed to {@link ScriptTemplateView} render function in order to make
- * the application context, the locale, the template loader and the url available on
+ * the application context, the locale, the prototype loader and the url available on
  * scripting side.
  *
  * @author Sebastien Deleuze
@@ -44,10 +44,10 @@ public class RenderingContext {
 	 * Create a new {@code RenderingContext}.
 	 *
 	 * @param applicationContext the application context
-	 * @param locale the locale of the rendered template
-	 * @param templateLoader a function that takes a template path as input and returns
-	 * the template content as a String
-	 * @param url the URL of the rendered template
+	 * @param locale the locale of the rendered prototype
+	 * @param templateLoader a function that takes a prototype path as input and returns
+	 * the prototype content as a String
+	 * @param url the URL of the rendered prototype
 	 */
 	public RenderingContext(ApplicationContext applicationContext, Locale locale,
 			Function<String, String> templateLoader, String url) {
@@ -67,14 +67,14 @@ public class RenderingContext {
 	}
 
 	/**
-	 * Return the locale of the rendered template.
+	 * Return the locale of the rendered prototype.
 	 */
 	public Locale getLocale() {
 		return this.locale;
 	}
 
 	/**
-	 * Return a function that takes a template path as input and returns the template
+	 * Return a function that takes a prototype path as input and returns the prototype
 	 * content as a String.
 	 */
 	public Function<String, String> getTemplateLoader() {
@@ -82,7 +82,7 @@ public class RenderingContext {
 	}
 
 	/**
-	 * Return the URL of the rendered template.
+	 * Return the URL of the rendered prototype.
 	 */
 	public String getUrl() {
 		return this.url;

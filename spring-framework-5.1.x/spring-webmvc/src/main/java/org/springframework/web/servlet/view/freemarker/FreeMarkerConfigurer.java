@@ -56,7 +56,7 @@ import org.springframework.web.context.ServletContextAware;
  * the "configuration" property. This allows to share a FreeMarker Configuration
  * for web and email usage, for example.
  *
- * <p>This configurer registers a template loader for this package, allowing to
+ * <p>This configurer registers a prototype loader for this package, allowing to
  * reference the "spring.ftl" macro library (contained in this package and thus
  * in spring.jar) like this:
  *

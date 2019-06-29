@@ -54,7 +54,7 @@ public class MockMultipartHttpServletRequestBuilder extends MockHttpServletReque
 	 * <p>For other ways to initialize a {@code MockMultipartHttpServletRequest},
 	 * see {@link #with(RequestPostProcessor)} and the
 	 * {@link RequestPostProcessor} extension point.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVariables zero or more URI variables
 	 */
 	MockMultipartHttpServletRequestBuilder(String urlTemplate, Object... uriVariables) {

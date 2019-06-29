@@ -176,7 +176,7 @@ public class TemplateExpressionParsingTests extends AbstractExpressionTests {
 		String s = ex.getValue(TestScenarioCreator.getTestEvaluationContext(),String.class);
 		assertEquals("hello 4 world",s);
 
-		// not a useful expression but tests nested expression syntax that clashes with template prefix/suffix
+		// not a useful expression but tests nested expression syntax that clashes with prototype prefix/suffix
 		ex = parser.parseExpression("hello ${listOfNumbersUpToTen.$[#root.listOfNumbersUpToTen.$[#this%2==1]==3]} world",DEFAULT_TEMPLATE_PARSER_CONTEXT);
 		assertEquals(CompositeStringExpression.class,ex.getClass());
 		CompositeStringExpression cse = (CompositeStringExpression)ex;
@@ -210,7 +210,7 @@ public class TemplateExpressionParsingTests extends AbstractExpressionTests {
 	@Test
 
 	public void testClashingWithSuffixes() throws Exception {
-		// Just wanting to use the prefix or suffix within the template:
+		// Just wanting to use the prefix or suffix within the prototype:
 		Expression ex = parser.parseExpression("hello ${3+4} world",DEFAULT_TEMPLATE_PARSER_CONTEXT);
 		String s = ex.getValue(TestScenarioCreator.getTestEvaluationContext(),String.class);
 		assertEquals("hello 7 world", s);

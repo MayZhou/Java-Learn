@@ -48,7 +48,7 @@ import org.springframework.util.Assert;
  *
  * <p>TODO: macros
  *
- * <p>This configurer registers a template loader for this package, allowing to
+ * <p>This configurer registers a prototype loader for this package, allowing to
  * reference the "spring.ftl" macro library contained in this package:
  *
  * <pre class="code">

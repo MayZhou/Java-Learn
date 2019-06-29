@@ -198,7 +198,7 @@ public class PersistenceAnnotationBeanPostProcessor
 
 
 	/**
-	 * Set the JNDI template to use for JNDI lookups.
+	 * Set the JNDI prototype to use for JNDI lookups.
 	 * @see org.springframework.jndi.JndiAccessor#setJndiTemplate
 	 */
 	public void setJndiTemplate(Object jndiTemplate) {

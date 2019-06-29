@@ -82,7 +82,7 @@ public class ExchangeResult {
 	 * @param requestBody capture of serialized request body content
 	 * @param responseBody capture of serialized response body content
 	 * @param timeout how long to wait for content to materialize
-	 * @param uriTemplate the URI template used to set up the request, if any
+	 * @param uriTemplate the URI prototype used to set up the request, if any
 	 */
 	ExchangeResult(ClientHttpRequest request, ClientHttpResponse response,
 			Mono<byte[]> requestBody, Mono<byte[]> responseBody, Duration timeout, @Nullable String uriTemplate) {
@@ -128,7 +128,7 @@ public class ExchangeResult {
 	}
 
 	/**
-	 * Return the original URI template used to prepare the request, if any.
+	 * Return the original URI prototype used to prepare the request, if any.
 	 */
 	@Nullable
 	public String getUriTemplate() {

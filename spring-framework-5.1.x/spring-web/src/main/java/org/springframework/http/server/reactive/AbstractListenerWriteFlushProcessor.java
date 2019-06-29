@@ -158,7 +158,7 @@ public abstract class AbstractListenerWriteFlushProcessor<T> implements Processo
 	}
 
 
-	// Write API methods to be implemented or template methods to override...
+	// Write API methods to be implemented or prototype methods to override...
 
 	/**
 	 * Create a new processor for the current flush boundary.

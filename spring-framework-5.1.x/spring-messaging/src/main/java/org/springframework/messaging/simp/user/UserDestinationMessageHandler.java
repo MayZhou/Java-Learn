@@ -122,7 +122,7 @@ public class UserDestinationMessageHandler implements MessageHandler, SmartLifec
 	}
 
 	/**
-	 * Return the messaging template used to send resolved messages to the
+	 * Return the messaging prototype used to send resolved messages to the
 	 * broker channel.
 	 */
 	public MessageSendingOperations<String> getBrokerMessagingTemplate() {

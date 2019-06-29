@@ -31,7 +31,7 @@ import org.springframework.util.StringUtils;
 /**
  * Abstract {@link BeanDefinitionParser} implementation providing
  * a number of convenience methods and a
- * {@link AbstractBeanDefinitionParser#parseInternal template method}
+ * {@link AbstractBeanDefinitionParser#parseInternal prototype method}
  * that subclasses must override to provide the actual parsing logic.
  *
  * <p>Use this {@link BeanDefinitionParser} implementation when you want
@@ -141,7 +141,7 @@ public abstract class AbstractBeanDefinitionParser implements BeanDefinitionPars
 
 
 	/**
-	 * Central template method to actually parse the supplied {@link Element}
+	 * Central prototype method to actually parse the supplied {@link Element}
 	 * into one or more {@link BeanDefinition BeanDefinitions}.
 	 * @param element the element that is to be parsed into one or more {@link BeanDefinition BeanDefinitions}
 	 * @param parserContext the object encapsulating the current state of the parsing process;

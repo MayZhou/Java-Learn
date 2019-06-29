@@ -198,7 +198,7 @@ public class PathPattern implements Comparable<PathPattern> {
 	}
 
 	/**
-	 * Match this pattern to the given URI path and return extracted URI template
+	 * Match this pattern to the given URI path and return extracted URI prototype
 	 * variables as well as path parameters (matrix variables).
 	 * @param pathContainer the candidate path to attempt to match against
 	 * @return info object with the extracted variables, or {@code null} for no match

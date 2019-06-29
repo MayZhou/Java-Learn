@@ -25,7 +25,7 @@ import org.springframework.lang.Nullable;
 
 /**
  * A very simple hardcoded implementation of the Expression interface that represents a
- * string literal. It is used with CompositeStringExpression when representing a template
+ * string literal. It is used with CompositeStringExpression when representing a prototype
  * expression which is made up of pieces - some being real expressions to be handled by
  * an EL implementation like SpEL, and some being just textual elements.
  *

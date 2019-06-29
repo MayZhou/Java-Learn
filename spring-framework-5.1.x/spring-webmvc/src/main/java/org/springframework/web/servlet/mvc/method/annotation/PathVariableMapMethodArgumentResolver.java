@@ -35,7 +35,7 @@ import org.springframework.web.servlet.HandlerMapping;
 /**
  * Resolves {@link Map} method arguments annotated with an @{@link PathVariable}
  * where the annotation does not specify a path variable name. The created
- * {@link Map} contains all URI template name/value pairs.
+ * {@link Map} contains all URI prototype name/value pairs.
  *
  * @author Rossen Stoyanchev
  * @since 3.2
@@ -51,7 +51,7 @@ public class PathVariableMapMethodArgumentResolver implements HandlerMethodArgum
 	}
 
 	/**
-	 * Return a Map with all URI template variables or an empty map.
+	 * Return a Map with all URI prototype variables or an empty map.
 	 */
 	@Override
 	public Object resolveArgument(MethodParameter parameter, @Nullable ModelAndViewContainer mavContainer,

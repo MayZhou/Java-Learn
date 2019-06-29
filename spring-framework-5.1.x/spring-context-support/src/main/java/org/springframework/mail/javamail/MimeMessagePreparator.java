@@ -47,7 +47,7 @@ public interface MimeMessagePreparator {
 	 * @throws java.io.IOException passing any exceptions thrown by MimeMessage methods
 	 * through for automatic conversion to the MailException hierarchy
 	 * @throws Exception if mail preparation failed, for example when a
-	 * FreeMarker template cannot be rendered for the mail text
+	 * FreeMarker prototype cannot be rendered for the mail text
 	 */
 	void prepare(MimeMessage mimeMessage) throws Exception;
 

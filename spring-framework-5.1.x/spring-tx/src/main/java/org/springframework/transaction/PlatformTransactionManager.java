@@ -28,7 +28,7 @@ import org.springframework.lang.Nullable;
  * {@link org.springframework.transaction.support.AbstractPlatformTransactionManager}
  * class, which pre-implements the defined propagation behavior and takes care
  * of transaction synchronization handling. Subclasses have to implement
- * template methods for specific states of the underlying transaction,
+ * prototype methods for specific states of the underlying transaction,
  * for example: begin, suspend, resume, commit.
  *
  * <p>The default implementations of this strategy interface are

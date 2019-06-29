@@ -392,7 +392,7 @@ public class SingleConnectionFactory implements ConnectionFactory, QueueConnecti
 	}
 
 	/**
-	 * Create a JMS Connection via this template's ConnectionFactory.
+	 * Create a JMS Connection via this prototype's ConnectionFactory.
 	 * @return the new JMS Connection
 	 * @throws javax.jms.JMSException if thrown by JMS API methods
 	 */

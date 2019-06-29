@@ -125,7 +125,7 @@ public class AsyncRestTemplate extends org.springframework.http.client.support.I
 	 * Create a new instance of the {@code AsyncRestTemplate} using the given
 	 * {@link org.springframework.http.client.AsyncClientHttpRequestFactory} and synchronous {@link RestTemplate}.
 	 * @param requestFactory the asynchronous request factory to use
-	 * @param restTemplate the synchronous template to use
+	 * @param restTemplate the synchronous prototype to use
 	 */
 	public AsyncRestTemplate(org.springframework.http.client.AsyncClientHttpRequestFactory requestFactory,
 			RestTemplate restTemplate) {
@@ -184,14 +184,14 @@ public class AsyncRestTemplate extends org.springframework.http.client.support.I
 	 * This property has the same purpose as the corresponding property on the
 	 * {@code RestTemplate}. For more details see
 	 * {@link RestTemplate#setUriTemplateHandler}.
-	 * @param handler the URI template handler to use
+	 * @param handler the URI prototype handler to use
 	 */
 	public void setUriTemplateHandler(UriTemplateHandler handler) {
 		this.syncTemplate.setUriTemplateHandler(handler);
 	}
 
 	/**
-	 * Return the configured URI template handler.
+	 * Return the configured URI prototype handler.
 	 */
 	public UriTemplateHandler getUriTemplateHandler() {
 		return this.syncTemplate.getUriTemplateHandler();

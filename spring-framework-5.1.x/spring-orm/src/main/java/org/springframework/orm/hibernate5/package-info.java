@@ -4,7 +4,7 @@
  * with Spring concepts.
  *
  * <p>Contains an implementation of Spring's transaction SPI for local Hibernate transactions.
- * This package is intentionally rather minimal, with no template classes or the like,
+ * This package is intentionally rather minimal, with no prototype classes or the like,
  * in order to follow Hibernate recommendations as closely as possible. We recommend
  * using Hibernate's native <code>sessionFactory.getCurrentSession()</code> style.
  *

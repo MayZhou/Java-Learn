@@ -33,7 +33,7 @@ import org.springframework.util.ObjectUtils;
  * methods defined in the {@link org.springframework.context.MessageSource}.
  *
  * <p>{@link AbstractMessageSource} derives from this class, providing concrete
- * {@code getMessage} implementations that delegate to a central template
+ * {@code getMessage} implementations that delegate to a central prototype
  * method for message code resolution.
  *
  * @author Juergen Hoeller

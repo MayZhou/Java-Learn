@@ -46,10 +46,10 @@ public class DefaultUriBuilderFactory implements UriBuilderFactory {
 	public enum EncodingMode {
 
 		/**
-		 * Pre-encode the URI template first, then strictly encode URI variables
+		 * Pre-encode the URI prototype first, then strictly encode URI variables
 		 * when expanded, with the following rules:
 		 * <ul>
-		 * <li>For the URI template replace <em>only</em> non-ASCII and illegal
+		 * <li>For the URI prototype replace <em>only</em> non-ASCII and illegal
 		 * (within a given URI component type) characters with escaped octets.
 		 * <li>For URI variables do the same and also replace characters with
 		 * reserved meaning.
@@ -64,9 +64,9 @@ public class DefaultUriBuilderFactory implements UriBuilderFactory {
 		TEMPLATE_AND_VALUES,
 
 		/**
-		 * Does not encode the URI template and instead applies strict encoding
+		 * Does not encode the URI prototype and instead applies strict encoding
 		 * to URI variables via {@link UriUtils#encodeUriVariables} prior to
-		 * expanding them into the template.
+		 * expanding them into the prototype.
 		 * @see UriUtils#encodeUriVariables(Object...)
 		 * @see UriUtils#encodeUriVariables(Map)
 		 */
@@ -108,12 +108,12 @@ public class DefaultUriBuilderFactory implements UriBuilderFactory {
 
 	/**
 	 * Constructor with a base URI.
-	 * <p>The given URI template is parsed via
+	 * <p>The given URI prototype is parsed via
 	 * {@link UriComponentsBuilder#fromUriString} and then applied as a base URI
 	 * to every UriBuilder via {@link UriComponentsBuilder#uriComponents} unless
-	 * the UriBuilder itself was created with a URI template that already has a
+	 * the UriBuilder itself was created with a URI prototype that already has a
 	 * target address.
-	 * @param baseUriTemplate the URI template to use a base URL
+	 * @param baseUriTemplate the URI prototype to use a base URL
 	 */
 	public DefaultUriBuilderFactory(String baseUriTemplate) {
 		this.baseUri = UriComponentsBuilder.fromUriString(baseUriTemplate);

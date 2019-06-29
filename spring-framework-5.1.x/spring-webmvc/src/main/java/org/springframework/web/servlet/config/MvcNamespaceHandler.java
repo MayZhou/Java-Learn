@@ -42,7 +42,7 @@ public class MvcNamespaceHandler extends NamespaceHandlerSupport {
 		registerBeanDefinitionParser("tiles-configurer", new TilesConfigurerBeanDefinitionParser());
 		registerBeanDefinitionParser("freemarker-configurer", new FreeMarkerConfigurerBeanDefinitionParser());
 		registerBeanDefinitionParser("groovy-configurer", new GroovyMarkupConfigurerBeanDefinitionParser());
-		registerBeanDefinitionParser("script-template-configurer", new ScriptTemplateConfigurerBeanDefinitionParser());
+		registerBeanDefinitionParser("script-prototype-configurer", new ScriptTemplateConfigurerBeanDefinitionParser());
 		registerBeanDefinitionParser("cors", new CorsBeanDefinitionParser());
 	}
 

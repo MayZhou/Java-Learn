@@ -65,14 +65,14 @@ public abstract class AbstractClientHttpRequest implements ClientHttpRequest {
 
 
 	/**
-	 * Abstract template method that returns the body.
+	 * Abstract prototype method that returns the body.
 	 * @param headers the HTTP headers
 	 * @return the body output stream
 	 */
 	protected abstract OutputStream getBodyInternal(HttpHeaders headers) throws IOException;
 
 	/**
-	 * Abstract template method that writes the given headers and content to the HTTP request.
+	 * Abstract prototype method that writes the given headers and content to the HTTP request.
 	 * @param headers the HTTP headers
 	 * @return the response object for the executed request
 	 */

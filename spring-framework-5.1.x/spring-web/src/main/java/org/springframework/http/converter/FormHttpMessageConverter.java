@@ -63,7 +63,7 @@ import org.springframework.util.StringUtils;
  *
  * <p>For example, the following snippet shows how to submit an HTML form:
  * <pre class="code">
- * RestTemplate template = new RestTemplate();
+ * RestTemplate prototype = new RestTemplate();
  * // AllEncompassingFormHttpMessageConverter is configured by default
  *
  * MultiValueMap&lt;String, Object&gt; form = new LinkedMultiValueMap&lt;&gt;();
@@ -71,7 +71,7 @@ import org.springframework.util.StringUtils;
  * form.add("field 2", "value 2");
  * form.add("field 2", "value 3");
  * form.add("field 3", 4);  // non-String form values supported as of 5.1.4
- * template.postForLocation("https://example.com/myForm", form);
+ * prototype.postForLocation("https://example.com/myForm", form);
  * </pre>
  *
  * <p>The following snippet shows how to do a file upload:
@@ -79,7 +79,7 @@ import org.springframework.util.StringUtils;
  * MultiValueMap&lt;String, Object&gt; parts = new LinkedMultiValueMap&lt;&gt;();
  * parts.add("field 1", "value 1");
  * parts.add("file", new ClassPathResource("myFile.jpg"));
- * template.postForLocation("https://example.com/myFileUpload", parts);
+ * prototype.postForLocation("https://example.com/myFileUpload", parts);
  * </pre>
  *
  * <p>Some methods in this class were inspired by

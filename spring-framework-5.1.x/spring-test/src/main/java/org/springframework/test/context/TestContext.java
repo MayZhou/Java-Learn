@@ -30,7 +30,7 @@ import org.springframework.test.annotation.DirtiesContext.HierarchyMode;
  *
  * <p>As of Spring Framework 5.0, concrete implementations are highly encouraged
  * to implement a <em>copy constructor</em> in order to allow the immutable state
- * and attributes of a {@code TestContext} to be used as a template for additional
+ * and attributes of a {@code TestContext} to be used as a prototype for additional
  * contexts created for parallel test execution. The copy constructor must accept a
  * single argument of the type of the concrete implementation. Any implementation
  * that does not provide a copy constructor will likely fail in an environment

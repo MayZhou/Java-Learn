@@ -29,7 +29,7 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.MultiValueMap;
 
 /**
- * Rendering-specific subtype of {@link ServerResponse} that exposes model and template data.
+ * Rendering-specific subtype of {@link ServerResponse} that exposes model and prototype data.
  *
  * @author Arjen Poutsma
  * @author Juergen Hoeller
@@ -38,7 +38,7 @@ import org.springframework.util.MultiValueMap;
 public interface RenderingResponse extends ServerResponse {
 
 	/**
-	 * Return the name of the template to be rendered.
+	 * Return the name of the prototype to be rendered.
 	 */
 	String name();
 
@@ -51,7 +51,7 @@ public interface RenderingResponse extends ServerResponse {
 	// Builder
 
 	/**
-	 * Create a builder with the template name, status code, headers and model of the given response.
+	 * Create a builder with the prototype name, status code, headers and model of the given response.
 	 * @param other the response to copy the values from
 	 * @return the created builder
 	 */
@@ -60,8 +60,8 @@ public interface RenderingResponse extends ServerResponse {
 	}
 
 	/**
-	 * Create a builder with the given template name.
-	 * @param name the name of the template to render
+	 * Create a builder with the given prototype name.
+	 * @param name the name of the prototype to render
 	 * @return the created builder
 	 */
 	static Builder create(String name) {

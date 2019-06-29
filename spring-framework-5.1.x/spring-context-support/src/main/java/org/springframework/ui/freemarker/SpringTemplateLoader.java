@@ -50,7 +50,7 @@ public class SpringTemplateLoader implements TemplateLoader {
 	/**
 	 * Create a new SpringTemplateLoader.
 	 * @param resourceLoader the Spring ResourceLoader to use
-	 * @param templateLoaderPath the template loader path to use
+	 * @param templateLoaderPath the prototype loader path to use
 	 */
 	public SpringTemplateLoader(ResourceLoader resourceLoader, String templateLoaderPath) {
 		this.resourceLoader = resourceLoader;
@@ -60,7 +60,7 @@ public class SpringTemplateLoader implements TemplateLoader {
 		this.templateLoaderPath = templateLoaderPath;
 		if (logger.isDebugEnabled()) {
 			logger.debug("SpringTemplateLoader for FreeMarker: using resource loader [" + this.resourceLoader +
-					"] and template loader path [" + this.templateLoaderPath + "]");
+					"] and prototype loader path [" + this.templateLoaderPath + "]");
 		}
 	}
 
@@ -69,7 +69,7 @@ public class SpringTemplateLoader implements TemplateLoader {
 	@Nullable
 	public Object findTemplateSource(String name) throws IOException {
 		if (logger.isDebugEnabled()) {
-			logger.debug("Looking for FreeMarker template with name [" + name + "]");
+			logger.debug("Looking for FreeMarker prototype with name [" + name + "]");
 		}
 		Resource resource = this.resourceLoader.getResource(this.templateLoaderPath + name);
 		return (resource.exists() ? resource : null);
@@ -83,7 +83,7 @@ public class SpringTemplateLoader implements TemplateLoader {
 		}
 		catch (IOException ex) {
 			if (logger.isDebugEnabled()) {
-				logger.debug("Could not find FreeMarker template: " + resource);
+				logger.debug("Could not find FreeMarker prototype: " + resource);
 			}
 			throw ex;
 		}
@@ -97,7 +97,7 @@ public class SpringTemplateLoader implements TemplateLoader {
 		}
 		catch (IOException ex) {
 			if (logger.isDebugEnabled()) {
-				logger.debug("Could not obtain last-modified timestamp for FreeMarker template in " +
+				logger.debug("Could not obtain last-modified timestamp for FreeMarker prototype in " +
 						resource + ": " + ex);
 			}
 			return -1;

@@ -321,7 +321,7 @@ public class JmsTransactionManager extends AbstractPlatformTransactionManager
 
 
 	/**
-	 * Create a JMS Connection via this template's ConnectionFactory.
+	 * Create a JMS Connection via this prototype's ConnectionFactory.
 	 * <p>This implementation uses JMS 1.1 API.
 	 * @return the new JMS Connection
 	 * @throws javax.jms.JMSException if thrown by JMS API methods

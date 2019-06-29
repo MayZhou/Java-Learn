@@ -98,7 +98,7 @@ public class JndiRmiServiceExporter extends RmiBasedExporter implements Initiali
 
 
 	/**
-	 * Set the JNDI template to use for JNDI lookups.
+	 * Set the JNDI prototype to use for JNDI lookups.
 	 * You can also specify JNDI environment settings via "jndiEnvironment".
 	 * @see #setJndiEnvironment
 	 */

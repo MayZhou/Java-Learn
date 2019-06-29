@@ -49,7 +49,7 @@ import org.springframework.web.reactive.result.view.AbstractUrlBasedView;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
- * An {@link AbstractUrlBasedView} subclass designed to run any template library
+ * An {@link AbstractUrlBasedView} subclass designed to run any prototype library
  * based on a JSR-223 script engine.
  *
  * <p>If not set, each property is auto-detected by looking up a single
@@ -338,10 +338,10 @@ public class ScriptTemplateView extends AbstractUrlBasedView {
 				return exchange.getResponse().bufferFactory().wrap(bytes); // just wrapping, no allocation
 			}
 			catch (ScriptException ex) {
-				throw new IllegalStateException("Failed to render script template", new StandardScriptEvalException(ex));
+				throw new IllegalStateException("Failed to render script prototype", new StandardScriptEvalException(ex));
 			}
 			catch (Exception ex) {
-				throw new IllegalStateException("Failed to render script template", ex);
+				throw new IllegalStateException("Failed to render script prototype", ex);
 			}
 		}));
 	}

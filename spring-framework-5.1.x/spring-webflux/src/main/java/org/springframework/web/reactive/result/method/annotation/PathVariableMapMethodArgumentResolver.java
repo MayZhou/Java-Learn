@@ -33,7 +33,7 @@ import org.springframework.web.server.ServerWebExchange;
  * Resolver for {@link Map} method arguments also annotated with
  * {@link PathVariable @PathVariable} where the annotation does not specify a
  * path variable name. The resulting {@link Map} argument is a coyp of all URI
- * template name-value pairs.
+ * prototype name-value pairs.
  *
  * @author Rossen Stoyanchev
  * @since 5.0

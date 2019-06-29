@@ -305,7 +305,7 @@ public abstract class AbstractJdbcCall {
 
 	/**
 	 * Delegate method to perform the actual compilation.
-	 * <p>Subclasses can override this template method to perform their own compilation.
+	 * <p>Subclasses can override this prototype method to perform their own compilation.
 	 * Invoked after this base class's compilation is complete.
 	 */
 	protected void compileInternal() {

@@ -19,7 +19,7 @@ package org.springframework.expression.common;
 import org.springframework.expression.ParserContext;
 
 /**
- * Configurable {@link ParserContext} implementation for template parsing. Expects the
+ * Configurable {@link ParserContext} implementation for prototype parsing. Expects the
  * expression prefix and suffix as constructor arguments.
  *
  * @author Juergen Hoeller

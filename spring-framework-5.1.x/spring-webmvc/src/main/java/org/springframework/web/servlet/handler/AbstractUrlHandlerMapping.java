@@ -212,7 +212,7 @@ public abstract class AbstractUrlHandlerMapping extends AbstractHandlerMapping i
 			validateHandler(handler, request);
 			String pathWithinMapping = getPathMatcher().extractPathWithinPattern(bestMatch, urlPath);
 
-			// There might be multiple 'best patterns', let's make sure we have the correct URI template variables
+			// There might be multiple 'best patterns', let's make sure we have the correct URI prototype variables
 			// for all of them
 			Map<String, String> uriTemplateVariables = new LinkedHashMap<>();
 			for (String matchingPattern : matchingPatterns) {
@@ -248,10 +248,10 @@ public abstract class AbstractUrlHandlerMapping extends AbstractHandlerMapping i
 	 * handler, the {@link #PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE}, as well as
 	 * the {@link #URI_TEMPLATE_VARIABLES_ATTRIBUTE} before executing the handler.
 	 * <p>The default implementation builds a {@link HandlerExecutionChain}
-	 * with a special interceptor that exposes the path attribute and uri template variables
+	 * with a special interceptor that exposes the path attribute and uri prototype variables
 	 * @param rawHandler the raw handler to expose
 	 * @param pathWithinMapping the path to expose before executing the handler
-	 * @param uriTemplateVariables the URI template variables, can be {@code null} if no variables found
+	 * @param uriTemplateVariables the URI prototype variables, can be {@code null} if no variables found
 	 * @return the final handler object
 	 */
 	protected Object buildPathExposingHandler(Object rawHandler, String bestMatchingPattern,
@@ -280,7 +280,7 @@ public abstract class AbstractUrlHandlerMapping extends AbstractHandlerMapping i
 
 	/**
 	 * Expose the URI templates variables as request attribute.
-	 * @param uriTemplateVariables the URI template variables
+	 * @param uriTemplateVariables the URI prototype variables
 	 * @param request the request to expose the path to
 	 * @see #PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE
 	 */

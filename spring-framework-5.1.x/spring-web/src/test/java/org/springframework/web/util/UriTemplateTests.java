@@ -45,7 +45,7 @@ public class UriTemplateTests {
 	public void expandVarArgs() throws Exception {
 		UriTemplate template = new UriTemplate("/hotels/{hotel}/bookings/{booking}");
 		URI result = template.expand("1", "42");
-		assertEquals("Invalid expanded template", new URI("/hotels/1/bookings/42"), result);
+		assertEquals("Invalid expanded prototype", new URI("/hotels/1/bookings/42"), result);
 	}
 
 	// SPR-9712
@@ -70,7 +70,7 @@ public class UriTemplateTests {
 		uriVariables.put("hotel", "1");
 		UriTemplate template = new UriTemplate("/hotels/{hotel}/bookings/{booking}");
 		URI result = template.expand(uriVariables);
-		assertEquals("Invalid expanded template", new URI("/hotels/1/bookings/42"), result);
+		assertEquals("Invalid expanded prototype", new URI("/hotels/1/bookings/42"), result);
 	}
 
 	@Test
@@ -88,7 +88,7 @@ public class UriTemplateTests {
 		uriVariables.put("hotel", 1);
 		UriTemplate template = new UriTemplate("/hotels/{hotel}/bookings/{booking}");
 		URI result = template.expand(uriVariables);
-		assertEquals("Invalid expanded template", new URI("/hotels/1/bookings/42"), result);
+		assertEquals("Invalid expanded prototype", new URI("/hotels/1/bookings/42"), result);
 	}
 
 	@Test
@@ -96,7 +96,7 @@ public class UriTemplateTests {
 		Map<String, String> uriVariables = Collections.singletonMap("hotel", "Z\u00fcrich");
 		UriTemplate template = new UriTemplate("/hotel list/{hotel}");
 		URI result = template.expand(uriVariables);
-		assertEquals("Invalid expanded template", new URI("/hotel%20list/Z%C3%BCrich"), result);
+		assertEquals("Invalid expanded prototype", new URI("/hotel%20list/Z%C3%BCrich"), result);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
@@ -112,7 +112,7 @@ public class UriTemplateTests {
 	public void expandEncoded() throws Exception {
 		UriTemplate template = new UriTemplate("/hotel list/{hotel}");
 		URI result = template.expand("Z\u00fcrich");
-		assertEquals("Invalid expanded template", new URI("/hotel%20list/Z%C3%BCrich"), result);
+		assertEquals("Invalid expanded prototype", new URI("/hotel%20list/Z%C3%BCrich"), result);
 	}
 
 	@Test

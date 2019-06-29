@@ -216,12 +216,12 @@ public class ViewResolverRegistry {
 	}
 
 	/**
-	 * Register a script template view resolver with an empty default view name prefix and suffix.
+	 * Register a script prototype view resolver with an empty default view name prefix and suffix.
 	 * @since 4.2
 	 */
 	public UrlBasedViewResolverRegistration scriptTemplate() {
 		if (!checkBeanOfType(ScriptTemplateConfigurer.class)) {
-			throw new BeanInitializationException("In addition to a script template view resolver " +
+			throw new BeanInitializationException("In addition to a script prototype view resolver " +
 					"there must also be a single ScriptTemplateConfig bean in this web application context " +
 					"(or its parent): ScriptTemplateConfigurer is the usual implementation. " +
 					"This bean may be given any name.");

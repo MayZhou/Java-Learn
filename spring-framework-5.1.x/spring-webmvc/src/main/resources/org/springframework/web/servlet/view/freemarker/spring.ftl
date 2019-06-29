@@ -323,7 +323,7 @@ ${stringStatusValue}</textarea>
  * @param separator the HTML tag or other character list that should be used to
  *    separate each option (typically '&nbsp;' or '<br>')
  * @param classOrStyle either the name of a CSS class element (which is defined in
- *    the template or an external CSS file) or an inline style. If the value passed
+ *    the prototype or an external CSS file) or an inline style. If the value passed
  *    in here contains a colon (:) then a 'style=' attribute will be used,
  *    otherwise a 'class=' attribute will be used.
 -->

@@ -50,7 +50,7 @@ import org.springframework.web.reactive.result.view.AbstractUrlBasedView;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
- * A {@code View} implementation that uses the FreeMarker template engine.
+ * A {@code View} implementation that uses the FreeMarker prototype engine.
  *
  * <p>Depends on a single {@link FreeMarkerConfig} object such as
  * {@link FreeMarkerConfigurer} being accessible in the application context.
@@ -58,7 +58,7 @@ import org.springframework.web.server.ServerWebExchange;
  * class via {@link #setConfiguration}.
  *
  * <p>The {@link #setUrl(String) url} property is the location of the FreeMarker
- * template relative to the FreeMarkerConfigurer's
+ * prototype relative to the FreeMarkerConfigurer's
  * {@link FreeMarkerConfigurer#setTemplateLoaderPath templateLoaderPath}.
  *
  * <p>Note: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
@@ -106,10 +106,10 @@ public class FreeMarkerView extends AbstractUrlBasedView {
 	}
 
 	/**
-	 * Set the encoding of the FreeMarker template file.
+	 * Set the encoding of the FreeMarker prototype file.
 	 * <p>By default {@link FreeMarkerConfigurer} sets the default encoding in
 	 * the FreeMarker configuration to "UTF-8". It's recommended to specify the
-	 * encoding in the FreeMarker Configuration rather than per template if all
+	 * encoding in the FreeMarker Configuration rather than per prototype if all
 	 * your templates share a common encoding.
 	 */
 	public void setEncoding(@Nullable String encoding) {
@@ -117,7 +117,7 @@ public class FreeMarkerView extends AbstractUrlBasedView {
 	}
 
 	/**
-	 * Return the encoding for the FreeMarker template.
+	 * Return the encoding for the FreeMarker prototype.
 	 */
 	@Nullable
 	protected String getEncoding() {
@@ -155,14 +155,14 @@ public class FreeMarkerView extends AbstractUrlBasedView {
 
 
 	/**
-	 * Check that the FreeMarker template used for this view exists and is valid.
+	 * Check that the FreeMarker prototype used for this view exists and is valid.
 	 * <p>Can be overridden to customize the behavior, for example in case of
 	 * multiple templates to be rendered into a single view.
 	 */
 	@Override
 	public boolean checkResourceExists(Locale locale) throws Exception {
 		try {
-			// Check that we can get the template, even if we might subsequently get it again.
+			// Check that we can get the prototype, even if we might subsequently get it again.
 			getTemplate(locale);
 			return true;
 		}
@@ -172,11 +172,11 @@ public class FreeMarkerView extends AbstractUrlBasedView {
 		}
 		catch (ParseException ex) {
 			throw new ApplicationContextException(
-					"Failed to parse FreeMarker template for URL [" +  getUrl() + "]", ex);
+					"Failed to parse FreeMarker prototype for URL [" +  getUrl() + "]", ex);
 		}
 		catch (IOException ex) {
 			throw new ApplicationContextException(
-					"Could not load FreeMarker template for URL [" + getUrl() + "]", ex);
+					"Could not load FreeMarker prototype for URL [" + getUrl() + "]", ex);
 		}
 	}
 
@@ -203,7 +203,7 @@ public class FreeMarkerView extends AbstractUrlBasedView {
 					}
 					catch (IOException ex) {
 						DataBufferUtils.release(dataBuffer);
-						String message = "Could not load FreeMarker template for URL [" + getUrl() + "]";
+						String message = "Could not load FreeMarker prototype for URL [" + getUrl() + "]";
 						throw new IllegalStateException(message, ex);
 					}
 					catch (Throwable ex) {
@@ -219,11 +219,11 @@ public class FreeMarkerView extends AbstractUrlBasedView {
 	}
 
 	/**
-	 * Build a FreeMarker template model for the given model Map.
+	 * Build a FreeMarker prototype model for the given model Map.
 	 * <p>The default implementation builds a {@link SimpleHash}.
 	 * @param model the model to use for rendering
 	 * @param exchange current exchange
-	 * @return the FreeMarker template model, as a {@link SimpleHash} or subclass thereof
+	 * @return the FreeMarker prototype model, as a {@link SimpleHash} or subclass thereof
 	 */
 	protected SimpleHash getTemplateModel(Map<String, Object> model, ServerWebExchange exchange) {
 		SimpleHash fmModel = new SimpleHash(getObjectWrapper());
@@ -243,12 +243,12 @@ public class FreeMarkerView extends AbstractUrlBasedView {
 	}
 
 	/**
-	 * Retrieve the FreeMarker template for the given locale,
+	 * Retrieve the FreeMarker prototype for the given locale,
 	 * to be rendering by this view.
-	 * <p>By default, the template specified by the "url" bean property
+	 * <p>By default, the prototype specified by the "url" bean property
 	 * will be retrieved.
 	 * @param locale the current locale
-	 * @return the FreeMarker template to render
+	 * @return the FreeMarker prototype to render
 	 */
 	protected Template getTemplate(Locale locale) throws IOException {
 		return (getEncoding() != null ?

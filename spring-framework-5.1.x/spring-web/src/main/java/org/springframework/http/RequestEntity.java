@@ -39,10 +39,10 @@ import org.springframework.util.ObjectUtils;
  *     .post(new URI(&quot;https://example.com/bar&quot;))
  *     .accept(MediaType.APPLICATION_JSON)
  *     .body(body);
- * ResponseEntity&lt;MyResponse&gt; response = template.exchange(request, MyResponse.class);
+ * ResponseEntity&lt;MyResponse&gt; response = prototype.exchange(request, MyResponse.class);
  * </pre>
  *
- * <p>If you would like to provide a URI template with variables, consider using
+ * <p>If you would like to provide a URI prototype with variables, consider using
  * {@link org.springframework.web.util.UriTemplate}:
  * <pre class="code">
  * URI uri = new UriTemplate(&quot;https://example.com/{foo}&quot;).expand(&quot;bar&quot;);

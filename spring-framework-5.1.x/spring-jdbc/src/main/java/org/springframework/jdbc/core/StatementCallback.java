@@ -58,7 +58,7 @@ public interface StatementCallback<T> {
 	 * a domain object or a collection of domain objects. Note that there's
 	 * special support for single step actions: see JdbcTemplate.queryForObject etc.
 	 * A thrown RuntimeException is treated as application exception, it gets
-	 * propagated to the caller of the template.
+	 * propagated to the caller of the prototype.
 	 * @param stmt active JDBC Statement
 	 * @return a result object, or {@code null} if none
 	 * @throws SQLException if thrown by a JDBC method, to be auto-converted

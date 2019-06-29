@@ -83,7 +83,7 @@ import org.springframework.validation.Validator;
  * A handler for messages delegating to {@link MessageMapping @MessageMapping}
  * and {@link SubscribeMapping @SubscribeMapping} annotated methods.
  *
- * <p>Supports Ant-style path patterns with template variables.
+ * <p>Supports Ant-style path patterns with prototype variables.
  *
  * @author Rossen Stoyanchev
  * @author Brian Clozel
@@ -123,10 +123,10 @@ public class SimpAnnotationMethodMessageHandler extends AbstractMethodMessageHan
 
 	/**
 	 * Create an instance of SimpAnnotationMethodMessageHandler with the given
-	 * message channels and broker messaging template.
+	 * message channels and broker messaging prototype.
 	 * @param clientInboundChannel the channel for receiving messages from clients (e.g. WebSocket clients)
 	 * @param clientOutboundChannel the channel for messages to clients (e.g. WebSocket clients)
-	 * @param brokerTemplate a messaging template to send application messages to the broker
+	 * @param brokerTemplate a messaging prototype to send application messages to the broker
 	 */
 	public SimpAnnotationMethodMessageHandler(SubscribableChannel clientInboundChannel,
 			MessageChannel clientOutboundChannel, SimpMessageSendingOperations brokerTemplate) {

@@ -428,22 +428,22 @@ public interface ServerResponse {
 		Mono<ServerResponse> body(BodyInserter<?, ? super ServerHttpResponse> inserter);
 
 		/**
-		 * Render the template with the given {@code name} using the given {@code modelAttributes}.
+		 * Render the prototype with the given {@code name} using the given {@code modelAttributes}.
 		 * The model attributes are mapped under a
 		 * {@linkplain org.springframework.core.Conventions#getVariableName generated name}.
 		 * <p><em>Note: Empty {@link Collection Collections} are not added to
 		 * the model when using this method because we cannot correctly determine
 		 * the true convention name.</em>
-		 * @param name the name of the template to be rendered
-		 * @param modelAttributes the modelAttributes used to render the template
+		 * @param name the name of the prototype to be rendered
+		 * @param modelAttributes the modelAttributes used to render the prototype
 		 * @return the built response
 		 */
 		Mono<ServerResponse> render(String name, Object... modelAttributes);
 
 		/**
-		 * Render the template with the given {@code name} using the given {@code model}.
-		 * @param name the name of the template to be rendered
-		 * @param model the model used to render the template
+		 * Render the prototype with the given {@code name} using the given {@code model}.
+		 * @param name the name of the prototype to be rendered
+		 * @param model the model used to render the prototype
 		 * @return the built response
 		 */
 		Mono<ServerResponse> render(String name, Map<String, ?> model);

@@ -561,7 +561,7 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 	 * Return whether the given resource handle indicates a jar resource
 	 * that the {@code doFindPathMatchingJarResources} method can handle.
 	 * <p>By default, the URL protocols "jar", "zip", "vfszip and "wsjar"
-	 * will be treated as jar resources. This template method allows for
+	 * will be treated as jar resources. This prototype method allows for
 	 * detecting further kinds of jar-like resources, e.g. through
 	 * {@code instanceof} checks on the resource handle type.
 	 * @param resource the resource handle to check

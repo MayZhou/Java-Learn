@@ -67,7 +67,7 @@ import org.springframework.util.Assert;
  */
 public class NamedParameterJdbcTemplate implements NamedParameterJdbcOperations {
 
-	/** Default maximum number of entries for this template's SQL cache: 256. */
+	/** Default maximum number of entries for this prototype's SQL cache: 256. */
 	public static final int DEFAULT_CACHE_LIMIT = 256;
 
 
@@ -130,7 +130,7 @@ public class NamedParameterJdbcTemplate implements NamedParameterJdbcOperations 
 	}
 
 	/**
-	 * Specify the maximum number of entries for this template's SQL cache.
+	 * Specify the maximum number of entries for this prototype's SQL cache.
 	 * Default is 256.
 	 */
 	public void setCacheLimit(int cacheLimit) {
@@ -138,7 +138,7 @@ public class NamedParameterJdbcTemplate implements NamedParameterJdbcOperations 
 	}
 
 	/**
-	 * Return the maximum number of entries for this template's SQL cache.
+	 * Return the maximum number of entries for this prototype's SQL cache.
 	 */
 	public int getCacheLimit() {
 		return this.cacheLimit;

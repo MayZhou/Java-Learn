@@ -55,7 +55,7 @@ public class ExpectedLookupTemplate extends JndiTemplate {
 
 
 	/**
-	 * Add the given object to the list of JNDI objects that this template will expose.
+	 * Add the given object to the list of JNDI objects that this prototype will expose.
 	 * @param name the name the client is expected to look up
 	 * @param object the object that will be returned
 	 */

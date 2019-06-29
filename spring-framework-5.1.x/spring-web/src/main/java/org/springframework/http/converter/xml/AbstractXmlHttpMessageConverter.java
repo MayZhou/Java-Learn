@@ -103,7 +103,7 @@ public abstract class AbstractXmlHttpMessageConverter<T> extends AbstractHttpMes
 
 
 	/**
-	 * Abstract template method called from {@link #read(Class, HttpInputMessage)}.
+	 * Abstract prototype method called from {@link #read(Class, HttpInputMessage)}.
 	 * @param clazz the type of object to return
 	 * @param headers the HTTP input headers
 	 * @param source the HTTP input body
@@ -113,7 +113,7 @@ public abstract class AbstractXmlHttpMessageConverter<T> extends AbstractHttpMes
 	protected abstract T readFromSource(Class<? extends T> clazz, HttpHeaders headers, Source source) throws Exception;
 
 	/**
-	 * Abstract template method called from {@link #writeInternal(Object, HttpOutputMessage)}.
+	 * Abstract prototype method called from {@link #writeInternal(Object, HttpOutputMessage)}.
 	 * @param t the object to write to the output message
 	 * @param headers the HTTP output headers
 	 * @param result the HTTP output body

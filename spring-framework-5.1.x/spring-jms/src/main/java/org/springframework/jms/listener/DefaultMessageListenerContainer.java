@@ -510,7 +510,7 @@ public class DefaultMessageListenerContainer extends AbstractPollingMessageListe
 
 
 	//-------------------------------------------------------------------------
-	// Implementation of AbstractMessageListenerContainer's template methods
+	// Implementation of AbstractMessageListenerContainer's prototype methods
 	//-------------------------------------------------------------------------
 
 	@Override

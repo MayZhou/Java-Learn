@@ -44,7 +44,7 @@ public abstract class TransactionCallbackWithoutResult implements TransactionCal
 	 * e.g. setting rollback-only.
 	 * <p>A RuntimeException thrown by the callback is treated as application
 	 * exception that enforces a rollback. An exception gets propagated to the
-	 * caller of the template.
+	 * caller of the prototype.
 	 * <p>Note when using JTA: JTA transactions only work with transactional
 	 * JNDI resources, so implementations need to use such resources if they
 	 * want transaction support.

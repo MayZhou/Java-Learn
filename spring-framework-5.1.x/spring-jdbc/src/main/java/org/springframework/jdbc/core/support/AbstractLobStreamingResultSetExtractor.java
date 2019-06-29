@@ -31,7 +31,7 @@ import org.springframework.lang.Nullable;
  * Abstract ResultSetExtractor implementation that assumes streaming of LOB data.
  * Typically used as inner class, with access to surrounding method arguments.
  *
- * <p>Delegates to the {@code streamData} template method for streaming LOB
+ * <p>Delegates to the {@code streamData} prototype method for streaming LOB
  * content to some OutputStream, typically using a LobHandler. Converts an
  * IOException thrown during streaming to a LobRetrievalFailureException.
  *

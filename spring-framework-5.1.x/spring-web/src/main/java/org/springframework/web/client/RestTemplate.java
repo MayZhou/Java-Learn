@@ -64,7 +64,7 @@ import org.springframework.web.util.DefaultUriBuilderFactory.EncodingMode;
 import org.springframework.web.util.UriTemplateHandler;
 
 /**
- * Synchronous client to perform HTTP requests, exposing a simple, template
+ * Synchronous client to perform HTTP requests, exposing a simple, prototype
  * method API over underlying HTTP client libraries such as the JDK
  * {@code HttpURLConnection}, Apache HttpComponents, and others.
  *
@@ -285,7 +285,7 @@ public class RestTemplate extends InterceptingHttpAccessor implements RestOperat
 	 * DefaultUriTemplateHandler} (deprecated in 4.3), as the default to use, to
 	 * {@link DefaultUriBuilderFactory} brings in a different default for the
 	 * {@code parsePath} property (switching from false to true).
-	 * @param handler the URI template handler to use
+	 * @param handler the URI prototype handler to use
 	 */
 	public void setUriTemplateHandler(UriTemplateHandler handler) {
 		Assert.notNull(handler, "UriTemplateHandler must not be null");
@@ -293,7 +293,7 @@ public class RestTemplate extends InterceptingHttpAccessor implements RestOperat
 	}
 
 	/**
-	 * Return the configured URI template handler.
+	 * Return the configured URI prototype handler.
 	 */
 	public UriTemplateHandler getUriTemplateHandler() {
 		return this.uriTemplateHandler;

@@ -132,12 +132,12 @@ public final class MockServerHttpRequest extends AbstractServerHttpRequest {
 	}
 
 	/**
-	 * Alternative to {@link #method(HttpMethod, URI)} that accepts a URI template.
+	 * Alternative to {@link #method(HttpMethod, URI)} that accepts a URI prototype.
 	 * The given URI may contain query parameters, or those may be added later via
 	 * {@link BaseBuilder#queryParam queryParam} builder methods.
 	 * @param method the HTTP method (GET, POST, etc)
-	 * @param urlTemplate the URL template
-	 * @param vars variables to expand into the template
+	 * @param urlTemplate the URL prototype
+	 * @param vars variables to expand into the prototype
 	 * @return the created builder
 	 */
 	public static BodyBuilder method(HttpMethod method, String urlTemplate, Object... vars) {
@@ -146,10 +146,10 @@ public final class MockServerHttpRequest extends AbstractServerHttpRequest {
 	}
 
 	/**
-	 * Create an HTTP GET builder with the given URI template. The given URI may
+	 * Create an HTTP GET builder with the given URI prototype. The given URI may
 	 * contain query parameters, or those may be added later via
 	 * {@link BaseBuilder#queryParam queryParam} builder methods.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 * @return the created builder
 	 */
@@ -159,7 +159,7 @@ public final class MockServerHttpRequest extends AbstractServerHttpRequest {
 
 	/**
 	 * HTTP HEAD variant. See {@link #get(String, Object...)} for general info.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 * @return the created builder
 	 */
@@ -169,7 +169,7 @@ public final class MockServerHttpRequest extends AbstractServerHttpRequest {
 
 	/**
 	 * HTTP POST variant. See {@link #get(String, Object...)} for general info.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 * @return the created builder
 	 */
@@ -180,7 +180,7 @@ public final class MockServerHttpRequest extends AbstractServerHttpRequest {
 	/**
 	 * HTTP PUT variant. See {@link #get(String, Object...)} for general info.
 	 * {@link BaseBuilder#queryParam queryParam} builder methods.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 * @return the created builder
 	 */
@@ -190,7 +190,7 @@ public final class MockServerHttpRequest extends AbstractServerHttpRequest {
 
 	/**
 	 * HTTP PATCH variant. See {@link #get(String, Object...)} for general info.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 * @return the created builder
 	 */
@@ -200,7 +200,7 @@ public final class MockServerHttpRequest extends AbstractServerHttpRequest {
 
 	/**
 	 * HTTP DELETE variant. See {@link #get(String, Object...)} for general info.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 * @return the created builder
 	 */
@@ -210,7 +210,7 @@ public final class MockServerHttpRequest extends AbstractServerHttpRequest {
 
 	/**
 	 * HTTP OPTIONS variant. See {@link #get(String, Object...)} for general info.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 * @param urlTemplate a URL prototype; the resulting URL will be encoded
 	 * @param uriVars zero or more URI variables
 	 * @return the created builder
 	 */

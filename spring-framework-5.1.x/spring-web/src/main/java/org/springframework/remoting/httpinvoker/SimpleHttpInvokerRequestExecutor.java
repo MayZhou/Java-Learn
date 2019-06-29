@@ -34,7 +34,7 @@ import org.springframework.remoting.support.RemoteInvocationResult;
  * that uses standard Java facilities to execute POST requests, without support for HTTP
  * authentication or advanced configuration options.
  *
- * <p>Designed for easy subclassing, customizing specific template methods. However,
+ * <p>Designed for easy subclassing, customizing specific prototype methods. However,
  * consider {@code HttpComponentsHttpInvokerRequestExecutor} for more sophisticated needs:
  * The standard {@link HttpURLConnection} class is rather limited in its capabilities.
  *
@@ -73,7 +73,7 @@ public class SimpleHttpInvokerRequestExecutor extends AbstractHttpInvokerRequest
 	/**
 	 * Execute the given request through a standard {@link HttpURLConnection}.
 	 * <p>This method implements the basic processing workflow:
-	 * The actual work happens in this class's template methods.
+	 * The actual work happens in this class's prototype methods.
 	 * @see #openConnection
 	 * @see #prepareConnection
 	 * @see #writeRequestBody

@@ -52,7 +52,7 @@ import org.springframework.util.Assert;
  *
  * <p>Allows to use a pre-configured {@link org.apache.http.client.HttpClient}
  * instance, potentially with authentication, HTTP connection pooling, etc.
- * Also designed for easy subclassing, providing specific template methods.
+ * Also designed for easy subclassing, providing specific prototype methods.
  *
  * <p>As of Spring 4.1, this request executor requires Apache HttpComponents 4.3 or higher.
  *
@@ -176,7 +176,7 @@ public class HttpComponentsHttpInvokerRequestExecutor extends AbstractHttpInvoke
 	/**
 	 * Execute the given request through the HttpClient.
 	 * <p>This method implements the basic processing workflow:
-	 * The actual work happens in this class's template methods.
+	 * The actual work happens in this class's prototype methods.
 	 * @see #createHttpPost
 	 * @see #setRequestBody
 	 * @see #executeHttpPost

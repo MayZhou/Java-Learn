@@ -52,7 +52,7 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 import org.springframework.web.servlet.view.AbstractUrlBasedView;
 
 /**
- * An {@link AbstractUrlBasedView} subclass designed to run any template library
+ * An {@link AbstractUrlBasedView} subclass designed to run any prototype library
  * based on a JSR-223 script engine.
  *
  * <p>If not set, each property is auto-detected by looking up a single
@@ -390,7 +390,7 @@ public class ScriptTemplateView extends AbstractUrlBasedView {
 			response.getWriter().write(String.valueOf(html));
 		}
 		catch (ScriptException ex) {
-			throw new ServletException("Failed to render script template", new StandardScriptEvalException(ex));
+			throw new ServletException("Failed to render script prototype", new StandardScriptEvalException(ex));
 		}
 	}
 

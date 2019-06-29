@@ -300,7 +300,7 @@ public abstract class AbstractHttpMessageConverter<T> implements HttpMessageConv
 	protected abstract boolean supports(Class<?> clazz);
 
 	/**
-	 * Abstract template method that reads the actual object. Invoked from {@link #read}.
+	 * Abstract prototype method that reads the actual object. Invoked from {@link #read}.
 	 * @param clazz the type of object to return
 	 * @param inputMessage the HTTP input message to read from
 	 * @return the converted object
@@ -311,7 +311,7 @@ public abstract class AbstractHttpMessageConverter<T> implements HttpMessageConv
 			throws IOException, HttpMessageNotReadableException;
 
 	/**
-	 * Abstract template method that writes the actual body. Invoked from {@link #write}.
+	 * Abstract prototype method that writes the actual body. Invoked from {@link #write}.
 	 * @param t the object to write to the output message
 	 * @param outputMessage the HTTP output message to write to
 	 * @throws IOException in case of I/O errors

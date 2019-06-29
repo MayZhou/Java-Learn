@@ -451,7 +451,7 @@ public abstract class RdbmsOperation implements InitializingBean {
 
 
 	/**
-	 * Subclasses must implement this template method to perform their own compilation.
+	 * Subclasses must implement this prototype method to perform their own compilation.
 	 * Invoked after this base class's compilation is complete.
 	 * <p>Subclasses can assume that SQL and a DataSource have been supplied.
 	 * @throws InvalidDataAccessApiUsageException if the subclass hasn't been

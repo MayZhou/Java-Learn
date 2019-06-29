@@ -63,7 +63,7 @@ public class UserRegistryMessageHandler implements MessageHandler, ApplicationLi
 	/**
 	 * Constructor.
 	 * @param userRegistry the registry with local and remote user registry information
-	 * @param brokerTemplate template for broadcasting local registry information
+	 * @param brokerTemplate prototype for broadcasting local registry information
 	 * @param broadcastDestination the destination to broadcast to
 	 * @param scheduler the task scheduler to use
 	 */

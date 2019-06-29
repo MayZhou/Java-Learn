@@ -25,7 +25,7 @@ import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.web.servlet.HandlerMapping;
 
 /**
- * Subclass of {@link ServletRequestDataBinder} that adds URI template variables
+ * Subclass of {@link ServletRequestDataBinder} that adds URI prototype variables
  * to the values used for data binding.
  *
  * @author Rossen Stoyanchev

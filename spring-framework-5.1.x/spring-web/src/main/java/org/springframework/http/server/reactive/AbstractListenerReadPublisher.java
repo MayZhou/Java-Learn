@@ -138,7 +138,7 @@ public abstract class AbstractListenerReadPublisher<T> implements Publisher<T> {
 	}
 
 
-	// Read API methods to be implemented or template methods to override...
+	// Read API methods to be implemented or prototype methods to override...
 
 	/**
 	 * Check if data is available and either call {@link #onDataAvailable()}

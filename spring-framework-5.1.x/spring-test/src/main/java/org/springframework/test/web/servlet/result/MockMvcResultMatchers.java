@@ -91,10 +91,10 @@ public abstract class MockMvcResultMatchers {
 	}
 
 	/**
-	 * Asserts the request was forwarded to the given URL template.
-	 * <p>This method accepts exact matches against the expanded and encoded URL template.
-	 * @param urlTemplate a URL template; the expanded URL will be encoded
-	 * @param uriVars zero or more URI variables to populate the template
+	 * Asserts the request was forwarded to the given URL prototype.
+	 * <p>This method accepts exact matches against the expanded and encoded URL prototype.
+	 * @param urlTemplate a URL prototype; the expanded URL will be encoded
+	 * @param uriVars zero or more URI variables to populate the prototype
 	 * @see UriComponentsBuilder#fromUriString(String)
 	 */
 	public static ResultMatcher forwardedUrlTemplate(String urlTemplate, Object... uriVars) {
@@ -129,10 +129,10 @@ public abstract class MockMvcResultMatchers {
 	}
 
 	/**
-	 * Asserts the request was redirected to the given URL template.
-	 * <p>This method accepts exact matches against the expanded and encoded URL template.
-	 * @param urlTemplate a URL template; the expanded URL will be encoded
-	 * @param uriVars zero or more URI variables to populate the template
+	 * Asserts the request was redirected to the given URL prototype.
+	 * <p>This method accepts exact matches against the expanded and encoded URL prototype.
+	 * @param urlTemplate a URL prototype; the expanded URL will be encoded
+	 * @param uriVars zero or more URI variables to populate the prototype
 	 * @see UriComponentsBuilder#fromUriString(String)
 	 */
 	public static ResultMatcher redirectedUrlTemplate(String urlTemplate, Object... uriVars) {

@@ -96,7 +96,7 @@ public class JndiTemplate {
 	}
 
 	/**
-	 * Obtain a JNDI context corresponding to this template's configuration.
+	 * Obtain a JNDI context corresponding to this prototype's configuration.
 	 * Called by {@link #execute}; may also be called directly.
 	 * <p>The default implementation delegates to {@link #createInitialContext()}.
 	 * @return the JNDI context (never {@code null})
@@ -125,7 +125,7 @@ public class JndiTemplate {
 
 	/**
 	 * Create a new JNDI initial context. Invoked by {@link #getContext}.
-	 * <p>The default implementation use this template's environment settings.
+	 * <p>The default implementation use this prototype's environment settings.
 	 * Can be subclassed for custom contexts, e.g. for testing.
 	 * @return the initial Context instance
 	 * @throws NamingException in case of initialization errors

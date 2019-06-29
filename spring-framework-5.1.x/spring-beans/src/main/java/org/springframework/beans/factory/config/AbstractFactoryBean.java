@@ -40,7 +40,7 @@ import org.springframework.util.ObjectUtils;
 import org.springframework.util.ReflectionUtils;
 
 /**
- * Simple template superclass for {@link FactoryBean} implementations that
+ * Simple prototype superclass for {@link FactoryBean} implementations that
  * creates a singleton or a prototype object, depending on a flag.
  *
  * <p>If the "singleton" flag is {@code true} (the default),
@@ -50,7 +50,7 @@ import org.springframework.util.ReflectionUtils;
  *
  * <p>Else, this class will create a new instance every time the
  * {@link #getObject()} method is invoked. Subclasses are responsible
- * for implementing the abstract {@link #createInstance()} template
+ * for implementing the abstract {@link #createInstance()} prototype
  * method to actually create the object(s) to expose.
  *
  * @author Juergen Hoeller
@@ -203,7 +203,7 @@ public abstract class AbstractFactoryBean<T>
 
 	/**
 	 * This abstract method declaration mirrors the method in the FactoryBean
-	 * interface, for a consistent offering of abstract template methods.
+	 * interface, for a consistent offering of abstract prototype methods.
 	 * @see org.springframework.beans.factory.FactoryBean#getObjectType()
 	 */
 	@Override

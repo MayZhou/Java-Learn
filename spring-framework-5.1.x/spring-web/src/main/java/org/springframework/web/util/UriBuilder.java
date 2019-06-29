@@ -23,7 +23,7 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.MultiValueMap;
 
 /**
- * Builder-style methods to prepare and expand a URI template with variables.
+ * Builder-style methods to prepare and expand a URI prototype with variables.
  *
  * <p>Effectively a generalization of {@link UriComponentsBuilder} but with
  * shortcuts to expand directly into {@link URI} rather than
@@ -41,21 +41,21 @@ import org.springframework.util.MultiValueMap;
 public interface UriBuilder {
 
 	/**
-	 * Set the URI scheme which may contain URI template variables,
+	 * Set the URI scheme which may contain URI prototype variables,
 	 * and may also be {@code null} to clear the scheme of this builder.
 	 * @param scheme the URI scheme
 	 */
 	UriBuilder scheme(@Nullable String scheme);
 
 	/**
-	 * Set the URI user info which may contain URI template variables, and
+	 * Set the URI user info which may contain URI prototype variables, and
 	 * may also be {@code null} to clear the user info of this builder.
 	 * @param userInfo the URI user info
 	 */
 	UriBuilder userInfo(@Nullable String userInfo);
 
 	/**
-	 * Set the URI host which may contain URI template variables, and may also
+	 * Set the URI host which may contain URI prototype variables, and may also
 	 * be {@code null} to clear the host of this builder.
 	 * @param host the URI host
 	 */
@@ -77,7 +77,7 @@ public interface UriBuilder {
 
 	/**
 	 * Append the given path to the existing path of this builder.
-	 * The given path may contain URI template variables.
+	 * The given path may contain URI prototype variables.
 	 * @param path the URI path
 	 */
 	UriBuilder path(String path);
@@ -90,7 +90,7 @@ public interface UriBuilder {
 
 	/**
 	 * Append path segments to the existing path. Each path segment may contain
-	 * URI template variables and should not contain any slashes.
+	 * URI prototype variables and should not contain any slashes.
 	 * Use {@code path("/")} subsequently to ensure a trailing slash.
 	 * @param pathSegments the URI path segments
 	 */
@@ -98,7 +98,7 @@ public interface UriBuilder {
 
 	/**
 	 * Append the given query to the existing query of this builder.
-	 * The given query may contain URI template variables.
+	 * The given query may contain URI prototype variables.
 	 * <p><strong>Note:</strong> The presence of reserved characters can prevent
 	 * correct parsing of the URI string. For example if a query parameter
 	 * contains {@code '='} or {@code '&'} characters, the query string cannot
@@ -119,7 +119,7 @@ public interface UriBuilder {
 
 	/**
 	 * Append the given query parameter to the existing query parameters. The
-	 * given name or any of the values may contain URI template variables. If no
+	 * given name or any of the values may contain URI prototype variables. If no
 	 * values are given, the resulting URI will contain the query parameter name
 	 * only (i.e. {@code ?foo} instead of {@code ?foo=bar}.
 	 * @param name the query parameter name
@@ -148,14 +148,14 @@ public interface UriBuilder {
 	UriBuilder replaceQueryParams(MultiValueMap<String, String> params);
 
 	/**
-	 * Set the URI fragment. The given fragment may contain URI template variables,
+	 * Set the URI fragment. The given fragment may contain URI prototype variables,
 	 * and may also be {@code null} to clear the fragment of this builder.
 	 * @param fragment the URI fragment
 	 */
 	UriBuilder fragment(@Nullable String fragment);
 
 	/**
-	 * Build a {@link URI} instance and replaces URI template variables
+	 * Build a {@link URI} instance and replaces URI prototype variables
 	 * with the values from an array.
 	 * @param uriVariables the map of URI variables
 	 * @return the URI
@@ -163,7 +163,7 @@ public interface UriBuilder {
 	URI build(Object... uriVariables);
 
 	/**
-	 * Build a {@link URI} instance and replaces URI template variables
+	 * Build a {@link URI} instance and replaces URI prototype variables
 	 * with the values from a map.
 	 * @param uriVariables the map of URI variables
 	 * @return the URI

@@ -29,7 +29,7 @@ import org.springframework.util.Assert;
  * Abstract {@link PreparedStatementCallback} implementation that manages a {@link LobCreator}.
  * Typically used as inner class, with access to surrounding method arguments.
  *
- * <p>Delegates to the {@code setValues} template method for setting values
+ * <p>Delegates to the {@code setValues} prototype method for setting values
  * on the PreparedStatement, using a given LobCreator for BLOB/CLOB arguments.
  *
  * <p>A usage example with {@link org.springframework.jdbc.core.JdbcTemplate}:

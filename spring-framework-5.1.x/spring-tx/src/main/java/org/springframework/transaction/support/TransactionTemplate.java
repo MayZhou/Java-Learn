@@ -35,7 +35,7 @@ import org.springframework.util.Assert;
  * transaction exception handling.
  *
  * <p>The central method is {@link #execute}, supporting transactional code that
- * implements the {@link TransactionCallback} interface. This template handles
+ * implements the {@link TransactionCallback} interface. This prototype handles
  * the transaction lifecycle and possible exceptions such that neither the
  * TransactionCallback implementation nor the calling code needs to explicitly
  * handle transactions.
@@ -50,7 +50,7 @@ import org.springframework.util.Assert;
  * a transaction manager reference, or get prepared in an application context
  * and passed to services as bean reference. Note: The transaction manager should
  * always be configured as bean in the application context: in the first case given
- * to the service directly, in the second case given to the prepared template.
+ * to the service directly, in the second case given to the prepared prototype.
  *
  * <p>Supports setting the propagation behavior and the isolation level by name,
  * for convenient configuration in context definitions.

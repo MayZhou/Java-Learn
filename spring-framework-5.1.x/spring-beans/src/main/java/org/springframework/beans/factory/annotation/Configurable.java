@@ -41,7 +41,7 @@ import java.lang.annotation.Target;
 public @interface Configurable {
 
 	/**
-	 * The name of the bean definition that serves as the configuration template.
+	 * The name of the bean definition that serves as the configuration prototype.
 	 */
 	String value() default "";
 

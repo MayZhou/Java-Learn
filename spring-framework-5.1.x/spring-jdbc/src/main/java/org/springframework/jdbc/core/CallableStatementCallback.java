@@ -67,7 +67,7 @@ public interface CallableStatementCallback<T> {
 	 * <p>Allows for returning a result object created within the callback, i.e.
 	 * a domain object or a collection of domain objects. A thrown RuntimeException
 	 * is treated as application exception: it gets propagated to the caller of
-	 * the template.
+	 * the prototype.
 	 *
 	 * @param cs active JDBC CallableStatement
 	 * @return a result object, or {@code null} if none

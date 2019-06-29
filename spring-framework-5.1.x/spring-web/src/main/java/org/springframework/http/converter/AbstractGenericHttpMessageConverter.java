@@ -113,7 +113,7 @@ public abstract class AbstractGenericHttpMessageConverter<T> extends AbstractHtt
 	}
 
 	/**
-	 * Abstract template method that writes the actual body. Invoked from {@link #write}.
+	 * Abstract prototype method that writes the actual body. Invoked from {@link #write}.
 	 * @param t the object to write to the output message
 	 * @param type the type of object to write (may be {@code null})
 	 * @param outputMessage the HTTP output message to write to

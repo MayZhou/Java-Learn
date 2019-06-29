@@ -455,7 +455,7 @@ public class XsltView extends AbstractUrlBasedView {
 	}
 
 	/**
-	 * Get the XSLT {@link Source} for the XSLT template under the {@link #setUrl configured URL}.
+	 * Get the XSLT {@link Source} for the XSLT prototype under the {@link #setUrl configured URL}.
 	 * @return the Source object
 	 */
 	protected Source getStylesheetSource() {

@@ -23,7 +23,7 @@ import org.springframework.beans.factory.BeanInitializationException;
 import org.springframework.beans.factory.InitializingBean;
 
 /**
- * Generic base class for DAOs, defining template methods for DAO initialization.
+ * Generic base class for DAOs, defining prototype methods for DAO initialization.
  *
  * <p>Extended by Spring's specific DAO support classes, such as:
  * JdbcDaoSupport, JdoDaoSupport, etc.
@@ -55,7 +55,7 @@ public abstract class DaoSupport implements InitializingBean {
 	/**
 	 * Abstract subclasses must override this to check their configuration.
 	 * <p>Implementors should be marked as {@code final} if concrete subclasses
-	 * are not supposed to override this template method themselves.
+	 * are not supposed to override this prototype method themselves.
 	 * @throws IllegalArgumentException in case of illegal configuration
 	 */
 	protected abstract void checkDaoConfig() throws IllegalArgumentException;

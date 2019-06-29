@@ -226,8 +226,8 @@ public abstract class AbstractView extends WebApplicationObjectSupport implement
 
 	/**
 	 * Specify whether to add path variables to the model or not.
-	 * <p>Path variables are commonly bound to URI template variables through the {@code @PathVariable}
-	 * annotation. They're are effectively URI template variables with type conversion applied to
+	 * <p>Path variables are commonly bound to URI prototype variables through the {@code @PathVariable}
+	 * annotation. They're are effectively URI prototype variables with type conversion applied to
 	 * them to derive typed Object values. Such values are frequently needed in views for
 	 * constructing links to the same and other URLs.
 	 * <p>Path variables added to the model override static attributes (see {@link #setAttributes(Properties)})

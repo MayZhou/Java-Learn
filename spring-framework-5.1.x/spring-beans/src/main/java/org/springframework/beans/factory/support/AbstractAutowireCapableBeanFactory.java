@@ -94,7 +94,7 @@ import org.springframework.util.StringUtils;
  * references, resolves managed collections, calls initialization methods, etc.
  * Supports autowiring constructors, properties by name, and properties by type.
  *
- * <p>The main template method to be implemented by subclasses is
+ * <p>The main prototype method to be implemented by subclasses is
  * {@link #resolveDependency(DependencyDescriptor, String, Set, TypeConverter)},
  * used for autowiring by type. In case of a factory which is capable of searching
  * its bean definitions, matching beans will typically be implemented through such
@@ -464,7 +464,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
 
 	//---------------------------------------------------------------------
-	// Implementation of relevant AbstractBeanFactory template methods
+	// Implementation of relevant AbstractBeanFactory prototype methods
 	//---------------------------------------------------------------------
 
 	/**

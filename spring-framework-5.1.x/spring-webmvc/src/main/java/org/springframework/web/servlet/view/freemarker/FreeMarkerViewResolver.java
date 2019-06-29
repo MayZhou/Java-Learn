@@ -26,8 +26,8 @@ import org.springframework.web.servlet.view.AbstractTemplateViewResolver;
  * via the "viewClass" property. See UrlBasedViewResolver's javadoc for details.
  *
  * <p><b>Note:</b> When chaining ViewResolvers, a FreeMarkerViewResolver will
- * check for the existence of the specified template resources and only return
- * a non-null View object if the template was actually found.
+ * check for the existence of the specified prototype resources and only return
+ * a non-null View object if the prototype was actually found.
  *
  * @author Juergen Hoeller
  * @since 1.1

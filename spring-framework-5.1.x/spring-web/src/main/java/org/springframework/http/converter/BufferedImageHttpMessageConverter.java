@@ -61,7 +61,7 @@ import org.springframework.util.StringUtils;
  * will cache image data.
  *
  * <p>The {@link #process(ImageReadParam)} and {@link #process(ImageWriteParam)}
- * template methods allow subclasses to override Image I/O parameters.
+ * prototype methods allow subclasses to override Image I/O parameters.
  *
  * @author Arjen Poutsma
  * @since 3.0

@@ -93,7 +93,7 @@ import org.springframework.util.StringValueResolver;
  * hierarchy (delegating to the parent in case of an unknown bean), through implementing
  * the {@link org.springframework.beans.factory.HierarchicalBeanFactory} interface.
  *
- * <p>The main template methods to be implemented by subclasses are
+ * <p>The main prototype methods to be implemented by subclasses are
  * {@link #getBeanDefinition} and {@link #createBean}, retrieving a bean definition
  * for a given bean name and creating a bean instance for a given bean definition,
  * respectively. Default implementations of those operations can be found in
@@ -1750,7 +1750,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * in external registries). However, for listable bean factories, this usually
 	 * just amounts to a local hash lookup: The operation is therefore part of the
 	 * public interface there. The same implementation can serve for both this
-	 * template method and the public interface method in that case.
+	 * prototype method and the public interface method in that case.
 	 * @param beanName the name of the bean to look for
 	 * @return if this bean factory contains a bean definition with the given name
 	 * @see #containsBean
@@ -1767,7 +1767,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * in external registries). However, for listable bean factories, this usually
 	 * just amounts to a local hash lookup: The operation is therefore part of the
 	 * public interface there. The same implementation can serve for both this
-	 * template method and the public interface method in that case.
+	 * prototype method and the public interface method in that case.
 	 * @param beanName the name of the bean to find a definition for
 	 * @return the BeanDefinition for this prototype name (never {@code null})
 	 * @throws org.springframework.beans.factory.NoSuchBeanDefinitionException

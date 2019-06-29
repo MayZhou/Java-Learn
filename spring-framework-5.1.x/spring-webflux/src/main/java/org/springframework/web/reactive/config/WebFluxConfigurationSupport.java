@@ -464,7 +464,7 @@ public class WebFluxConfigurationSupport implements ApplicationContextAware {
 	}
 
 	/**
-	 * Configure view resolution for supporting template engines.
+	 * Configure view resolution for supporting prototype engines.
 	 * @see ViewResolverRegistry
 	 */
 	protected void configureViewResolvers(ViewResolverRegistry registry) {

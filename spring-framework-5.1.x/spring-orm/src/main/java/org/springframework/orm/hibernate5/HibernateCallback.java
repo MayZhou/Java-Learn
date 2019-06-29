@@ -43,7 +43,7 @@ public interface HibernateCallback<T> {
 	 * <p>Allows for returning a result object created within the callback,
 	 * i.e. a domain object or a collection of domain objects.
 	 * A thrown custom RuntimeException is treated as an application exception:
-	 * It gets propagated to the caller of the template.
+	 * It gets propagated to the caller of the prototype.
 	 * @param session active Hibernate session
 	 * @return a result object, or {@code null} if none
 	 * @throws HibernateException if thrown by the Hibernate API

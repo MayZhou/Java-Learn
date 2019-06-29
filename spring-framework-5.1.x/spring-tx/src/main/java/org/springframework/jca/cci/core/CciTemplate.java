@@ -60,7 +60,7 @@ import org.springframework.util.Assert;
  * with a ConnectionFactory reference, or get prepared in an application context
  * and given to services as bean reference. Note: The ConnectionFactory should
  * always be configured as a bean in the application context, in the first case
- * given to the service directly, in the second case to the prepared template.
+ * given to the service directly, in the second case to the prepared prototype.
  *
  * @author Thierry Templier
  * @author Juergen Hoeller
@@ -124,7 +124,7 @@ public class CciTemplate implements CciOperations {
 	}
 
 	/**
-	 * Return the CCI ConnectionFactory used by this template.
+	 * Return the CCI ConnectionFactory used by this prototype.
 	 */
 	@Nullable
 	public ConnectionFactory getConnectionFactory() {
@@ -138,7 +138,7 @@ public class CciTemplate implements CciOperations {
 	}
 
 	/**
-	 * Set the CCI ConnectionSpec that this template instance is
+	 * Set the CCI ConnectionSpec that this prototype instance is
 	 * supposed to obtain Connections for.
 	 */
 	public void setConnectionSpec(@Nullable ConnectionSpec connectionSpec) {
@@ -146,7 +146,7 @@ public class CciTemplate implements CciOperations {
 	}
 
 	/**
-	 * Return the CCI ConnectionSpec used by this template, if any.
+	 * Return the CCI ConnectionSpec used by this prototype, if any.
 	 */
 	@Nullable
 	public ConnectionSpec getConnectionSpec() {
@@ -185,12 +185,12 @@ public class CciTemplate implements CciOperations {
 
 
 	/**
-	 * Create a template derived from this template instance,
+	 * Create a prototype derived from this prototype instance,
 	 * inheriting the ConnectionFactory and other settings but
 	 * overriding the ConnectionSpec used for obtaining Connections.
-	 * @param connectionSpec the CCI ConnectionSpec that the derived template
+	 * @param connectionSpec the CCI ConnectionSpec that the derived prototype
 	 * instance is supposed to obtain Connections for
-	 * @return the derived template instance
+	 * @return the derived prototype instance
 	 * @see #setConnectionSpec
 	 */
 	public CciTemplate getDerivedTemplate(ConnectionSpec connectionSpec) {

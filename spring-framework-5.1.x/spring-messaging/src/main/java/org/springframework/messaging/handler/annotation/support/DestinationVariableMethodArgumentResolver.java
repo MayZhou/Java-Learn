@@ -37,7 +37,7 @@ import org.springframework.util.Assert;
 public class DestinationVariableMethodArgumentResolver extends AbstractNamedValueMethodArgumentResolver {
 
 	/**
-	 * The name of the header used to for template variables.
+	 * The name of the header used to for prototype variables.
 	 */
 	public static final String DESTINATION_TEMPLATE_VARIABLES_HEADER =
 			DestinationVariableMethodArgumentResolver.class.getSimpleName() + ".templateVariables";
@@ -73,7 +73,7 @@ public class DestinationVariableMethodArgumentResolver extends AbstractNamedValu
 
 	@Override
 	protected void handleMissingValue(String name, MethodParameter parameter, Message<?> message) {
-		throw new MessageHandlingException(message, "Missing path template variable '" + name +
+		throw new MessageHandlingException(message, "Missing path prototype variable '" + name +
 				"' for method parameter type [" + parameter.getParameterType() + "]");
 	}
 

@@ -29,7 +29,7 @@ import org.springframework.util.Assert;
  * Abstract base class for {@link UriTemplateHandler} implementations.
  *
  * <p>Support {@link #setBaseUrl} and {@link #setDefaultUriVariables} properties
- * that should be relevant regardless of the URI template expand and encode
+ * that should be relevant regardless of the URI prototype expand and encode
  * mechanism used in sub-classes.
  *
  * @author Rossen Stoyanchev
@@ -73,7 +73,7 @@ public abstract class AbstractUriTemplateHandler implements UriTemplateHandler {
 
 	/**
 	 * Configure default URI variable values to use with every expanded URI
-	 * template. These default values apply only when expanding with a Map, and
+	 * prototype. These default values apply only when expanding with a Map, and
 	 * not with an array, where the Map supplied to {@link #expand(String, Map)}
 	 * can override the default values.
 	 * @param defaultUriVariables the default URI variable values
@@ -114,12 +114,12 @@ public abstract class AbstractUriTemplateHandler implements UriTemplateHandler {
 
 
 	/**
-	 * Actually expand and encode the URI template.
+	 * Actually expand and encode the URI prototype.
 	 */
 	protected abstract URI expandInternal(String uriTemplate, Map<String, ?> uriVariables);
 
 	/**
-	 * Actually expand and encode the URI template.
+	 * Actually expand and encode the URI prototype.
 	 */
 	protected abstract URI expandInternal(String uriTemplate, Object... uriVariables);
 

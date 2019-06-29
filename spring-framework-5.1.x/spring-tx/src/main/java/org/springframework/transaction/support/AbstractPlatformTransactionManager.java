@@ -53,7 +53,7 @@ import org.springframework.transaction.UnexpectedRollbackException;
  * (if transaction synchronization is active).
  * </ul>
  *
- * <p>Subclasses have to implement specific template methods for specific
+ * <p>Subclasses have to implement specific prototype methods for specific
  * states of a transaction, e.g.: begin, suspend, resume, commit, rollback.
  * The most important of them are abstract and must be provided by a concrete
  * implementation; for the rest, defaults are provided, so overriding is optional.
@@ -559,7 +559,7 @@ public abstract class AbstractPlatformTransactionManager implements PlatformTran
 
 	/**
 	 * Suspend the given transaction. Suspends transaction synchronization first,
-	 * then delegates to the {@code doSuspend} template method.
+	 * then delegates to the {@code doSuspend} prototype method.
 	 * @param transaction the current transaction object
 	 * (or {@code null} to just suspend active synchronizations, if any)
 	 * @return an object that holds suspended resources
@@ -606,7 +606,7 @@ public abstract class AbstractPlatformTransactionManager implements PlatformTran
 
 	/**
 	 * Resume the given transaction. Delegates to the {@code doResume}
-	 * template method first, then resuming transaction synchronization.
+	 * prototype method first, then resuming transaction synchronization.
 	 * @param transaction the current transaction object
 	 * @param resourcesHolder the object that holds suspended resources,
 	 * as returned by {@code suspend} (or {@code null} to just
@@ -1024,7 +1024,7 @@ public abstract class AbstractPlatformTransactionManager implements PlatformTran
 	 * Return a transaction object for the current transaction state.
 	 * <p>The returned object will usually be specific to the concrete transaction
 	 * manager implementation, carrying corresponding transaction state in a
-	 * modifiable fashion. This object will be passed into the other template
+	 * modifiable fashion. This object will be passed into the other prototype
 	 * methods (e.g. doBegin and doCommit), either directly or as part of a
 	 * DefaultTransactionStatus instance.
 	 * <p>The returned object should contain information about any existing

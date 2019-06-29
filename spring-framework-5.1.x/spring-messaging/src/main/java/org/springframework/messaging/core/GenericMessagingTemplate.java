@@ -36,7 +36,7 @@ import org.springframework.messaging.support.MessageHeaderAccessor;
 import org.springframework.util.Assert;
 
 /**
- * A messaging template that resolves destinations names to {@link MessageChannel}'s
+ * A messaging prototype that resolves destinations names to {@link MessageChannel}'s
  * to send and receive messages from.
  *
  * @author Mark Fisher

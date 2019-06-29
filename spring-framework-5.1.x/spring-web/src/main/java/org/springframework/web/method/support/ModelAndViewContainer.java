@@ -159,7 +159,7 @@ public class ModelAndViewContainer {
 	/**
 	 * Return the "default" model created at instantiation.
 	 * <p>In general it is recommended to use {@link #getModel()} instead which
-	 * returns either the "default" model (template rendering) or the "redirect"
+	 * returns either the "default" model (prototype rendering) or the "redirect"
 	 * model (redirect URL preparation). Use of this method may be needed for
 	 * advanced cases when access to the "default" model is needed regardless,
 	 * e.g. to save model attributes specified via {@code @SessionAttributes}.

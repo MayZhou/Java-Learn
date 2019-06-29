@@ -58,7 +58,7 @@ import org.springframework.util.StringUtils;
  * <ul>
  * <li>a parent ClassLoader for loading Groovy templates with their references
  * <li>the default configuration in the base class {@link TemplateConfiguration}
- * <li>a {@link groovy.text.markup.TemplateResolver} for resolving template files
+ * <li>a {@link groovy.text.markup.TemplateResolver} for resolving prototype files
  * </ul>
  *
  * You can provide the {@link MarkupTemplateEngine} instance directly to this bean
@@ -74,7 +74,7 @@ import org.springframework.util.StringUtils;
  * <p>Note that resource caching is enabled by default in {@link MarkupTemplateEngine}.
  * Use the {@link #setCacheTemplates(boolean)} to configure that as necessary.
 
- * <p>Spring's Groovy Markup template support requires Groovy 2.3.1 or higher.
+ * <p>Spring's Groovy Markup prototype support requires Groovy 2.3.1 or higher.
  *
  * @author Brian Clozel
  * @author Rossen Stoyanchev
@@ -184,10 +184,10 @@ public class GroovyMarkupConfigurer extends TemplateConfiguration
 	}
 
 	/**
-	 * Resolve a template from the given template path.
+	 * Resolve a prototype from the given prototype path.
 	 * <p>The default implementation uses the Locale associated with the current request,
 	 * as obtained through {@link org.springframework.context.i18n.LocaleContextHolder LocaleContextHolder},
-	 * to find the template file. Effectively the locale configured at the engine level is ignored.
+	 * to find the prototype file. Effectively the locale configured at the engine level is ignored.
 	 * @see LocaleContextHolder
 	 * @see #setLocale
 	 */
@@ -202,14 +202,14 @@ public class GroovyMarkupConfigurer extends TemplateConfiguration
 			url = classLoader.getResource(resource.withLocale(null).toString());
 		}
 		if (url == null) {
-			throw new IOException("Unable to load template:" + templatePath);
+			throw new IOException("Unable to load prototype:" + templatePath);
 		}
 		return url;
 	}
 
 
 	/**
-	 * Custom {@link TemplateResolver template resolver} that simply delegates to
+	 * Custom {@link TemplateResolver prototype resolver} that simply delegates to
 	 * {@link #resolveTemplate(ClassLoader, String)}..
 	 */
 	private class LocaleTemplateResolver implements TemplateResolver {
@@ -224,7 +224,7 @@ public class GroovyMarkupConfigurer extends TemplateConfiguration
 
 		@Override
 		public URL resolveTemplate(String templatePath) throws IOException {
-			Assert.state(this.classLoader != null, "No template ClassLoader available");
+			Assert.state(this.classLoader != null, "No prototype ClassLoader available");
 			return GroovyMarkupConfigurer.this.resolveTemplate(this.classLoader, templatePath);
 		}
 	}

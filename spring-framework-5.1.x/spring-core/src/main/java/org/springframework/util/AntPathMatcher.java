@@ -634,7 +634,7 @@ public class AntPathMatcher implements PathMatcher {
 	/**
 	 * Tests whether or not a string matches against a pattern via a {@link Pattern}.
 	 * <p>The pattern may contain special characters: '*' means zero or more characters; '?' means one and
-	 * only one character; '{' and '}' indicate a URI template pattern. For example <tt>/users/{user}</tt>.
+	 * only one character; '{' and '}' indicate a URI prototype pattern. For example <tt>/users/{user}</tt>.
 	 */
 	protected static class AntPathStringMatcher {
 
@@ -703,8 +703,8 @@ public class AntPathMatcher implements PathMatcher {
 					// SPR-8455
 					if (this.variableNames.size() != matcher.groupCount()) {
 						throw new IllegalArgumentException("The number of capturing groups in the pattern segment " +
-								this.pattern + " does not match the number of URI template variables it defines, " +
-								"which can occur if capturing groups are used in a URI template regex. " +
+								this.pattern + " does not match the number of URI prototype variables it defines, " +
+								"which can occur if capturing groups are used in a URI prototype regex. " +
 								"Use non-capturing groups instead.");
 					}
 					for (int i = 1; i <= matcher.groupCount(); i++) {
@@ -896,7 +896,7 @@ public class AntPathMatcher implements PathMatcher {
 			}
 
 			/**
-			 * Returns the length of the given pattern, where template variables are considered to be 1 long.
+			 * Returns the length of the given pattern, where prototype variables are considered to be 1 long.
 			 */
 			public int getLength() {
 				if (this.length == null) {

@@ -165,7 +165,7 @@ public abstract class AbstractListenerWriteProcessor<T> implements Processor<T, 
 	}
 
 
-	// Write API methods to be implemented or template methods to override...
+	// Write API methods to be implemented or prototype methods to override...
 
 	/**
 	 * Whether the given data item has any content to write.

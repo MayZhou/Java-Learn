@@ -34,7 +34,7 @@ import org.springframework.web.servlet.ViewResolver;
  * once resolved: This means that view resolution won't be a performance problem,
  * no matter how costly initial view retrieval is.
  *
- * <p>Subclasses need to implement the {@link #loadView} template method,
+ * <p>Subclasses need to implement the {@link #loadView} prototype method,
  * building the View object for a specific view name and locale.
  *
  * @author Rod Johnson

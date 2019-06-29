@@ -25,7 +25,7 @@ import java.lang.annotation.Target;
 import org.springframework.core.annotation.AliasFor;
 
 /**
- * Annotation which indicates that a method parameter should be bound to a URI template
+ * Annotation which indicates that a method parameter should be bound to a URI prototype
  * variable. Supported for {@link RequestMapping} annotated handler methods.
  *
  * <p>If the method parameter is {@link java.util.Map Map&lt;String, String&gt;}

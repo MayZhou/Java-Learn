@@ -175,7 +175,7 @@ public class SingleConnectionFactory extends DelegatingConnectionFactory impleme
 	}
 
 	/**
-	 * Create a CCI Connection via this template's ConnectionFactory.
+	 * Create a CCI Connection via this prototype's ConnectionFactory.
 	 * @return the new CCI Connection
 	 * @throws javax.resource.ResourceException if thrown by CCI API methods
 	 */

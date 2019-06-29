@@ -54,7 +54,7 @@ public interface View {
 
 	/**
 	 * Name of the {@link HttpServletRequest} attribute that contains a Map with path variables.
-	 * The map consists of String-based URI template variable names as keys and their corresponding
+	 * The map consists of String-based URI prototype variable names as keys and their corresponding
 	 * Object-based values -- extracted from segments of the URL and type converted.
 	 * <p>Note: This attribute is not required to be supported by all View implementations.
 	 * @since 3.1

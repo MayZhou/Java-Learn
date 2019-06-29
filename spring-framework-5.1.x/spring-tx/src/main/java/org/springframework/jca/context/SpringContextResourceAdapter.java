@@ -160,7 +160,7 @@ public class SpringContextResourceAdapter implements ResourceAdapter {
 
 	/**
 	 * This implementation loads a Spring ApplicationContext through the
-	 * {@link #createApplicationContext} template method.
+	 * {@link #createApplicationContext} prototype method.
 	 */
 	@Override
 	public void start(BootstrapContext bootstrapContext) throws ResourceAdapterInternalException {

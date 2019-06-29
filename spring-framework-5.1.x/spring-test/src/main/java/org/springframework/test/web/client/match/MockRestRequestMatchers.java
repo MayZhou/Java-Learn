@@ -89,9 +89,9 @@ public abstract class MockRestRequestMatchers {
 
 	/**
 	 * Variant of {@link #requestTo(URI)} that prepares the URI from a URI
-	 * template plus optional variables via {@link UriComponentsBuilder}
+	 * prototype plus optional variables via {@link UriComponentsBuilder}
 	 * including encoding.
-	 * @param expectedUri the expected URI template
+	 * @param expectedUri the expected URI prototype
 	 * @param uriVars zero or more URI variables to populate the expected URI
 	 * @return the request matcher
 	 */

@@ -173,8 +173,8 @@ public class CustomizableTraceInterceptor extends AbstractTraceInterceptor {
 
 
 	/**
-	 * Set the template used for method entry log messages.
-	 * This template can contain any of the following placeholders:
+	 * Set the prototype used for method entry log messages.
+	 * This prototype can contain any of the following placeholders:
 	 * <ul>
 	 * <li>{@code $[targetClassName]}</li>
 	 * <li>{@code $[targetClassShortName]}</li>
@@ -195,8 +195,8 @@ public class CustomizableTraceInterceptor extends AbstractTraceInterceptor {
 	}
 
 	/**
-	 * Set the template used for method exit log messages.
-	 * This template can contain any of the following placeholders:
+	 * Set the prototype used for method exit log messages.
+	 * This prototype can contain any of the following placeholders:
 	 * <ul>
 	 * <li>{@code $[targetClassName]}</li>
 	 * <li>{@code $[targetClassShortName]}</li>
@@ -215,8 +215,8 @@ public class CustomizableTraceInterceptor extends AbstractTraceInterceptor {
 	}
 
 	/**
-	 * Set the template used for method exception log messages.
-	 * This template can contain any of the following placeholders:
+	 * Set the prototype used for method exception log messages.
+	 * This prototype can contain any of the following placeholders:
 	 * <ul>
 	 * <li>{@code $[targetClassName]}</li>
 	 * <li>{@code $[targetClassShortName]}</li>
@@ -279,7 +279,7 @@ public class CustomizableTraceInterceptor extends AbstractTraceInterceptor {
 	/**
 	 * Replace the placeholders in the given message with the supplied values,
 	 * or values derived from those supplied.
-	 * @param message the message template containing the placeholders to be replaced
+	 * @param message the message prototype containing the placeholders to be replaced
 	 * @param methodInvocation the {@code MethodInvocation} being logged.
 	 * Used to derive values for all placeholders except {@code $[exception]}
 	 * and {@code $[returnValue]}.

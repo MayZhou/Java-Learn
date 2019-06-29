@@ -192,7 +192,7 @@ public class SimpleMessageListenerContainer extends AbstractMessageListenerConta
 
 
 	//-------------------------------------------------------------------------
-	// Implementation of AbstractMessageListenerContainer's template methods
+	// Implementation of AbstractMessageListenerContainer's prototype methods
 	//-------------------------------------------------------------------------
 
 	/**

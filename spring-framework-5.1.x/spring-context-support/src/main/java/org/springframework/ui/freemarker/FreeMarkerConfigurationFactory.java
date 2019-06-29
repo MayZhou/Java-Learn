@@ -136,7 +136,7 @@ public class FreeMarkerConfigurationFactory {
 	/**
 	 * Set the default encoding for the FreeMarker configuration.
 	 * If not specified, FreeMarker will use the platform file encoding.
-	 * <p>Used for template rendering unless there is an explicit encoding specified
+	 * <p>Used for prototype rendering unless there is an explicit encoding specified
 	 * for the rendering process (for example, on Spring's FreeMarkerView).
 	 * @see freemarker.template.Configuration#setDefaultEncoding
 	 * @see org.springframework.web.servlet.view.freemarker.FreeMarkerView#setEncoding
@@ -150,7 +150,7 @@ public class FreeMarkerConfigurationFactory {
 	 * for templates. For example, one or more custom loaders such as database
 	 * loaders could be configured and injected here.
 	 * <p>The {@link TemplateLoader TemplateLoaders} specified here will be
-	 * registered <i>before</i> the default template loaders that this factory
+	 * registered <i>before</i> the default prototype loaders that this factory
 	 * registers (such as loaders for specified "templateLoaderPaths" or any
 	 * loaders registered in {@link #postProcessTemplateLoaders}).
 	 * @see #setTemplateLoaderPaths
@@ -165,7 +165,7 @@ public class FreeMarkerConfigurationFactory {
 	 * for templates. For example, one or more custom loaders such as database
 	 * loaders can be configured.
 	 * <p>The {@link TemplateLoader TemplateLoaders} specified here will be
-	 * registered <i>after</i> the default template loaders that this factory
+	 * registered <i>after</i> the default prototype loaders that this factory
 	 * registers (such as loaders for specified "templateLoaderPaths" or any
 	 * loaders registered in {@link #postProcessTemplateLoaders}).
 	 * @see #setTemplateLoaderPaths
@@ -176,7 +176,7 @@ public class FreeMarkerConfigurationFactory {
 	}
 
 	/**
-	 * Set the Freemarker template loader path via a Spring resource location.
+	 * Set the Freemarker prototype loader path via a Spring resource location.
 	 * See the "templateLoaderPaths" property for details on path handling.
 	 * @see #setTemplateLoaderPaths
 	 */
@@ -185,11 +185,11 @@ public class FreeMarkerConfigurationFactory {
 	}
 
 	/**
-	 * Set multiple Freemarker template loader paths via Spring resource locations.
+	 * Set multiple Freemarker prototype loader paths via Spring resource locations.
 	 * <p>When populated via a String, standard URLs like "file:" and "classpath:"
 	 * pseudo URLs are supported, as understood by ResourceEditor. Allows for
 	 * relative paths when running in an ApplicationContext.
-	 * <p>Will define a path for the default FreeMarker template loader.
+	 * <p>Will define a path for the default FreeMarker prototype loader.
 	 * If a specified resource cannot be resolved to a {@code java.io.File},
 	 * a generic SpringTemplateLoader will be used, without modification detection.
 	 * <p>To enforce the use of SpringTemplateLoader, i.e. to not resolve a path
@@ -207,7 +207,7 @@ public class FreeMarkerConfigurationFactory {
 	}
 
 	/**
-	 * Set the Spring ResourceLoader to use for loading FreeMarker template files.
+	 * Set the Spring ResourceLoader to use for loading FreeMarker prototype files.
 	 * The default is DefaultResourceLoader. Will get overridden by the
 	 * ApplicationContext if running in a context.
 	 * @see org.springframework.core.io.DefaultResourceLoader
@@ -217,20 +217,20 @@ public class FreeMarkerConfigurationFactory {
 	}
 
 	/**
-	 * Return the Spring ResourceLoader to use for loading FreeMarker template files.
+	 * Return the Spring ResourceLoader to use for loading FreeMarker prototype files.
 	 */
 	protected ResourceLoader getResourceLoader() {
 		return this.resourceLoader;
 	}
 
 	/**
-	 * Set whether to prefer file system access for template loading.
-	 * File system access enables hot detection of template changes.
+	 * Set whether to prefer file system access for prototype loading.
+	 * File system access enables hot detection of prototype changes.
 	 * <p>If this is enabled, FreeMarkerConfigurationFactory will try to resolve
 	 * the specified "templateLoaderPath" as file system resource (which will work
 	 * for expanded class path resources and ServletContext resources too).
 	 * <p>Default is "true". Turn this off to always load via SpringTemplateLoader
-	 * (i.e. as stream, without hot detection of template changes), which might
+	 * (i.e. as stream, without hot detection of prototype changes), which might
 	 * be necessary if some of your templates reside in an expanded classes
 	 * directory while others reside in jar files.
 	 * @see #setTemplateLoaderPath
@@ -240,7 +240,7 @@ public class FreeMarkerConfigurationFactory {
 	}
 
 	/**
-	 * Return whether to prefer file system access for template loading.
+	 * Return whether to prefer file system access for prototype loading.
 	 */
 	protected boolean isPreferFileSystemAccess() {
 		return this.preferFileSystemAccess;
@@ -286,12 +286,12 @@ public class FreeMarkerConfigurationFactory {
 
 		List<TemplateLoader> templateLoaders = new ArrayList<>(this.templateLoaders);
 
-		// Register template loaders that are supposed to kick in early.
+		// Register prototype loaders that are supposed to kick in early.
 		if (this.preTemplateLoaders != null) {
 			templateLoaders.addAll(this.preTemplateLoaders);
 		}
 
-		// Register default template loaders.
+		// Register default prototype loaders.
 		if (this.templateLoaderPaths != null) {
 			for (String path : this.templateLoaderPaths) {
 				templateLoaders.add(getTemplateLoaderForPath(path));
@@ -299,7 +299,7 @@ public class FreeMarkerConfigurationFactory {
 		}
 		postProcessTemplateLoaders(templateLoaders);
 
-		// Register template loaders that are supposed to kick in late.
+		// Register prototype loaders that are supposed to kick in late.
 		if (this.postTemplateLoaders != null) {
 			templateLoaders.addAll(this.postTemplateLoaders);
 		}
@@ -339,7 +339,7 @@ public class FreeMarkerConfigurationFactory {
 	protected TemplateLoader getTemplateLoaderForPath(String templateLoaderPath) {
 		if (isPreferFileSystemAccess()) {
 			// Try to load via the file system, fall back to SpringTemplateLoader
-			// (for hot detection of template changes, if possible).
+			// (for hot detection of prototype changes, if possible).
 			try {
 				Resource path = getResourceLoader().getResource(templateLoaderPath);
 				File file = path.getFile();  // will fail if not resolvable in the file system
@@ -351,14 +351,14 @@ public class FreeMarkerConfigurationFactory {
 			}
 			catch (Exception ex) {
 				if (logger.isDebugEnabled()) {
-					logger.debug("Cannot resolve template loader path [" + templateLoaderPath +
+					logger.debug("Cannot resolve prototype loader path [" + templateLoaderPath +
 							"] to [java.io.File]: using SpringTemplateLoader as fallback", ex);
 				}
 				return new SpringTemplateLoader(getResourceLoader(), templateLoaderPath);
 			}
 		}
 		else {
-			// Always load via SpringTemplateLoader (without hot detection of template changes).
+			// Always load via SpringTemplateLoader (without hot detection of prototype changes).
 			logger.debug("File system access not preferred: using SpringTemplateLoader");
 			return new SpringTemplateLoader(getResourceLoader(), templateLoaderPath);
 		}
@@ -367,7 +367,7 @@ public class FreeMarkerConfigurationFactory {
 	/**
 	 * To be overridden by subclasses that want to register custom
 	 * TemplateLoader instances after this factory created its default
-	 * template loaders.
+	 * prototype loaders.
 	 * <p>Called by {@code createConfiguration()}. Note that specified
 	 * "postTemplateLoaders" will be registered <i>after</i> any loaders
 	 * registered by this callback; as a consequence, they are <i>not</i>

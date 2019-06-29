@@ -737,7 +737,7 @@ final class HierarchicalUriComponents extends UriComponents {
 		FULLY_ENCODED,
 
 		/**
-		 * URI template encoded first by quoting illegal characters only, and
+		 * URI prototype encoded first by quoting illegal characters only, and
 		 * then URI vars encoded more strictly when expanded, by quoting both
 		 * illegal chars and chars with reserved meaning.
  		 */

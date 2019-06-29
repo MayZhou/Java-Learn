@@ -71,7 +71,7 @@ public class AsyncHttpAccessor {
 	}
 
 	/**
-	 * Create a new {@link org.springframework.http.client.AsyncClientHttpRequest} via this template's
+	 * Create a new {@link org.springframework.http.client.AsyncClientHttpRequest} via this prototype's
 	 * {@link org.springframework.http.client.AsyncClientHttpRequestFactory}.
 	 * @param url the URL to connect to
 	 * @param method the HTTP method to execute (GET, POST, etc.)

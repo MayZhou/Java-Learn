@@ -162,8 +162,8 @@ class RegexPathElement extends PathElement {
 			// Process captures
 			if (this.variableNames.size() != matcher.groupCount()) { // SPR-8455
 				throw new IllegalArgumentException("The number of capturing groups in the pattern segment "
-						+ this.pattern + " does not match the number of URI template variables it defines, "
-						+ "which can occur if capturing groups are used in a URI template regex. "
+						+ this.pattern + " does not match the number of URI prototype variables it defines, "
+						+ "which can occur if capturing groups are used in a URI prototype regex. "
 						+ "Use non-capturing groups instead.");
 			}
 			for (int i = 1; i <= matcher.groupCount(); i++) {

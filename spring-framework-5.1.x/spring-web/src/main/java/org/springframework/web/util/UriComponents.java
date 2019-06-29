@@ -36,7 +36,7 @@ import org.springframework.util.MultiValueMap;
  * Represents an immutable collection of URI components, mapping component type to
  * String values. Contains convenience getters for all components. Effectively similar
  * to {@link java.net.URI}, but with more powerful encoding options and support for
- * URI template variables.
+ * URI prototype variables.
  *
  * @author Arjen Poutsma
  * @author Juergen Hoeller
@@ -47,7 +47,7 @@ import org.springframework.util.MultiValueMap;
 @SuppressWarnings("serial")
 public abstract class UriComponents implements Serializable {
 
-	/** Captures URI template variable names. */
+	/** Captures URI prototype variable names. */
 	private static final Pattern NAMES_PATTERN = Pattern.compile("\\{([^/]+?)\\}");
 
 
@@ -150,7 +150,7 @@ public abstract class UriComponents implements Serializable {
 	public abstract UriComponents encode(Charset charset);
 
 	/**
-	 * Replace all URI template variables with the values from a given map.
+	 * Replace all URI prototype variables with the values from a given map.
 	 * <p>The given map keys represent variable names; the corresponding values
 	 * represent variable values. The order of variables is not significant.
 	 * @param uriVariables the map of URI variables
@@ -162,7 +162,7 @@ public abstract class UriComponents implements Serializable {
 	}
 
 	/**
-	 * Replace all URI template variables with the values from a given array.
+	 * Replace all URI prototype variables with the values from a given array.
 	 * <p>The given array represents variable values. The order of variables is significant.
 	 * @param uriVariableValues the URI variable values
 	 * @return the expanded URI components
@@ -173,9 +173,9 @@ public abstract class UriComponents implements Serializable {
 	}
 
 	/**
-	 * Replace all URI template variables with the values from the given
+	 * Replace all URI prototype variables with the values from the given
 	 * {@link UriTemplateVariables}.
-	 * @param uriVariables the URI template values
+	 * @param uriVariables the URI prototype values
 	 * @return the expanded URI components
 	 */
 	public final UriComponents expand(UriTemplateVariables uriVariables) {
@@ -184,9 +184,9 @@ public abstract class UriComponents implements Serializable {
 	}
 
 	/**
-	 * Replace all URI template variables with the values from the given {@link
+	 * Replace all URI prototype variables with the values from the given {@link
 	 * UriTemplateVariables}.
-	 * @param uriVariables the URI template values
+	 * @param uriVariables the URI prototype values
 	 * @return the expanded URI components
 	 */
 	abstract UriComponents expandInternal(UriTemplateVariables uriVariables);
@@ -328,7 +328,7 @@ public abstract class UriComponents implements Serializable {
 
 
 	/**
-	 * URI template variables backed by a map.
+	 * URI prototype variables backed by a map.
 	 */
 	private static class MapTemplateVariables implements UriTemplateVariables {
 
@@ -350,7 +350,7 @@ public abstract class UriComponents implements Serializable {
 
 
 	/**
-	 * URI template variables backed by a variable argument array.
+	 * URI prototype variables backed by a variable argument array.
 	 */
 	private static class VarArgsTemplateVariables implements UriTemplateVariables {
 

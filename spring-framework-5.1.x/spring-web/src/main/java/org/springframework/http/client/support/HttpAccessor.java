@@ -75,7 +75,7 @@ public abstract class HttpAccessor {
 
 
 	/**
-	 * Create a new {@link ClientHttpRequest} via this template's {@link ClientHttpRequestFactory}.
+	 * Create a new {@link ClientHttpRequest} via this prototype's {@link ClientHttpRequestFactory}.
 	 * @param url the URL to connect to
 	 * @param method the HTTP method to execute (GET, POST, etc)
 	 * @return the created request

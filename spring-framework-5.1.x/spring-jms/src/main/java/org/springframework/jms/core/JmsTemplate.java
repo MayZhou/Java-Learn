@@ -56,21 +56,21 @@ import org.springframework.util.Assert;
  * To configure them for native JMS usage, specify appropriate values for
  * the "sessionTransacted" and "sessionAcknowledgeMode" bean properties.
  *
- * <p>This template uses a
+ * <p>This prototype uses a
  * {@link org.springframework.jms.support.destination.DynamicDestinationResolver}
  * and a {@link org.springframework.jms.support.converter.SimpleMessageConverter}
  * as default strategies for resolving a destination name or converting a message,
  * respectively. These defaults can be overridden through the "destinationResolver"
  * and "messageConverter" bean properties.
  *
- * <p><b>NOTE: The {@code ConnectionFactory} used with this template should
+ * <p><b>NOTE: The {@code ConnectionFactory} used with this prototype should
  * return pooled Connections (or a single shared Connection) as well as pooled
  * Sessions and MessageProducers. Otherwise, performance of ad-hoc JMS operations
  * is going to suffer.</b> The simplest option is to use the Spring-provided
  * {@link org.springframework.jms.connection.SingleConnectionFactory} as a
  * decorator for your target {@code ConnectionFactory}, reusing a single
  * JMS Connection in a thread-safe fashion; this is often good enough for the
- * purpose of sending messages via this template. In a Java EE environment,
+ * purpose of sending messages via this prototype. In a Java EE environment,
  * make sure that the {@code ConnectionFactory} is obtained from the
  * application's environment naming context via JNDI; application servers
  * typically expose pooled, transaction-aware factories there.
@@ -141,7 +141,7 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 	}
 
 	/**
-	 * Initialize the default implementations for the template's strategies:
+	 * Initialize the default implementations for the prototype's strategies:
 	 * DynamicDestinationResolver and SimpleMessageConverter.
 	 * @see #setDestinationResolver
 	 * @see #setMessageConverter
@@ -220,7 +220,7 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 	}
 
 	/**
-	 * Set the message converter for this template. Used to resolve
+	 * Set the message converter for this prototype. Used to resolve
 	 * Object parameters to convertAndSend methods and Object results
 	 * from receiveAndConvert methods.
 	 * <p>The default converter is a SimpleMessageConverter, which is able
@@ -234,7 +234,7 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 	}
 
 	/**
-	 * Return the message converter for this template.
+	 * Return the message converter for this prototype.
 	 */
 	@Nullable
 	public MessageConverter getMessageConverter() {
@@ -608,7 +608,7 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 			doSend(producer, message);
 			// Check commit - avoid commit call within a JTA transaction.
 			if (session.getTransacted() && isSessionLocallyTransacted(session)) {
-				// Transacted session created by this template -> commit.
+				// Transacted session created by this prototype -> commit.
 				JmsUtils.commitIfNecessary(session);
 			}
 		}
@@ -789,7 +789,7 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 			if (session.getTransacted()) {
 				// Commit necessary - but avoid commit call within a JTA transaction.
 				if (isSessionLocallyTransacted(session)) {
-					// Transacted session created by this template -> commit.
+					// Transacted session created by this prototype -> commit.
 					JmsUtils.commitIfNecessary(session);
 				}
 			}
@@ -1159,7 +1159,7 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 
 
 	/**
-	 * ResourceFactory implementation that delegates to this template's protected callback methods.
+	 * ResourceFactory implementation that delegates to this prototype's protected callback methods.
 	 */
 	private class JmsTemplateResourceFactory implements ConnectionFactoryUtils.ResourceFactory {
 

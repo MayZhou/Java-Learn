@@ -41,7 +41,7 @@ import org.springframework.web.util.UriUtils;
 
 /**
  * View that redirects to an absolute or context relative URL. The URL may be a
- * URI template in which case the URI template variables will be replaced with
+ * URI prototype in which case the URI prototype variables will be replaced with
  * values from the model or with URI variables from the current request.
  *
  * <p>By default {@link HttpStatus#SEE_OTHER} is used but alternate status codes
@@ -189,7 +189,7 @@ public class RedirectView extends AbstractUrlBasedView {
 
 	/**
 	 * Create the target URL and, if necessary, pre-pend the contextPath, expand
-	 * URI template variables, append the current request query, and apply the
+	 * URI prototype variables, append the current request query, and apply the
 	 * configured {@link #getRequestDataValueProcessor()
 	 * RequestDataValueProcessor}.
 	 */
@@ -227,7 +227,7 @@ public class RedirectView extends AbstractUrlBasedView {
 	}
 
 	/**
-	 * Expand URI template variables in the target URL with either model
+	 * Expand URI prototype variables in the target URL with either model
 	 * attribute values or as a fallback with URI variable values from the
 	 * current request. Values are encoded.
 	 */

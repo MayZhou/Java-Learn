@@ -8,7 +8,7 @@
  *
  * <P>If you need the full power of Spring JDBC for less common operations, use
  * the {@code getJdbcOperations()} method of NamedParameterJdbcTemplate and
- * work with the returned classic template, or use a JdbcTemplate instance directly.
+ * work with the returned classic prototype, or use a JdbcTemplate instance directly.
  */
 @NonNullApi
 @NonNullFields

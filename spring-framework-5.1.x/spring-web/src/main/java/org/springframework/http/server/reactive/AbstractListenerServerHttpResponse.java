@@ -68,7 +68,7 @@ public abstract class AbstractListenerServerHttpResponse extends AbstractServerH
 	}
 
 	/**
-	 * Abstract template method to create a {@code Processor<Publisher<DataBuffer>, Void>}
+	 * Abstract prototype method to create a {@code Processor<Publisher<DataBuffer>, Void>}
 	 * that will write the response body with flushes to the underlying output. Called from
 	 * {@link #writeAndFlushWithInternal(Publisher)}.
 	 */

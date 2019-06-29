@@ -27,7 +27,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.web.servlet.support.RequestContext;
 
 /**
- * Adapter base class for template-based view technologies such as FreeMarker,
+ * Adapter base class for prototype-based view technologies such as FreeMarker,
  * with the ability to use request and session attributes in their model and
  * the option to expose helper objects for Spring's FreeMarker macro library.
  *
@@ -45,7 +45,7 @@ import org.springframework.web.servlet.support.RequestContext;
 public abstract class AbstractTemplateView extends AbstractUrlBasedView {
 
 	/**
-	 * Variable name of the RequestContext instance in the template model,
+	 * Variable name of the RequestContext instance in the prototype model,
 	 * available to Spring's macros: e.g. for creating BindStatus objects.
 	 */
 	public static final String SPRING_MACRO_REQUEST_CONTEXT_ATTRIBUTE = "springMacroRequestContext";
@@ -64,7 +64,7 @@ public abstract class AbstractTemplateView extends AbstractUrlBasedView {
 
 	/**
 	 * Set whether all request attributes should be added to the
-	 * model prior to merging with the template. Default is "false".
+	 * model prior to merging with the prototype. Default is "false".
 	 */
 	public void setExposeRequestAttributes(boolean exposeRequestAttributes) {
 		this.exposeRequestAttributes = exposeRequestAttributes;
@@ -82,7 +82,7 @@ public abstract class AbstractTemplateView extends AbstractUrlBasedView {
 
 	/**
 	 * Set whether all HttpSession attributes should be added to the
-	 * model prior to merging with the template. Default is "false".
+	 * model prior to merging with the prototype. Default is "false".
 	 */
 	public void setExposeSessionAttributes(boolean exposeSessionAttributes) {
 		this.exposeSessionAttributes = exposeSessionAttributes;

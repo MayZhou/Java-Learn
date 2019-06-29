@@ -77,7 +77,7 @@ public abstract class AbstractFormTag extends HtmlEscapingAwareTag {
 	}
 
 	/**
-	 * Provide a simple template method that calls {@link #createTagWriter()} and passes
+	 * Provide a simple prototype method that calls {@link #createTagWriter()} and passes
 	 * the created {@link TagWriter} to the {@link #writeTagContent(TagWriter)} method.
 	 * @return the value returned by {@link #writeTagContent(TagWriter)}
 	 */

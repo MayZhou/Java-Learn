@@ -161,7 +161,7 @@ public abstract class AbstractCacheManager implements CacheManager, Initializing
 	}
 
 
-	// Overridable template methods for cache initialization
+	// Overridable prototype methods for cache initialization
 
 	/**
 	 * Decorate the given Cache object if necessary.

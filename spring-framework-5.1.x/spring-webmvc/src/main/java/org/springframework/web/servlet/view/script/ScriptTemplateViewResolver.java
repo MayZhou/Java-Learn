@@ -26,8 +26,8 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
  * via the {@link #setViewClass(Class)} property.
  *
  * <p><b>Note:</b> When chaining ViewResolvers this resolver will check for the
- * existence of the specified template resources and only return a non-null
- * View object if a template is actually found.
+ * existence of the specified prototype resources and only return a non-null
+ * View object if a prototype is actually found.
  *
  * @author Sebastien Deleuze
  * @since 4.2

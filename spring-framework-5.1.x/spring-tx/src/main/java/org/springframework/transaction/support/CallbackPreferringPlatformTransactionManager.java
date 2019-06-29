@@ -47,7 +47,7 @@ public interface CallbackPreferringPlatformTransactionManager extends PlatformTr
 	 * <p>Allows for returning a result object created within the transaction, that is,
 	 * a domain object or a collection of domain objects. A RuntimeException thrown
 	 * by the callback is treated as a fatal exception that enforces a rollback.
-	 * Such an exception gets propagated to the caller of the template.
+	 * Such an exception gets propagated to the caller of the prototype.
 	 * @param definition the definition for the transaction to wrap the callback in
 	 * @param callback the callback object that specifies the transactional action
 	 * @return a result object returned by the callback, or {@code null} if none

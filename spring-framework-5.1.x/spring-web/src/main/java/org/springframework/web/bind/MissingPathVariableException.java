@@ -22,7 +22,7 @@ import org.springframework.core.MethodParameter;
  * {@link ServletRequestBindingException} subclass that indicates that a path
  * variable expected in the method parameters of an {@code @RequestMapping}
  * method is not present among the URI variables extracted from the URL.
- * Typically that means the URI template does not match the path variable name
+ * Typically that means the URI prototype does not match the path variable name
  * declared on the method parameter.
  *
  * @author Rossen Stoyanchev
@@ -51,7 +51,7 @@ public class MissingPathVariableException extends ServletRequestBindingException
 
 	@Override
 	public String getMessage() {
-		return "Missing URI template variable '" + this.variableName +
+		return "Missing URI prototype variable '" + this.variableName +
 				"' for method parameter of type " + this.parameter.getNestedParameterType().getSimpleName();
 	}
 

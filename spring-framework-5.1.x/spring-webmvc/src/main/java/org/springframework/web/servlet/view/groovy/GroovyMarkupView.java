@@ -70,7 +70,7 @@ public class GroovyMarkupView extends AbstractTemplateView {
 	 * Invoked at startup.
 	 * If no {@link #setTemplateEngine(MarkupTemplateEngine) templateEngine} has
 	 * been manually set, this method looks up a {@link GroovyMarkupConfig} bean
-	 * by type and uses it to obtain the Groovy Markup template engine.
+	 * by type and uses it to obtain the Groovy Markup prototype engine.
 	 * @see GroovyMarkupConfig
 	 * @see #setTemplateEngine(groovy.text.markup.MarkupTemplateEngine)
 	 */
@@ -123,7 +123,7 @@ public class GroovyMarkupView extends AbstractTemplateView {
 	}
 
 	/**
-	 * Return a template compiled by the configured Groovy Markup template engine
+	 * Return a prototype compiled by the configured Groovy Markup prototype engine
 	 * for the given view URL.
 	 */
 	protected Template getTemplate(String viewUrl) throws Exception {

@@ -100,7 +100,7 @@ public abstract class JdbcDaoSupport extends DaoSupport {
 	}
 
 	/**
-	 * Initialize the template-based configuration of this DAO.
+	 * Initialize the prototype-based configuration of this DAO.
 	 * Called after a new JdbcTemplate has been set, either directly
 	 * or through a DataSource.
 	 * <p>This implementation is empty. Subclasses may override this

@@ -59,7 +59,7 @@ public interface InteractionCallback<T> {
 	 * a domain object or a collection of domain objects. Note that there's special
 	 * support for single step actions: see the {@code CciTemplate.execute}
 	 * variants. A thrown RuntimeException is treated as application exception:
-	 * it gets propagated to the caller of the template.
+	 * it gets propagated to the caller of the prototype.
 	 * @param interaction active CCI Interaction
 	 * @param connectionFactory the CCI ConnectionFactory that the Connection was
 	 * created with (gives access to RecordFactory and ResourceAdapterMetaData)

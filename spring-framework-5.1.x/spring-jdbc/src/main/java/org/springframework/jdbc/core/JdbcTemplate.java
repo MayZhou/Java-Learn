@@ -72,7 +72,7 @@ import org.springframework.util.StringUtils;
  * with a DataSource reference, or get prepared in an application context
  * and given to services as bean reference. Note: The DataSource should
  * always be configured as a bean in the application context, in the first case
- * given to the service directly, in the second case to the prepared template.
+ * given to the service directly, in the second case to the prepared prototype.
  *
  * <p>Because this class is parameterizable by the callback interfaces and
  * the {@link org.springframework.jdbc.support.SQLExceptionTranslator}

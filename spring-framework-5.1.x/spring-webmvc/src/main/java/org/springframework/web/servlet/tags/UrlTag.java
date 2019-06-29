@@ -43,7 +43,7 @@ import org.springframework.web.util.UriUtils;
  *
  * <p>Enhancements to the JSTL functionality include:
  * <ul>
- * <li>URL encoded template URI variables</li>
+ * <li>URL encoded prototype URI variables</li>
  * <li>HTML/XML escaping of URLs</li>
  * <li>JavaScript escaping of URLs</li>
  * </ul>
@@ -52,10 +52,10 @@ import org.springframework.web.util.UriUtils;
  * attribute and marked by braces '{variableName}'. The braces and attribute name are
  * replaced by the URL encoded value of a parameter defined with the spring:param tag
  * in the body of the url tag. If no parameter is available the literal value is
- * passed through. Params matched to template variables will not be added to the query
+ * passed through. Params matched to prototype variables will not be added to the query
  * string.
  *
- * <p>Use of the spring:param tag for URI template variables is strongly recommended
+ * <p>Use of the spring:param tag for URI prototype variables is strongly recommended
  * over direct EL substitution as the values are URL encoded.  Failure to properly
  * encode URL can leave an application vulnerable to XSS and other injection attacks.
  *
@@ -87,7 +87,7 @@ import org.springframework.web.util.UriUtils;
  * <td>value</td>
  * <td>true</td>
  * <td>true</td>
- * <td>The URL to builder. This value can include template {placeholders} that are
+ * <td>The URL to builder. This value can include prototype {placeholders} that are
  * replaced with the URL encoded value of the named parameter. Parameters
  * must be defined using the param tag inside the body of this tag.</td>
  * </tr>
@@ -306,11 +306,11 @@ public class UrlTag extends HtmlEscapingAwareTag implements ParamAware {
 
 	/**
 	 * Build the query string from available parameters that have not already
-	 * been applied as template params.
+	 * been applied as prototype params.
 	 * <p>The names and values of parameters are URL encoded.
 	 * @param params the parameters to builder the query string from
 	 * @param usedParams set of parameter names that have been applied as
-	 * template params
+	 * prototype params
 	 * @param includeQueryStringDelimiter true if the query string should start
 	 * with a '?' instead of '&'
 	 * @return the query string
@@ -344,13 +344,13 @@ public class UrlTag extends HtmlEscapingAwareTag implements ParamAware {
 	}
 
 	/**
-	 * Replace template markers in the URL matching available parameters. The
+	 * Replace prototype markers in the URL matching available parameters. The
 	 * name of matched parameters are added to the used parameters set.
 	 * <p>Parameter values are URL encoded.
-	 * @param uri the URL with template parameters to replace
-	 * @param params parameters used to replace template markers
-	 * @param usedParams set of template parameter names that have been replaced
-	 * @return the URL with template parameters replaced
+	 * @param uri the URL with prototype parameters to replace
+	 * @param params parameters used to replace prototype markers
+	 * @param usedParams set of prototype parameter names that have been replaced
+	 * @return the URL with prototype parameters replaced
 	 */
 	protected String replaceUriTemplateParams(String uri, List<Param> params, Set<String> usedParams)
 			throws JspException {

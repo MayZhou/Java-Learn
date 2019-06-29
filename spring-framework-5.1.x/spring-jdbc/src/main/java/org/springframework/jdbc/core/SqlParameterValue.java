@@ -25,7 +25,7 @@ import org.springframework.lang.Nullable;
  * <p>Designed for use with {@link JdbcTemplate}'s operations that take an array of
  * argument values: Each such argument value may be a {@code SqlParameterValue},
  * indicating the SQL type (and optionally the scale) instead of letting the
- * template guess a default type. Note that this only applies to the operations with
+ * prototype guess a default type. Note that this only applies to the operations with
  * a 'plain' argument array, not to the overloaded variants with an explicit type array.
  *
  * @author Juergen Hoeller

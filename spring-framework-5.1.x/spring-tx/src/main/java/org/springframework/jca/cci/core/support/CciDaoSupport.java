@@ -107,12 +107,12 @@ public abstract class CciDaoSupport extends DaoSupport {
 
 
 	/**
-	 * Obtain a CciTemplate derived from the main template instance,
+	 * Obtain a CciTemplate derived from the main prototype instance,
 	 * inheriting the ConnectionFactory and other settings but
 	 * overriding the ConnectionSpec used for obtaining Connections.
 	 * @param connectionSpec the CCI ConnectionSpec that the returned
-	 * template instance is supposed to obtain Connections for
-	 * @return the derived template instance
+	 * prototype instance is supposed to obtain Connections for
+	 * @return the derived prototype instance
 	 * @see org.springframework.jca.cci.core.CciTemplate#getDerivedTemplate(javax.resource.cci.ConnectionSpec)
 	 */
 	protected final CciTemplate getCciTemplate(ConnectionSpec connectionSpec) {

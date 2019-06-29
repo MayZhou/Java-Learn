@@ -56,7 +56,7 @@ import org.springframework.messaging.Message;
  * with STOMP over WebSocket support also sub-classes such as
  * {@link org.springframework.messaging.simp.SimpMessageHeaderAccessor}
  * for convenient access to all method arguments.</li>
- * <li>{@link DestinationVariable}-annotated arguments for access to template
+ * <li>{@link DestinationVariable}-annotated arguments for access to prototype
  * variable values extracted from the message destination (e.g. /hotels/{hotel}).
  * Variable values will be converted to the declared method argument type.</li>
  * <li>{@link java.security.Principal} method arguments are supported with
@@ -99,7 +99,7 @@ public @interface MessageMapping {
 	 * Destination-based mapping expressed by this annotation.
 	 * <p>For STOMP over WebSocket messages: this is the destination of the
 	 * STOMP message (e.g. {@code "/positions"}). Ant-style path patterns
-	 * (e.g. {@code "/price.stock.*"}) and path template variables (e.g.
+	 * (e.g. {@code "/price.stock.*"}) and path prototype variables (e.g.
 	 * <code>"/price.stock.{ticker}"</code>) are also supported.
 	 */
 	String[] value() default {};
