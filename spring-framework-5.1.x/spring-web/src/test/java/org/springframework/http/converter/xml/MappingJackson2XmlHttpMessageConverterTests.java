@@ -36,7 +36,7 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
- * Jackson 2.x XML converter tests.
+ * Jackson 2.x XML com.mayzhou.runtimeAnnotations.excelkit.converter tests.
  *
  * @author Sebastien Deleuze
  * @author Rossen Stoyanchev

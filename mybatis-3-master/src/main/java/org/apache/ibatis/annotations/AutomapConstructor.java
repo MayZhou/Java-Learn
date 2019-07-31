@@ -22,6 +22,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * 指示用于自动映射的构造函数的标记注释。
  * The marker annotation that indicate a constructor for automatic mapping.
  *
  * @author Tim Chen

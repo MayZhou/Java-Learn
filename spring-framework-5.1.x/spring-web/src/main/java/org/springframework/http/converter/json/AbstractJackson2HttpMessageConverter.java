@@ -70,7 +70,7 @@ import org.springframework.util.TypeUtils;
 public abstract class AbstractJackson2HttpMessageConverter extends AbstractGenericHttpMessageConverter<Object> {
 
 	/**
-	 * The default charset used by the converter.
+	 * The default charset used by the com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 */
 	public static final Charset DEFAULT_CHARSET = StandardCharsets.UTF_8;
 
@@ -133,7 +133,7 @@ public abstract class AbstractJackson2HttpMessageConverter extends AbstractGener
 	 * <pre class="code">
 	 * ObjectMapper mapper = new ObjectMapper();
 	 * mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
-	 * converter.setObjectMapper(mapper);
+	 * com.mayzhou.runtimeAnnotations.excelkit.converter.setObjectMapper(mapper);
 	 * </pre>
 	 */
 	public void setPrettyPrint(boolean prettyPrint) {

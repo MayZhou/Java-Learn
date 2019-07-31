@@ -79,7 +79,7 @@ public abstract class AbstractMessageSendingTemplate<D> implements MessageSendin
 	/**
 	 * Set the {@link MessageConverter} to use in {@code convertAndSend} methods.
 	 * <p>By default, {@link SimpleMessageConverter} is used.
-	 * @param messageConverter the message converter to use
+	 * @param messageConverter the message com.mayzhou.runtimeAnnotations.excelkit.converter to use
 	 */
 	public void setMessageConverter(MessageConverter messageConverter) {
 		Assert.notNull(messageConverter, "MessageConverter must not be null");
@@ -184,7 +184,7 @@ public abstract class AbstractMessageSendingTemplate<D> implements MessageSendin
 			String payloadType = payload.getClass().getName();
 			Object contentType = (messageHeaders != null ? messageHeaders.get(MessageHeaders.CONTENT_TYPE) : null);
 			throw new MessageConversionException("Unable to convert payload with type='" + payloadType +
-					"', contentType='" + contentType + "', converter=[" + getMessageConverter() + "]");
+					"', contentType='" + contentType + "', com.mayzhou.runtimeAnnotations.excelkit.converter=[" + getMessageConverter() + "]");
 		}
 		if (postProcessor != null) {
 			message = postProcessor.postProcessMessage(message);

@@ -38,7 +38,7 @@ import org.springframework.http.converter.HttpMessageNotReadableException;
 import static org.junit.Assert.*;
 
 /**
- * Gson 2.x converter tests.
+ * Gson 2.x com.mayzhou.runtimeAnnotations.excelkit.converter tests.
  *
  * @author Roy Clarkson
  * @author Juergen Hoeller

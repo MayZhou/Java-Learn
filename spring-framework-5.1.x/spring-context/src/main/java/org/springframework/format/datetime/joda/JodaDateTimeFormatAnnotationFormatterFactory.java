@@ -82,11 +82,11 @@ public class JodaDateTimeFormatAnnotationFormatterFactory extends EmbeddedValueR
 			return new ReadablePartialPrinter(formatter);
 		}
 		else if (ReadableInstant.class.isAssignableFrom(fieldType) || Calendar.class.isAssignableFrom(fieldType)) {
-			// assumes Calendar->ReadableInstant converter is registered
+			// assumes Calendar->ReadableInstant com.mayzhou.runtimeAnnotations.excelkit.converter is registered
 			return new ReadableInstantPrinter(formatter);
 		}
 		else {
-			// assumes Date->Long converter is registered
+			// assumes Date->Long com.mayzhou.runtimeAnnotations.excelkit.converter is registered
 			return new MillisecondInstantPrinter(formatter);
 		}
 	}

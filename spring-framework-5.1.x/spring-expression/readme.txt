@@ -22,7 +22,7 @@ Syntax
 - should the 'is' operator change to 'instanceof' ?
 - in this expression we hit the problem of not being able to write chars, since '' always means string:
   evaluate("new java.lang.String('hello').charAt(2).equals('l'.charAt(0))", true, Boolean.class);
-  So 'l'.charAt(0) was required - wonder if we can build in a converter for a single length string to char?
+  So 'l'.charAt(0) was required - wonder if we can build in a com.mayzhou.runtimeAnnotations.excelkit.converter for a single length string to char?
   Can't do that as equals take Object and so we don't know to do a cast in order to pass a char into equals
   We certainly cannot do a cast (unless casts are added to the syntax).  See MethodInvocationTest.testStringClass()
 - MATCHES is now the thing that takes a java regex.  What does 'like' do? right now it is the SQL LIKE that supports

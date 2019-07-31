@@ -178,7 +178,7 @@ public class SimpAnnotationMethodMessageHandler extends AbstractMethodMessageHan
 	/**
 	 * Configure a {@link MessageConverter} to use to convert the payload of a message from
 	 * its serialized form with a specific MIME type to an Object matching the target method
-	 * parameter. The converter is also used when sending a message to the message broker.
+	 * parameter. The com.mayzhou.runtimeAnnotations.excelkit.converter is also used when sending a message to the message broker.
 	 * @see CompositeMessageConverter
 	 */
 	public void setMessageConverter(MessageConverter converter) {

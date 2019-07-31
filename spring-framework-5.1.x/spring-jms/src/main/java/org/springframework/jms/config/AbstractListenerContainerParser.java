@@ -63,7 +63,7 @@ abstract class AbstractListenerContainerParser implements BeanDefinitionParser {
 
 	protected static final String DESTINATION_RESOLVER_ATTRIBUTE = "destination-resolver";
 
-	protected static final String MESSAGE_CONVERTER_ATTRIBUTE = "message-converter";
+	protected static final String MESSAGE_CONVERTER_ATTRIBUTE = "message-com.mayzhou.runtimeAnnotations.excelkit.converter";
 
 	protected static final String RESPONSE_DESTINATION_ATTRIBUTE = "response-destination";
 
@@ -293,7 +293,7 @@ abstract class AbstractListenerContainerParser implements BeanDefinitionParser {
 			String messageConverter = containerEle.getAttribute(MESSAGE_CONVERTER_ATTRIBUTE);
 			if (!StringUtils.hasText(messageConverter)) {
 				parserContext.getReaderContext().error(
-						"listener container 'message-converter' attribute contains empty value.", containerEle);
+						"listener container 'message-com.mayzhou.runtimeAnnotations.excelkit.converter' attribute contains empty value.", containerEle);
 			}
 			else {
 				properties.add("messageConverter", new RuntimeBeanReference(messageConverter));

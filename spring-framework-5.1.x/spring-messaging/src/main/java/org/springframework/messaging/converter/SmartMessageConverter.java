@@ -24,7 +24,7 @@ import org.springframework.messaging.MessageHeaders;
  * An extended {@link MessageConverter} SPI with conversion hint support.
  *
  * <p>In case of a conversion hint being provided, the framework will call
- * these extended methods if a converter implements this interface, instead
+ * these extended methods if a com.mayzhou.runtimeAnnotations.excelkit.converter implements this interface, instead
  * of calling the regular {@code fromMessage} / {@code toMessage} variants.
  *
  * @author Juergen Hoeller
@@ -40,7 +40,7 @@ public interface SmartMessageConverter extends MessageConverter {
 	 * @param targetClass the target class for the conversion
 	 * @param conversionHint an extra object passed to the {@link MessageConverter},
 	 * e.g. the associated {@code MethodParameter} (may be {@code null}}
-	 * @return the result of the conversion, or {@code null} if the converter cannot
+	 * @return the result of the conversion, or {@code null} if the com.mayzhou.runtimeAnnotations.excelkit.converter cannot
 	 * perform the conversion
 	 * @see #fromMessage(Message, Class)
 	 */
@@ -55,7 +55,7 @@ public interface SmartMessageConverter extends MessageConverter {
 	 * @param headers optional headers for the message (may be {@code null})
 	 * @param conversionHint an extra object passed to the {@link MessageConverter},
 	 * e.g. the associated {@code MethodParameter} (may be {@code null}}
-	 * @return the new message, or {@code null} if the converter does not support the
+	 * @return the new message, or {@code null} if the com.mayzhou.runtimeAnnotations.excelkit.converter does not support the
 	 * Object type or the target media type
 	 * @see #toMessage(Object, MessageHeaders)
 	 */

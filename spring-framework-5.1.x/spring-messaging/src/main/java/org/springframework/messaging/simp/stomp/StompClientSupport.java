@@ -57,7 +57,7 @@ public abstract class StompClientSupport {
 	 * and outgoing messages to and from {@code byte[]} based on object type
 	 * and the "content-type" header.
 	 * <p>By default, {@link SimpleMessageConverter} is configured.
-	 * @param messageConverter the message converter to use
+	 * @param messageConverter the message com.mayzhou.runtimeAnnotations.excelkit.converter to use
 	 */
 	public void setMessageConverter(MessageConverter messageConverter) {
 		Assert.notNull(messageConverter, "MessageConverter must not be null");

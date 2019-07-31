@@ -96,7 +96,7 @@ public abstract class AbstractHttpMessageConverter<T> implements HttpMessageConv
 
 
 	/**
-	 * Set the list of {@link MediaType} objects supported by this converter.
+	 * Set the list of {@link MediaType} objects supported by this com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 */
 	public void setSupportedMediaTypes(List<MediaType> supportedMediaTypes) {
 		Assert.notEmpty(supportedMediaTypes, "MediaType List must not be empty");
@@ -293,7 +293,7 @@ public abstract class AbstractHttpMessageConverter<T> implements HttpMessageConv
 
 
 	/**
-	 * Indicates whether the given class is supported by this converter.
+	 * Indicates whether the given class is supported by this com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 * @param clazz the class to test for support
 	 * @return {@code true} if supported; {@code false} otherwise
 	 */

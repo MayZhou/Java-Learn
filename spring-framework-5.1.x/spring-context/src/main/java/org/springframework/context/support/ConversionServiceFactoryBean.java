@@ -58,7 +58,7 @@ public class ConversionServiceFactoryBean implements FactoryBean<ConversionServi
 
 
 	/**
-	 * Configure the set of custom converter objects that should be added:
+	 * Configure the set of custom com.mayzhou.runtimeAnnotations.excelkit.converter objects that should be added:
 	 * implementing {@link org.springframework.core.convert.converter.Converter},
 	 * {@link org.springframework.core.convert.converter.ConverterFactory},
 	 * or {@link org.springframework.core.convert.converter.GenericConverter}.

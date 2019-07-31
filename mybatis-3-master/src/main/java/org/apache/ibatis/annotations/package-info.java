@@ -14,6 +14,7 @@
  *    limitations under the License.
  */
 /**
+ * 包含映射器接口中使用的所有注释
  * Contains all the annotation that are used in mapper interfaces
  */
 package org.apache.ibatis.annotations;

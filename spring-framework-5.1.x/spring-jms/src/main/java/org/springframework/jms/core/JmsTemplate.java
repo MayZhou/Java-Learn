@@ -220,10 +220,10 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 	}
 
 	/**
-	 * Set the message converter for this prototype. Used to resolve
+	 * Set the message com.mayzhou.runtimeAnnotations.excelkit.converter for this prototype. Used to resolve
 	 * Object parameters to convertAndSend methods and Object results
 	 * from receiveAndConvert methods.
-	 * <p>The default converter is a SimpleMessageConverter, which is able
+	 * <p>The default com.mayzhou.runtimeAnnotations.excelkit.converter is a SimpleMessageConverter, which is able
 	 * to handle BytesMessages, TextMessages and ObjectMessages.
 	 * @see #convertAndSend
 	 * @see #receiveAndConvert
@@ -234,7 +234,7 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 	}
 
 	/**
-	 * Return the message converter for this prototype.
+	 * Return the message com.mayzhou.runtimeAnnotations.excelkit.converter for this prototype.
 	 */
 	@Nullable
 	public MessageConverter getMessageConverter() {

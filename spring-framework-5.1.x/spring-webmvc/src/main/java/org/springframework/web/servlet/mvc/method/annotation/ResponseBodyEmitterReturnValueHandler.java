@@ -193,7 +193,7 @@ public class ResponseBodyEmitterReturnValueHandler implements HandlerMethodRetur
 					return;
 				}
 			}
-			throw new IllegalArgumentException("No suitable converter for " + data.getClass());
+			throw new IllegalArgumentException("No suitable com.mayzhou.runtimeAnnotations.excelkit.converter for " + data.getClass());
 		}
 
 		@Override

@@ -28,7 +28,7 @@ import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
  *
  * <p>The main purpose of this class is to
  * {@linkplain com.thoughtworks.xstream.XStream#registerConverter(com.thoughtworks.xstream.converters.Converter, int) register}
- * this converter as a catch-all last converter with a
+ * this com.mayzhou.runtimeAnnotations.excelkit.converter as a catch-all last com.mayzhou.runtimeAnnotations.excelkit.converter with a
  * {@linkplain com.thoughtworks.xstream.XStream#PRIORITY_NORMAL normal}
  * or higher priority, in addition to converters that explicitly handle the domain
  * classes that should be supported. As a result, default XStream converters with

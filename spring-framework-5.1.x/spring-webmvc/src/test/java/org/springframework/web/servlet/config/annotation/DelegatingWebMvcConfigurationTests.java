@@ -137,7 +137,7 @@ public class DelegatingWebMvcConfigurationTests {
 		delegatingConfig.setConfigurers(configurers);
 
 		RequestMappingHandlerAdapter adapter = delegatingConfig.requestMappingHandlerAdapter();
-		assertEquals("Only one custom converter should be registered", 2, adapter.getMessageConverters().size());
+		assertEquals("Only one custom com.mayzhou.runtimeAnnotations.excelkit.converter should be registered", 2, adapter.getMessageConverters().size());
 		assertSame(customConverter, adapter.getMessageConverters().get(0));
 		assertSame(stringConverter, adapter.getMessageConverters().get(1));
 	}
@@ -191,7 +191,7 @@ public class DelegatingWebMvcConfigurationTests {
 
 		HandlerExceptionResolverComposite composite =
 				(HandlerExceptionResolverComposite) delegatingConfig.handlerExceptionResolver();
-		assertEquals("Only one custom converter is expected", 1, composite.getExceptionResolvers().size());
+		assertEquals("Only one custom com.mayzhou.runtimeAnnotations.excelkit.converter is expected", 1, composite.getExceptionResolvers().size());
 	}
 
 	@Test

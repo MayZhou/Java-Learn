@@ -69,7 +69,7 @@ public class RedirectAttributesModelMapTests {
 		this.conversionService.addConverter(new TestBeanConverter());
 		this.redirectAttributes.addAttribute(attrName, new TestBean("Fred"));
 
-		assertEquals("Type converter should have been used", "[Fred]", this.redirectAttributes.get(attrName));
+		assertEquals("Type com.mayzhou.runtimeAnnotations.excelkit.converter should have been used", "[Fred]", this.redirectAttributes.get(attrName));
 	}
 
 	@Test

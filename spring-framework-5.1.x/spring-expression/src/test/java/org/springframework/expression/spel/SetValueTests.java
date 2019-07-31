@@ -135,7 +135,7 @@ public class SetValueTests extends AbstractExpressionTests {
 		setValueExpectError("arrayContainer.ints[1]", "wibble");
 		setValueExpectError("arrayContainer.floats[1]", "dribble");
 		setValueExpectError("arrayContainer.booleans[1]", "nein");
-		// TODO -- this fails with NPE due to ArrayToObject converter - discuss with Andy
+		// TODO -- this fails with NPE due to ArrayToObject com.mayzhou.runtimeAnnotations.excelkit.converter - discuss with Andy
 		//setValueExpectError("arrayContainer.doubles[1]", new ArrayList<String>());
 		//setValueExpectError("arrayContainer.shorts[1]", new ArrayList<String>());
 		//setValueExpectError("arrayContainer.longs[1]", new ArrayList<String>());

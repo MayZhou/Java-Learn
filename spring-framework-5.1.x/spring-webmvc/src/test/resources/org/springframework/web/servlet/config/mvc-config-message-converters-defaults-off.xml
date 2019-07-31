@@ -12,7 +12,7 @@
 		</mvc:message-converters>
 	</mvc:annotation-driven>
 
-	<bean id="stringConverter" class="org.springframework.http.converter.StringHttpMessageConverter"/>
-	<bean id="resourceConverter" class="org.springframework.http.converter.ResourceHttpMessageConverter"/>
+	<bean id="stringConverter" class="org.springframework.http.com.mayzhou.runtimeAnnotations.excelkit.converter.StringHttpMessageConverter"/>
+	<bean id="resourceConverter" class="org.springframework.http.com.mayzhou.runtimeAnnotations.excelkit.converter.ResourceHttpMessageConverter"/>
 
 </beans>

@@ -31,7 +31,7 @@ import org.springframework.http.MockHttpInputMessage;
 import org.springframework.http.MockHttpOutputMessage;
 
 /**
- * Jackson 2.x Smile converter tests.
+ * Jackson 2.x Smile com.mayzhou.runtimeAnnotations.excelkit.converter tests.
  *
  * @author Sebastien Deleuze
  */

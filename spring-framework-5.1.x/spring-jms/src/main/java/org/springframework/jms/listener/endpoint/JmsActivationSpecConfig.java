@@ -272,7 +272,7 @@ public class JmsActivationSpecConfig {
 
 	/**
 	 * Set the {@link MessageConverter} strategy for converting JMS Messages.
-	 * @param messageConverter the message converter to use
+	 * @param messageConverter the message com.mayzhou.runtimeAnnotations.excelkit.converter to use
 	 */
 	public void setMessageConverter(@Nullable MessageConverter messageConverter) {
 		this.messageConverter = messageConverter;

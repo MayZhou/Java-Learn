@@ -22,7 +22,7 @@ import javax.jms.Message;
 /**
  * To be used with JmsTemplate's send method that convert an object to a message.
  * It allows for further modification of the message after it has been processed
- * by the converter. This is useful for setting of JMS Header and Properties.
+ * by the com.mayzhou.runtimeAnnotations.excelkit.converter. This is useful for setting of JMS Header and Properties.
  *
  * <p>This often as an anonymous class within a method implementation.
  *

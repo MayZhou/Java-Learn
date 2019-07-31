@@ -44,11 +44,11 @@ public abstract class ReflectionHelper {
 
 	/**
 	 * Compare argument arrays and return information about whether they match.
-	 * A supplied type converter and conversionAllowed flag allow for matches to take
-	 * into account that a type may be transformed into a different type by the converter.
+	 * A supplied type com.mayzhou.runtimeAnnotations.excelkit.converter and conversionAllowed flag allow for matches to take
+	 * into account that a type may be transformed into a different type by the com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 * @param expectedArgTypes the types the method/constructor is expecting
 	 * @param suppliedArgTypes the types that are being supplied at the point of invocation
-	 * @param typeConverter a registered type converter
+	 * @param typeConverter a registered type com.mayzhou.runtimeAnnotations.excelkit.converter
 	 * @return a MatchInfo object indicating what kind of match it was,
 	 * or {@code null} if it was not a match
 	 */
@@ -131,12 +131,12 @@ public abstract class ReflectionHelper {
 
 	/**
 	 * Compare argument arrays and return information about whether they match.
-	 * A supplied type converter and conversionAllowed flag allow for matches to
+	 * A supplied type com.mayzhou.runtimeAnnotations.excelkit.converter and conversionAllowed flag allow for matches to
 	 * take into account that a type may be transformed into a different type by the
-	 * converter. This variant of compareArguments also allows for a varargs match.
+	 * com.mayzhou.runtimeAnnotations.excelkit.converter. This variant of compareArguments also allows for a varargs match.
 	 * @param expectedArgTypes the types the method/constructor is expecting
 	 * @param suppliedArgTypes the types that are being supplied at the point of invocation
-	 * @param typeConverter a registered type converter
+	 * @param typeConverter a registered type com.mayzhou.runtimeAnnotations.excelkit.converter
 	 * @return a MatchInfo object indicating what kind of match it was,
 	 * or {@code null} if it was not a match
 	 */
@@ -237,7 +237,7 @@ public abstract class ReflectionHelper {
 	 * parameterTypes are {Integer, String[]} and the input arguments are {Integer, boolean, float} then both
 	 * the boolean and float must be converted to strings). This method does *not* repackage the arguments
 	 * into a form suitable for the varargs invocation - a subsequent call to setupArgumentsForVarargsInvocation handles that.
-	 * @param converter the converter to use for type conversions
+	 * @param converter the com.mayzhou.runtimeAnnotations.excelkit.converter to use for type conversions
 	 * @param arguments the arguments to convert to the requested parameter types
 	 * @param method the target Method
 	 * @return true if some kind of conversion occurred on the argument
@@ -253,7 +253,7 @@ public abstract class ReflectionHelper {
 	/**
 	 * Takes an input set of argument values and converts them to the types specified as the
 	 * required parameter types. The arguments are converted 'in-place' in the input array.
-	 * @param converter the type converter to use for attempting conversions
+	 * @param converter the type com.mayzhou.runtimeAnnotations.excelkit.converter to use for attempting conversions
 	 * @param arguments the actual arguments that need conversion
 	 * @param executable the target Method or Constructor
 	 * @param varargsPosition the known position of the varargs argument, if any
@@ -384,7 +384,7 @@ public abstract class ReflectionHelper {
 		/** A close match is where the parameter types either exactly match or are assignment-compatible. */
 		CLOSE,
 
-		/** A conversion match is where the type converter must be used to transform some of the parameter types. */
+		/** A conversion match is where the type com.mayzhou.runtimeAnnotations.excelkit.converter must be used to transform some of the parameter types. */
 		REQUIRES_CONVERSION
 	}
 

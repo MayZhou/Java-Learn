@@ -34,7 +34,7 @@ import org.springframework.util.StreamUtils;
  * Implementation of {@link HttpMessageConverter} that can read/write {@link Resource Resources}
  * and supports byte range requests.
  *
- * <p>By default, this converter can read all media types. The {@link MediaTypeFactory} is used
+ * <p>By default, this com.mayzhou.runtimeAnnotations.excelkit.converter can read all media types. The {@link MediaTypeFactory} is used
  * to determine the {@code Content-Type} of written resources.
  *
  * @author Arjen Poutsma
@@ -59,7 +59,7 @@ public class ResourceHttpMessageConverter extends AbstractHttpMessageConverter<R
 
 	/**
 	 * Create a new instance of the {@code ResourceHttpMessageConverter}.
-	 * @param supportsReadStreaming whether the converter should support
+	 * @param supportsReadStreaming whether the com.mayzhou.runtimeAnnotations.excelkit.converter should support
 	 * read streaming, i.e. convert to {@code InputStreamResource}
 	 * @since 5.0
 	 */

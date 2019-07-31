@@ -29,8 +29,12 @@ import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.RowBounds;
 
 /**
+ * 这是MyBatis游标的默认实现。
+ * 这个实现不是线程安全的
  * This is the default implementation of a MyBatis Cursor.
  * This implementation is not thread safe.
+ *
+ * T ：查询结果pojo
  *
  * @author Guillaume Darmont / guillaume@dropinocean.com
  */
@@ -52,18 +56,22 @@ public class DefaultCursor<T> implements Cursor<T> {
   private enum CursorStatus {
 
     /**
+     * 创建新的游标，数据库ResultSet消费已经启动。
      * A freshly created cursor, database ResultSet consuming has not started.
      */
     CREATED,
     /**
+     * 当前正在使用的游标，数据库ResultSet消费已经启动。
      * A cursor currently in use, database ResultSet consuming has started.
      */
     OPEN,
     /**
+     * 关闭游标，未完全使用。
      * A closed cursor, not fully consumed.
      */
     CLOSED,
     /**
+     * 完全消耗完的游标，一个已经被使用过的游标总是关闭的
      * A fully consumed cursor, a consumed cursor is always closed.
      */
     CONSUMED

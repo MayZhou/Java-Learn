@@ -57,7 +57,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link GenericConversionService}.
  *
- * <p>In this package for access to package-local converter implementations.
+ * <p>In this package for access to package-local com.mayzhou.runtimeAnnotations.excelkit.converter implementations.
  *
  * @author Keith Donald
  * @author Juergen Hoeller
@@ -619,7 +619,7 @@ public class GenericConversionServiceTests {
 		assertEquals(Collections.singleton("testX"),
 				conversionService.convert("test", TypeDescriptor.valueOf(String.class), new TypeDescriptor(getClass().getField("rawCollection"))));
 
-		// The following is unpleasant but a consequence of the generic collection converter above...
+		// The following is unpleasant but a consequence of the generic collection com.mayzhou.runtimeAnnotations.excelkit.converter above...
 		assertEquals(Collections.singleton("testX"),
 				conversionService.convert("test", TypeDescriptor.valueOf(String.class), new TypeDescriptor(getClass().getField("integerCollection"))));
 	}
@@ -635,7 +635,7 @@ public class GenericConversionServiceTests {
 		assertEquals(Collections.singleton("testX"),
 				conversionService.convert("test", TypeDescriptor.valueOf(String.class), new TypeDescriptor(getClass().getField("rawCollection"))));
 
-		// The following is unpleasant but a consequence of the raw collection converter above...
+		// The following is unpleasant but a consequence of the raw collection com.mayzhou.runtimeAnnotations.excelkit.converter above...
 		assertEquals(Collections.singleton("testX"),
 				conversionService.convert("test", TypeDescriptor.valueOf(String.class), new TypeDescriptor(getClass().getField("integerCollection"))));
 	}

@@ -7,7 +7,7 @@
 
 	<jms:listener-container factory-id="testJmsFactory"
 			connection-factory="testConnectionFactory" task-executor="testTaskExecutor"
-			destination-resolver="testDestinationResolver" message-converter="testMessageConverter"
+			destination-resolver="testDestinationResolver" message-com.mayzhou.runtimeAnnotations.excelkit.converter="testMessageConverter"
 			transaction-manager="testTransactionManager" error-handler="testErrorHandler"
 			destination-type="durableTopic" response-destination-type="queue"
 			cache="connection" concurrency="3-5" prefetch="50" receive-timeout="100" back-off="testBackOff" phase="99">
@@ -31,7 +31,7 @@
 
 	<jms:jca-listener-container factory-id="testJcaFactory"
 			resource-adapter="testResourceAdapter" activation-spec-factory="testActivationSpecFactory"
-			message-converter="testMessageConverter" destination-type="topic" response-destination-type="queue"
+			message-com.mayzhou.runtimeAnnotations.excelkit.converter="testMessageConverter" destination-type="topic" response-destination-type="queue"
 								concurrency="5" prefetch="50" phase="77">
 		<jms:listener id="listener3" destination="testDestination" ref="testBean1" method="setName"/>
 		<jms:listener id="listener4" destination="testDestination" ref="testBean2" method="setName"
@@ -45,7 +45,7 @@
 	<!-- Only export the factory -->
 	<jms:listener-container factory-id="onlyJmsFactory"
 							connection-factory="testConnectionFactory" task-executor="testTaskExecutor"
-							destination-resolver="testDestinationResolver" message-converter="testMessageConverter"
+							destination-resolver="testDestinationResolver" message-com.mayzhou.runtimeAnnotations.excelkit.converter="testMessageConverter"
 							transaction-manager="testTransactionManager" error-handler="testErrorHandler"
 							concurrency="3-5" prefetch="50" receive-timeout="100"
 							recovery-interval="1000" back-off="testBackOff"/>
@@ -66,7 +66,7 @@
 
 	<bean id="testDestinationResolver" class="org.springframework.jms.support.destination.DynamicDestinationResolver"/>
 
-	<bean id="testMessageConverter" class="org.springframework.jms.support.converter.SimpleMessageConverter"/>
+	<bean id="testMessageConverter" class="org.springframework.jms.support.com.mayzhou.runtimeAnnotations.excelkit.converter.SimpleMessageConverter"/>
 
 	<bean id="testTransactionManager" class="org.springframework.tests.transaction.CallCountingTransactionManager"/>
 

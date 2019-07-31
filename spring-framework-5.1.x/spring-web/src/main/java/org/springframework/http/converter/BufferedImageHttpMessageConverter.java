@@ -50,14 +50,14 @@ import org.springframework.util.StringUtils;
  * Implementation of {@link HttpMessageConverter} that can read and write
  * {@link BufferedImage BufferedImages}.
  *
- * <p>By default, this converter can read all media types that are supported
+ * <p>By default, this com.mayzhou.runtimeAnnotations.excelkit.converter can read all media types that are supported
  * by the {@linkplain ImageIO#getReaderMIMETypes() registered image readers},
  * and writes using the media type of the first available
  * {@linkplain javax.imageio.ImageIO#getWriterMIMETypes() registered image writer}.
  * The latter can be overridden by setting the
  * {@link #setDefaultContentType defaultContentType} property.
  *
- * <p>If the {@link #setCacheDir cacheDir} property is set, this converter
+ * <p>If the {@link #setCacheDir cacheDir} property is set, this com.mayzhou.runtimeAnnotations.excelkit.converter
  * will cache image data.
  *
  * <p>The {@link #process(ImageReadParam)} and {@link #process(ImageWriteParam)}
@@ -122,7 +122,7 @@ public class BufferedImageHttpMessageConverter implements HttpMessageConverter<B
 
 	/**
 	 * Sets the cache directory. If this property is set to an existing directory,
-	 * this converter will cache image data.
+	 * this com.mayzhou.runtimeAnnotations.excelkit.converter will cache image data.
 	 */
 	public void setCacheDir(File cacheDir) {
 		Assert.notNull(cacheDir, "'cacheDir' must not be null");

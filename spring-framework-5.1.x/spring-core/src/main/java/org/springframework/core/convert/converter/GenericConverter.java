@@ -23,7 +23,7 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 
 /**
- * Generic converter interface for converting between two or more types.
+ * Generic com.mayzhou.runtimeAnnotations.excelkit.converter interface for converting between two or more types.
  *
  * <p>This is the most flexible of the Converter SPI interfaces, but also the most complex.
  * It is flexible in that a GenericConverter may support converting between multiple source/target
@@ -48,7 +48,7 @@ import org.springframework.util.Assert;
 public interface GenericConverter {
 
 	/**
-	 * Return the source and target types that this converter can convert between.
+	 * Return the source and target types that this com.mayzhou.runtimeAnnotations.excelkit.converter can convert between.
 	 * <p>Each entry is a convertible source-to-target type pair.
 	 * <p>For {@link ConditionalConverter conditional converters} this method may return
 	 * {@code null} to indicate all source-to-target pairs should be considered.

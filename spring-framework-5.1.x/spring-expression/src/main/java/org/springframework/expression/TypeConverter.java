@@ -20,7 +20,7 @@ import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.lang.Nullable;
 
 /**
- * A type converter can convert values between different types encountered during
+ * A type com.mayzhou.runtimeAnnotations.excelkit.converter can convert values between different types encountered during
  * expression evaluation. This is an SPI for the expression parser; see
  * {@link org.springframework.core.convert.ConversionService} for the primary
  * user API to Spring's conversion facilities.
@@ -32,7 +32,7 @@ import org.springframework.lang.Nullable;
 public interface TypeConverter {
 
 	/**
-	 * Return {@code true} if the type converter can convert the specified type
+	 * Return {@code true} if the type com.mayzhou.runtimeAnnotations.excelkit.converter can convert the specified type
 	 * to the desired target type.
 	 * @param sourceType a type descriptor that describes the source type
 	 * @param targetType a type descriptor that describes the requested result type

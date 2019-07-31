@@ -47,7 +47,7 @@ import org.springframework.util.ClassUtils;
  * Implementation of {@link org.springframework.http.converter.HttpMessageConverter
  * HttpMessageConverter} that can read and write XML using JAXB2.
  *
- * <p>This converter can read classes annotated with {@link XmlRootElement} and
+ * <p>This com.mayzhou.runtimeAnnotations.excelkit.converter can read classes annotated with {@link XmlRootElement} and
  * {@link XmlType}, and write classes annotated with {@link XmlRootElement},
  * or subclasses thereof.
  *

@@ -98,7 +98,7 @@ public interface WebSocketMessageBrokerConfigurer {
 	 * while the boolean return value is used to determine if default message should
 	 * be added as well.
 	 * @param messageConverters the converters to configure (initially an empty list)
-	 * @return whether to also add default converter or not
+	 * @return whether to also add default com.mayzhou.runtimeAnnotations.excelkit.converter or not
 	 */
 	default boolean configureMessageConverters(List<MessageConverter> messageConverters) {
 		return true;

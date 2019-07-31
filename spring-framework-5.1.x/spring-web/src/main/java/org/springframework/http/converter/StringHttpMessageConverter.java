@@ -33,7 +33,7 @@ import org.springframework.util.StreamUtils;
 /**
  * Implementation of {@link HttpMessageConverter} that can read and write strings.
  *
- * <p>By default, this converter supports all media types ({@code &#42;&#47;&#42;}),
+ * <p>By default, this com.mayzhou.runtimeAnnotations.excelkit.converter supports all media types ({@code &#42;&#47;&#42;}),
  * and writes with a {@code Content-Type} of {@code text/plain}. This can be overridden
  * by setting the {@link #setSupportedMediaTypes supportedMediaTypes} property.
  *
@@ -44,7 +44,7 @@ import org.springframework.util.StreamUtils;
 public class StringHttpMessageConverter extends AbstractHttpMessageConverter<String> {
 
 	/**
-	 * The default charset used by the converter.
+	 * The default charset used by the com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 */
 	public static final Charset DEFAULT_CHARSET = StandardCharsets.ISO_8859_1;
 

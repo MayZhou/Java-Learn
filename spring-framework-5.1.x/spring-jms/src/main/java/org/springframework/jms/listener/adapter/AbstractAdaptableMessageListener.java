@@ -135,10 +135,10 @@ public abstract class AbstractAdaptableMessageListener
 	}
 
 	/**
-	 * Set the converter that will convert incoming JMS messages to
+	 * Set the com.mayzhou.runtimeAnnotations.excelkit.converter that will convert incoming JMS messages to
 	 * listener method arguments, and objects returned from listener
 	 * methods back to JMS messages.
-	 * <p>The default converter is a {@link SimpleMessageConverter}, which is able
+	 * <p>The default com.mayzhou.runtimeAnnotations.excelkit.converter is a {@link SimpleMessageConverter}, which is able
 	 * to handle {@link javax.jms.BytesMessage BytesMessages},
 	 * {@link javax.jms.TextMessage TextMessages} and
 	 * {@link javax.jms.ObjectMessage ObjectMessages}.
@@ -148,7 +148,7 @@ public abstract class AbstractAdaptableMessageListener
 	}
 
 	/**
-	 * Return the converter that will convert incoming JMS messages to
+	 * Return the com.mayzhou.runtimeAnnotations.excelkit.converter that will convert incoming JMS messages to
 	 * listener method arguments, and objects returned from listener
 	 * methods back to JMS messages.
 	 */
@@ -494,7 +494,7 @@ public abstract class AbstractAdaptableMessageListener
 
 			MessageConverter converter = getMessageConverter();
 			if (converter == null) {
-				throw new IllegalStateException("No message converter, cannot handle '" + payload + "'");
+				throw new IllegalStateException("No message com.mayzhou.runtimeAnnotations.excelkit.converter, cannot handle '" + payload + "'");
 			}
 			if (converter instanceof SmartMessageConverter) {
 				return ((SmartMessageConverter) converter).toMessage(payload, session, conversionHint);
@@ -534,7 +534,7 @@ public abstract class AbstractAdaptableMessageListener
 
 			/**
 			 * Extract the payload of the current message. Since we deferred the resolution
-			 * of the payload, a custom converter may still return a full message for it. In
+			 * of the payload, a custom com.mayzhou.runtimeAnnotations.excelkit.converter may still return a full message for it. In
 			 * this case, its payload is returned.
 			 * @return the payload of the message
 			 */

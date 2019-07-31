@@ -51,8 +51,8 @@ import org.springframework.util.xml.StaxUtils;
 /**
  * An {@code HttpMessageConverter} that can read XML collections using JAXB2.
  *
- * <p>This converter can read {@linkplain Collection collections} that contain classes
- * annotated with {@link XmlRootElement} and {@link XmlType}. Note that this converter
+ * <p>This com.mayzhou.runtimeAnnotations.excelkit.converter can read {@linkplain Collection collections} that contain classes
+ * annotated with {@link XmlRootElement} and {@link XmlType}. Note that this com.mayzhou.runtimeAnnotations.excelkit.converter
  * does not support writing.
  *
  * @author Arjen Poutsma
@@ -244,7 +244,7 @@ public class Jaxb2CollectionHttpMessageConverter<T extends Collection>
 	}
 
 	/**
-	 * Create an {@code XMLInputFactory} that this converter will use to create
+	 * Create an {@code XMLInputFactory} that this com.mayzhou.runtimeAnnotations.excelkit.converter will use to create
 	 * {@link javax.xml.stream.XMLStreamReader} and {@link javax.xml.stream.XMLEventReader}
 	 * objects.
 	 * <p>Can be overridden in subclasses, adding further initialization of the factory.

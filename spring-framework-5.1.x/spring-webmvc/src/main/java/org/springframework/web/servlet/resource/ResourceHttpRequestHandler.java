@@ -230,7 +230,7 @@ public class ResourceHttpRequestHandler extends WebContentGenerator
 	}
 
 	/**
-	 * Return the configured resource converter.
+	 * Return the configured resource com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 * @since 4.3
 	 */
 	@Nullable
@@ -248,7 +248,7 @@ public class ResourceHttpRequestHandler extends WebContentGenerator
 	}
 
 	/**
-	 * Return the configured resource region converter.
+	 * Return the configured resource region com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 * @since 4.3
 	 */
 	@Nullable

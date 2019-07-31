@@ -39,7 +39,7 @@ import org.springframework.lang.Nullable;
 public interface GenericHttpMessageConverter<T> extends HttpMessageConverter<T> {
 
 	/**
-	 * Indicates whether the given type can be read by this converter.
+	 * Indicates whether the given type can be read by this com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 * This method should perform the same checks than
 	 * {@link HttpMessageConverter#canRead(Class, MediaType)} with additional ones
 	 * related to the generic type.
@@ -68,7 +68,7 @@ public interface GenericHttpMessageConverter<T> extends HttpMessageConverter<T> 
 			throws IOException, HttpMessageNotReadableException;
 
 	/**
-	 * Indicates whether the given class can be written by this converter.
+	 * Indicates whether the given class can be written by this com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 * <p>This method should perform the same checks than
 	 * {@link HttpMessageConverter#canWrite(Class, MediaType)} with additional ones
 	 * related to the generic type.
@@ -91,7 +91,7 @@ public interface GenericHttpMessageConverter<T> extends HttpMessageConverter<T> 
 	 * previously been passed to the {@link #canWrite canWrite} method of this interface,
 	 * which must have returned {@code true}. Can be {@code null} if not specified.
 	 * @param contentType the content type to use when writing. May be {@code null} to
-	 * indicate that the default content type of the converter must be used. If not
+	 * indicate that the default content type of the com.mayzhou.runtimeAnnotations.excelkit.converter must be used. If not
 	 * {@code null}, this media type must have previously been passed to the
 	 * {@link #canWrite canWrite} method of this interface, which must have returned
 	 * {@code true}.

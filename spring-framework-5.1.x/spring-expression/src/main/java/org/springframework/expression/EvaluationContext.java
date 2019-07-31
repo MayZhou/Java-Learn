@@ -69,7 +69,7 @@ public interface EvaluationContext {
 	TypeLocator getTypeLocator();
 
 	/**
-	 * Return a type converter that can convert (or coerce) a value from one type to another.
+	 * Return a type com.mayzhou.runtimeAnnotations.excelkit.converter that can convert (or coerce) a value from one type to another.
 	 */
 	TypeConverter getTypeConverter();
 

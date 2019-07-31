@@ -63,9 +63,9 @@ import org.springframework.lang.Nullable;
  * {@link MappingJackson2HttpMessageConverter}:
  *
  * <pre class="code">
- * &lt;bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+ * &lt;bean class="org.springframework.http.com.mayzhou.runtimeAnnotations.excelkit.converter.json.MappingJackson2HttpMessageConverter">
  *   &lt;property name="objectMapper">
- *     &lt;bean class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean"
+ *     &lt;bean class="org.springframework.http.com.mayzhou.runtimeAnnotations.excelkit.converter.json.Jackson2ObjectMapperFactoryBean"
  *       p:autoDetectFields="false"
  *       p:autoDetectGettersSetters="false"
  *       p:annotationIntrospector-ref="jaxbAnnotationIntrospector" />
@@ -78,7 +78,7 @@ import org.springframework.lang.Nullable;
  * <pre class="code">
  * &lt;bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
  *   &lt;property name="objectMapper">
- *     &lt;bean class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean"
+ *     &lt;bean class="org.springframework.http.com.mayzhou.runtimeAnnotations.excelkit.converter.json.Jackson2ObjectMapperFactoryBean"
  *       p:failOnEmptyBeans="false"
  *       p:indentOutput="true">
  *       &lt;property name="serializers">
@@ -96,7 +96,7 @@ import org.springframework.lang.Nullable;
  * {@link #setFeaturesToDisable}.
  *
  * <pre class="code">
- * &lt;bean class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean">
+ * &lt;bean class="org.springframework.http.com.mayzhou.runtimeAnnotations.excelkit.converter.json.Jackson2ObjectMapperFactoryBean">
  *   &lt;property name="featuresToEnable">
  *     &lt;array>
  *       &lt;util:constant static-field="com.fasterxml.jackson.databind.SerializationFeature.WRAP_ROOT_VALUE"/>
@@ -130,7 +130,7 @@ import org.springframework.lang.Nullable;
  * you can register one or more such Modules by class name via {@link #setModulesToInstall}:
  *
  * <pre class="code">
- * &lt;bean class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean">
+ * &lt;bean class="org.springframework.http.com.mayzhou.runtimeAnnotations.excelkit.converter.json.Jackson2ObjectMapperFactoryBean">
  *   &lt;property name="modulesToInstall" value="myapp.jackson.MySampleModule,myapp.jackson.MyOtherModule"/>
  * &lt;/bean
  * </pre>

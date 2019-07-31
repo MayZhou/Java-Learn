@@ -87,7 +87,7 @@ public abstract class AbstractMessageReceivingTemplate<D> extends AbstractMessag
 		T value = (T) messageConverter.fromMessage(message, targetClass);
 		if (value == null) {
 			throw new MessageConversionException(message, "Unable to convert payload [" + message.getPayload() +
-					"] to type [" + targetClass + "] using converter [" + messageConverter + "]");
+					"] to type [" + targetClass + "] using com.mayzhou.runtimeAnnotations.excelkit.converter [" + messageConverter + "]");
 		}
 		return value;
 	}

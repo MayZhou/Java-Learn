@@ -31,14 +31,14 @@ import org.springframework.util.Assert;
  * for reading and writing content and a {@link ConversionService} for converting
  * the String content to and from the target object type.
  *
- * <p>By default, this converter supports the media type {@code text/plain} only.
+ * <p>By default, this com.mayzhou.runtimeAnnotations.excelkit.converter supports the media type {@code text/plain} only.
  * This can be overridden through the {@link #setSupportedMediaTypes supportedMediaTypes}
  * property.
  *
  * <p>A usage example:
  *
  * <pre class="code">
- * &lt;bean class="org.springframework.http.converter.ObjectToStringHttpMessageConverter">
+ * &lt;bean class="org.springframework.http.com.mayzhou.runtimeAnnotations.excelkit.converter.ObjectToStringHttpMessageConverter">
  *   &lt;constructor-arg>
  *     &lt;bean class="org.springframework.context.support.ConversionServiceFactoryBean"/>
  *   &lt;/constructor-arg>

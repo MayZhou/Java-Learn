@@ -32,7 +32,7 @@ import org.springframework.util.Assert;
  * that can read and write JSON using the
  * <a href="http://json-b.net/">JSON Binding API</a>.
  *
- * <p>This converter can be used to bind to typed beans or untyped {@code HashMap}s.
+ * <p>This com.mayzhou.runtimeAnnotations.excelkit.converter can be used to bind to typed beans or untyped {@code HashMap}s.
  * By default, it supports {@code application/json} and {@code application/*+json} with
  * {@code UTF-8} character set.
  *
@@ -87,7 +87,7 @@ public class JsonbHttpMessageConverter extends AbstractJsonHttpMessageConverter 
 	}
 
 	/**
-	 * Return the configured {@code Jsonb} instance for this converter.
+	 * Return the configured {@code Jsonb} instance for this com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 */
 	public Jsonb getJsonb() {
 		return this.jsonb;

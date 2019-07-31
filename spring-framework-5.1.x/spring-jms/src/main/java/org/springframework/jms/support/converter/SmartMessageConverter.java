@@ -26,7 +26,7 @@ import org.springframework.lang.Nullable;
  * An extended {@link MessageConverter} SPI with conversion hint support.
  *
  * <p>In case of a conversion hint being provided, the framework will call
- * the extended method if a converter implements this interface, instead
+ * the extended method if a com.mayzhou.runtimeAnnotations.excelkit.converter implements this interface, instead
  * of calling the regular {@code toMessage} variant.
  *
  * @author Stephane Nicoll

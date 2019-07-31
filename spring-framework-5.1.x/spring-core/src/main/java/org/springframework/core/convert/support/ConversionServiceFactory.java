@@ -41,7 +41,7 @@ public final class ConversionServiceFactory {
 
 	/**
 	 * Register the given Converter objects with the given target ConverterRegistry.
-	 * @param converters the converter objects: implementing {@link Converter},
+	 * @param converters the com.mayzhou.runtimeAnnotations.excelkit.converter objects: implementing {@link Converter},
 	 * {@link ConverterFactory}, or {@link GenericConverter}
 	 * @param registry the target registry
 	 */
@@ -58,7 +58,7 @@ public final class ConversionServiceFactory {
 					registry.addConverterFactory((ConverterFactory<?, ?>) converter);
 				}
 				else {
-					throw new IllegalArgumentException("Each converter object must implement one of the " +
+					throw new IllegalArgumentException("Each com.mayzhou.runtimeAnnotations.excelkit.converter object must implement one of the " +
 							"Converter, ConverterFactory, or GenericConverter interfaces");
 				}
 			}

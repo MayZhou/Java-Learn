@@ -156,7 +156,7 @@ public class OpPlus extends Operator {
 	}
 
 	/**
-	 * Convert operand value to string using registered converter or using
+	 * Convert operand value to string using registered com.mayzhou.runtimeAnnotations.excelkit.converter or using
 	 * {@code toString} method.
 	 * @param value typed value to be converted
 	 * @param state expression state

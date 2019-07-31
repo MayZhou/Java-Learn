@@ -51,8 +51,8 @@ final class JodaTimeConverters {
 
 
 	/**
-	 * Install the converters into the converter registry.
-	 * @param registry the converter registry
+	 * Install the converters into the com.mayzhou.runtimeAnnotations.excelkit.converter registry.
+	 * @param registry the com.mayzhou.runtimeAnnotations.excelkit.converter registry
 	 */
 	@SuppressWarnings("deprecation")
 	public static void registerConverters(ConverterRegistry registry) {

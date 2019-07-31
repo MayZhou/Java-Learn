@@ -25,7 +25,7 @@ import org.springframework.http.MediaType;
 import org.springframework.lang.Nullable;
 
 /**
- * Strategy interface that specifies a converter that can convert from and to HTTP requests and responses.
+ * Strategy interface that specifies a com.mayzhou.runtimeAnnotations.excelkit.converter that can convert from and to HTTP requests and responses.
  *
  * @author Arjen Poutsma
  * @author Juergen Hoeller
@@ -35,7 +35,7 @@ import org.springframework.lang.Nullable;
 public interface HttpMessageConverter<T> {
 
 	/**
-	 * Indicates whether the given class can be read by this converter.
+	 * Indicates whether the given class can be read by this com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 * @param clazz the class to test for readability
 	 * @param mediaType the media type to read (can be {@code null} if not specified);
 	 * typically the value of a {@code Content-Type} header.
@@ -44,7 +44,7 @@ public interface HttpMessageConverter<T> {
 	boolean canRead(Class<?> clazz, @Nullable MediaType mediaType);
 
 	/**
-	 * Indicates whether the given class can be written by this converter.
+	 * Indicates whether the given class can be written by this com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 * @param clazz the class to test for writability
 	 * @param mediaType the media type to write (can be {@code null} if not specified);
 	 * typically the value of an {@code Accept} header.
@@ -53,7 +53,7 @@ public interface HttpMessageConverter<T> {
 	boolean canWrite(Class<?> clazz, @Nullable MediaType mediaType);
 
 	/**
-	 * Return the list of {@link MediaType} objects supported by this converter.
+	 * Return the list of {@link MediaType} objects supported by this com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 * @return the list of supported media types
 	 */
 	List<MediaType> getSupportedMediaTypes();
@@ -75,7 +75,7 @@ public interface HttpMessageConverter<T> {
 	 * @param t the object to write to the output message. The type of this object must have previously been
 	 * passed to the {@link #canWrite canWrite} method of this interface, which must have returned {@code true}.
 	 * @param contentType the content type to use when writing. May be {@code null} to indicate that the
-	 * default content type of the converter must be used. If not {@code null}, this media type must have
+	 * default content type of the com.mayzhou.runtimeAnnotations.excelkit.converter must be used. If not {@code null}, this media type must have
 	 * previously been passed to the {@link #canWrite canWrite} method of this interface, which must have
 	 * returned {@code true}.
 	 * @param outputMessage the message to write to

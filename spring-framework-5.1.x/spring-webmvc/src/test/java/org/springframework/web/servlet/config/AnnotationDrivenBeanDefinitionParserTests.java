@@ -172,7 +172,7 @@ public class AnnotationDrivenBeanDefinitionParserTests {
 		assertTrue(value instanceof List);
 		List<HttpMessageConverter<?>> converters = (List<HttpMessageConverter<?>>) value;
 		if (hasDefaultRegistrations) {
-			assertTrue("Default and custom converter expected", converters.size() > 2);
+			assertTrue("Default and custom com.mayzhou.runtimeAnnotations.excelkit.converter expected", converters.size() > 2);
 		}
 		else {
 			assertTrue("Only custom converters expected", converters.size() == 2);

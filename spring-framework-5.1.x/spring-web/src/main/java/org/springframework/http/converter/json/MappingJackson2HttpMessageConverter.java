@@ -28,9 +28,9 @@ import org.springframework.lang.Nullable;
  * Implementation of {@link org.springframework.http.converter.HttpMessageConverter} that can read and
  * write JSON using <a href="https://github.com/FasterXML/jackson">Jackson 2.x's</a> {@link ObjectMapper}.
  *
- * <p>This converter can be used to bind to typed beans, or untyped {@code HashMap} instances.
+ * <p>This com.mayzhou.runtimeAnnotations.excelkit.converter can be used to bind to typed beans, or untyped {@code HashMap} instances.
  *
- * <p>By default, this converter supports {@code application/json} and {@code application/*+json}
+ * <p>By default, this com.mayzhou.runtimeAnnotations.excelkit.converter supports {@code application/json} and {@code application/*+json}
  * with {@code UTF-8} character set. This can be overridden by setting the
  * {@link #setSupportedMediaTypes supportedMediaTypes} property.
  *

@@ -126,7 +126,7 @@ public class JmsMessagingTemplate extends AbstractMessagingTemplate<Destination>
 	 * {@link MessagingMessageConverter} is defined using a {@link SimpleMessageConverter}
 	 * to convert the payload of the message.
 	 * <p>Consider configuring a {@link MessagingMessageConverter} with a different
-	 * {@link MessagingMessageConverter#setPayloadConverter(MessageConverter) payload converter}
+	 * {@link MessagingMessageConverter#setPayloadConverter(MessageConverter) payload com.mayzhou.runtimeAnnotations.excelkit.converter}
 	 * for more advanced scenarios.
 	 * @see org.springframework.jms.support.converter.MessagingMessageConverter
 	 */

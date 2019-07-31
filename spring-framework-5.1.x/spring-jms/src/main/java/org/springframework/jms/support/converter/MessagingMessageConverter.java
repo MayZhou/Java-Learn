@@ -47,7 +47,7 @@ public class MessagingMessageConverter implements MessageConverter, Initializing
 
 
 	/**
-	 * Create an instance with a default payload converter.
+	 * Create an instance with a default payload com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 * @see org.springframework.jms.support.converter.SimpleMessageConverter
 	 * @see org.springframework.jms.support.SimpleJmsHeaderMapper
 	 */
@@ -56,8 +56,8 @@ public class MessagingMessageConverter implements MessageConverter, Initializing
 	}
 
 	/**
-	 * Create an instance with the specific payload converter.
-	 * @param payloadConverter the payload converter to use
+	 * Create an instance with the specific payload com.mayzhou.runtimeAnnotations.excelkit.converter.
+	 * @param payloadConverter the payload com.mayzhou.runtimeAnnotations.excelkit.converter to use
 	 * @since 4.3.12
 	 */
 	public MessagingMessageConverter(MessageConverter payloadConverter) {
@@ -65,7 +65,7 @@ public class MessagingMessageConverter implements MessageConverter, Initializing
 	}
 
 	/**
-	 * Create an instance with the specified payload converter and
+	 * Create an instance with the specified payload com.mayzhou.runtimeAnnotations.excelkit.converter and
 	 * header mapper.
 	 */
 	public MessagingMessageConverter(MessageConverter payloadConverter, JmsHeaderMapper headerMapper) {
@@ -102,7 +102,7 @@ public class MessagingMessageConverter implements MessageConverter, Initializing
 	public javax.jms.Message toMessage(Object object, Session session) throws JMSException, MessageConversionException {
 		if (!(object instanceof Message)) {
 			throw new IllegalArgumentException("Could not convert [" + object + "] - only [" +
-					Message.class.getName() + "] is handled by this converter");
+					Message.class.getName() + "] is handled by this com.mayzhou.runtimeAnnotations.excelkit.converter");
 		}
 		Message<?> input = (Message<?>) object;
 		MessageHeaders headers = input.getHeaders();

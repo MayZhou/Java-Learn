@@ -34,7 +34,7 @@ import org.springframework.util.ConcurrentReferenceHashMap;
 import org.springframework.util.ReflectionUtils;
 
 /**
- * Generic converter that uses conventions to convert a source object to a
+ * Generic com.mayzhou.runtimeAnnotations.excelkit.converter that uses conventions to convert a source object to a
  * {@code targetType} by delegating to a method on the source object or to
  * a static factory method or constructor on the {@code targetType}.
  *
@@ -52,7 +52,7 @@ import org.springframework.util.ReflectionUtils;
  * <li>Otherwise throw a {@link ConversionFailedException}.
  * </ol>
  *
- * <p><strong>Warning</strong>: this converter does <em>not</em> support the
+ * <p><strong>Warning</strong>: this com.mayzhou.runtimeAnnotations.excelkit.converter does <em>not</em> support the
  * {@link Object#toString()} method for converting from a {@code sourceType}
  * to {@code java.lang.String}. For {@code toString()} support, use
  * {@link FallbackObjectToStringConverter} instead.

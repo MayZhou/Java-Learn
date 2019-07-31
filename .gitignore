@@ -39,7 +39,7 @@ test-output
 atlassian-ide-plugin.xml
 .gradletasknamecache
 /.idea/
-/Stream/Stream.iml
+/JavaCore2/Stream.iml
 /Design-Pattern/Design-Pattern.iml
 /Design-Pattern/target/
 /spring-framework-5.1.x/spring-framework-5.1.x.iml

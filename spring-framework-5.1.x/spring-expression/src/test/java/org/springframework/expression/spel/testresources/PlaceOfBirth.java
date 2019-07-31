@@ -7,7 +7,7 @@ public class PlaceOfBirth {
 	public String Country;
 
 	/**
-	 * Keith now has a converter that supports String to X, if X has a ctor that takes a String.
+	 * Keith now has a com.mayzhou.runtimeAnnotations.excelkit.converter that supports String to X, if X has a ctor that takes a String.
 	 * In order for round tripping to work we need toString() for X to return what it was
 	 * constructed with.  This is a bit of a hack because a PlaceOfBirth also encapsulates a
 	 * country - but as it is just a test object, it is ok.

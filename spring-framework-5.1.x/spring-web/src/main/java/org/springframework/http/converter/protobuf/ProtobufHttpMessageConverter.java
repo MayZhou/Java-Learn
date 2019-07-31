@@ -59,7 +59,7 @@ import static org.springframework.http.MediaType.TEXT_PLAIN;
  *
  * <p>To generate {@code Message} Java classes, you need to install the {@code protoc} binary.
  *
- * <p>This converter supports by default {@code "application/x-protobuf"} and {@code "text/plain"}
+ * <p>This com.mayzhou.runtimeAnnotations.excelkit.converter supports by default {@code "application/x-protobuf"} and {@code "text/plain"}
  * with the official {@code "com.google.protobuf:protobuf-java"} library. Other formats can be
  * supported with one of the following additional libraries on the classpath:
  * <ul>
@@ -70,7 +70,7 @@ import static org.springframework.http.MediaType.TEXT_PLAIN;
  * </ul>
  *
  * <p>Requires Protobuf 2.6 or higher (and Protobuf Java Format 1.4 or higher for formatting).
- * This converter will auto-adapt to Protobuf 3 and its default {@code protobuf-java-util} JSON
+ * This com.mayzhou.runtimeAnnotations.excelkit.converter will auto-adapt to Protobuf 3 and its default {@code protobuf-java-util} JSON
  * format if the Protobuf 2 based {@code protobuf-java-format} isn't present; however, for more
  * explicit JSON setup on Protobuf 3, consider {@link ProtobufJsonFormatHttpMessageConverter}.
  *
@@ -86,7 +86,7 @@ import static org.springframework.http.MediaType.TEXT_PLAIN;
 public class ProtobufHttpMessageConverter extends AbstractHttpMessageConverter<Message> {
 
 	/**
-	 * The default charset used by the converter.
+	 * The default charset used by the com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 */
 	public static final Charset DEFAULT_CHARSET = StandardCharsets.UTF_8;
 

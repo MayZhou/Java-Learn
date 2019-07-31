@@ -35,7 +35,7 @@ import org.springframework.util.MimeType;
 /**
  * Abstract base class for {@link SmartMessageConverter} implementations including
  * support for common properties and a partial implementation of the conversion methods,
- * mainly to check if the converter supports the conversion based on the payload class
+ * mainly to check if the com.mayzhou.runtimeAnnotations.excelkit.converter supports the conversion based on the payload class
  * and MIME type.
  *
  * @author Rossen Stoyanchev
@@ -88,7 +88,7 @@ public abstract class AbstractMessageConverter implements SmartMessageConverter 
 	 * type of an input message.
 	 * <p>Note that if no resolver is configured, then
 	 * {@link #setStrictContentTypeMatch(boolean) strictContentTypeMatch} should
-	 * be left as {@code false} (the default) or otherwise this converter will
+	 * be left as {@code false} (the default) or otherwise this com.mayzhou.runtimeAnnotations.excelkit.converter will
 	 * ignore all messages.
 	 * <p>By default, a {@code DefaultContentTypeResolver} instance is used.
 	 */
@@ -105,10 +105,10 @@ public abstract class AbstractMessageConverter implements SmartMessageConverter 
 	}
 
 	/**
-	 * Whether this converter should convert messages for which no content type
+	 * Whether this com.mayzhou.runtimeAnnotations.excelkit.converter should convert messages for which no content type
 	 * could be resolved through the configured
 	 * {@link org.springframework.messaging.converter.ContentTypeResolver}.
-	 * <p>A converter can configured to be strict only when a
+	 * <p>A com.mayzhou.runtimeAnnotations.excelkit.converter can configured to be strict only when a
 	 * {@link #setContentTypeResolver contentTypeResolver} is configured and the
 	 * list of {@link #getSupportedMimeTypes() supportedMimeTypes} is not be empty.
 	 * <p>When this flag is set to {@code true}, {@link #supportsMimeType(MessageHeaders)}
@@ -251,7 +251,7 @@ public abstract class AbstractMessageConverter implements SmartMessageConverter 
 
 
 	/**
-	 * Whether the given class is supported by this converter.
+	 * Whether the given class is supported by this com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 * @param clazz the class to test for support
 	 * @return {@code true} if supported; {@code false} otherwise
 	 */
@@ -263,7 +263,7 @@ public abstract class AbstractMessageConverter implements SmartMessageConverter 
 	 * @param targetClass the target class for the conversion
 	 * @param conversionHint an extra object passed to the {@link MessageConverter},
 	 * e.g. the associated {@code MethodParameter} (may be {@code null}}
-	 * @return the result of the conversion, or {@code null} if the converter cannot
+	 * @return the result of the conversion, or {@code null} if the com.mayzhou.runtimeAnnotations.excelkit.converter cannot
 	 * perform the conversion
 	 * @since 4.2
 	 */
@@ -280,7 +280,7 @@ public abstract class AbstractMessageConverter implements SmartMessageConverter 
 	 * @param headers optional headers for the message (may be {@code null})
 	 * @param conversionHint an extra object passed to the {@link MessageConverter},
 	 * e.g. the associated {@code MethodParameter} (may be {@code null}}
-	 * @return the resulting payload for the message, or {@code null} if the converter
+	 * @return the resulting payload for the message, or {@code null} if the com.mayzhou.runtimeAnnotations.excelkit.converter
 	 * cannot perform the conversion
 	 * @since 4.2
 	 */

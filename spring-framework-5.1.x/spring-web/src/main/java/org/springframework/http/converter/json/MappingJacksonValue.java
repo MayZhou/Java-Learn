@@ -23,11 +23,11 @@ import org.springframework.lang.Nullable;
 /**
  * A simple holder for the POJO to serialize via
  * {@link MappingJackson2HttpMessageConverter} along with further
- * serialization instructions to be passed in to the converter.
+ * serialization instructions to be passed in to the com.mayzhou.runtimeAnnotations.excelkit.converter.
  *
  * <p>On the server side this wrapper is added with a
  * {@code ResponseBodyInterceptor} after content negotiation selects the
- * converter to use but before the write.
+ * com.mayzhou.runtimeAnnotations.excelkit.converter to use but before the write.
  *
  * <p>On the client side, simply wrap the POJO and pass it in to the
  * {@code RestTemplate}.

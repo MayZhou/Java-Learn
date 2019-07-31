@@ -43,7 +43,7 @@ public class ConvertingComparator<S, T> implements Comparator<S> {
 
 	/**
 	 * Create a new {@link ConvertingComparator} instance.
-	 * @param converter the converter
+	 * @param converter the com.mayzhou.runtimeAnnotations.excelkit.converter
 	 */
 	public ConvertingComparator(Converter<S, T> converter) {
 		this(Comparators.comparable(), converter);
@@ -52,7 +52,7 @@ public class ConvertingComparator<S, T> implements Comparator<S> {
 	/**
 	 * Create a new {@link ConvertingComparator} instance.
 	 * @param comparator the underlying comparator used to compare the converted values
-	 * @param converter the converter
+	 * @param converter the com.mayzhou.runtimeAnnotations.excelkit.converter
 	 */
 	public ConvertingComparator(Comparator<T> comparator, Converter<S, T> converter) {
 		Assert.notNull(comparator, "Comparator must not be null");

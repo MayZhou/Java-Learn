@@ -98,7 +98,7 @@ public class MappingJackson2MessageConverter extends AbstractMessageConverter {
 	}
 
 	/**
-	 * Set the {@code ObjectMapper} for this converter.
+	 * Set the {@code ObjectMapper} for this com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 * If not set, a default {@link ObjectMapper#ObjectMapper() ObjectMapper} is used.
 	 * <p>Setting a custom-configured {@code ObjectMapper} is one way to take further
 	 * control of the JSON serialization process. For example, an extended
@@ -115,7 +115,7 @@ public class MappingJackson2MessageConverter extends AbstractMessageConverter {
 	}
 
 	/**
-	 * Return the underlying {@code ObjectMapper} for this converter.
+	 * Return the underlying {@code ObjectMapper} for this com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 */
 	public ObjectMapper getObjectMapper() {
 		return this.objectMapper;
@@ -127,7 +127,7 @@ public class MappingJackson2MessageConverter extends AbstractMessageConverter {
 	 * <pre class="code">
 	 * ObjectMapper mapper = new ObjectMapper();
 	 * mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
-	 * converter.setObjectMapper(mapper);
+	 * com.mayzhou.runtimeAnnotations.excelkit.converter.setObjectMapper(mapper);
 	 * </pre>
 	 */
 	public void setPrettyPrint(boolean prettyPrint) {
@@ -289,7 +289,7 @@ public class MappingJackson2MessageConverter extends AbstractMessageConverter {
 	/**
 	 * Determine a Jackson serialization view based on the given conversion hint.
 	 * @param conversionHint the conversion hint Object as passed into the
-	 * converter for the current conversion attempt
+	 * com.mayzhou.runtimeAnnotations.excelkit.converter for the current conversion attempt
 	 * @return the serialization view class, or {@code null} if none
 	 * @since 4.2
 	 */

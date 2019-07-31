@@ -52,7 +52,7 @@ public class GenericMessageConverterTests {
 	@Test
 	public void fromMessageNoConverter() {
 		Message<Integer> content = MessageBuilder.withPayload(1234).build();
-		assertNull("No converter from integer to locale", converter.fromMessage(content, Locale.class));
+		assertNull("No com.mayzhou.runtimeAnnotations.excelkit.converter from integer to locale", converter.fromMessage(content, Locale.class));
 	}
 
 	@Test

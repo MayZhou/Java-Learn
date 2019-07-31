@@ -48,8 +48,8 @@ final class DateTimeConverters {
 
 
 	/**
-	 * Install the converters into the converter registry.
-	 * @param registry the converter registry
+	 * Install the converters into the com.mayzhou.runtimeAnnotations.excelkit.converter registry.
+	 * @param registry the com.mayzhou.runtimeAnnotations.excelkit.converter registry
 	 */
 	public static void registerConverters(ConverterRegistry registry) {
 		DateFormatterRegistrar.addDateConverters(registry);

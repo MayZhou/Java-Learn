@@ -21,7 +21,7 @@ import org.springframework.core.convert.converter.Converter;
 
 /**
  * Calls {@link Enum#name()} to convert a source Enum to a String.
- * This converter will not match enums with interfaces that can be converted.
+ * This com.mayzhou.runtimeAnnotations.excelkit.converter will not match enums with interfaces that can be converted.
  *
  * @author Keith Donald
  * @author Phillip Webb

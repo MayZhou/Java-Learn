@@ -31,7 +31,7 @@ import javax.jms.TextMessage;
 import org.springframework.util.ObjectUtils;
 
 /**
- * A simple message converter which is able to handle TextMessages, BytesMessages,
+ * A simple message com.mayzhou.runtimeAnnotations.excelkit.converter which is able to handle TextMessages, BytesMessages,
  * MapMessages, and ObjectMessages. Used as default conversion strategy
  * by {@link org.springframework.jms.core.JmsTemplate}, for
  * {@code convertAndSend} and {@code receiveAndConvert} operations.

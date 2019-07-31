@@ -7,8 +7,8 @@
 
 	<mvc:annotation-driven>
 		<mvc:message-converters>
-			<bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
-			<bean class="org.springframework.http.converter.ResourceHttpMessageConverter"/>
+			<bean class="org.springframework.http.com.mayzhou.runtimeAnnotations.excelkit.converter.StringHttpMessageConverter"/>
+			<bean class="org.springframework.http.com.mayzhou.runtimeAnnotations.excelkit.converter.ResourceHttpMessageConverter"/>
 		</mvc:message-converters>
 	</mvc:annotation-driven>
 

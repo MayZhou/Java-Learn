@@ -694,7 +694,7 @@ public class DataBinderTests {
 		NameBean bean = new NameBean("Fred");
 		assertEquals("ConversionService should have invoked toString()", "Fred", dataBinder.convertIfNecessary(bean, String.class));
 		conversionService.addConverter(new NameBeanConverter());
-		assertEquals("Type converter should have been used", "[Fred]", dataBinder.convertIfNecessary(bean, String.class));
+		assertEquals("Type com.mayzhou.runtimeAnnotations.excelkit.converter should have been used", "[Fred]", dataBinder.convertIfNecessary(bean, String.class));
 	}
 
 	@Test

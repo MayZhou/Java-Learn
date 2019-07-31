@@ -55,7 +55,7 @@ import static org.junit.Assert.*;
  * <li>Registering java methods as functions callable from the expression
  * <li>Adding a basic property resolver
  * <li>Adding an advanced (better performing) property resolver
- * <li>Adding your own type converter to support conversion between any types you like
+ * <li>Adding your own type com.mayzhou.runtimeAnnotations.excelkit.converter to support conversion between any types you like
  * </ul>
  *
  * @author Andy Clement

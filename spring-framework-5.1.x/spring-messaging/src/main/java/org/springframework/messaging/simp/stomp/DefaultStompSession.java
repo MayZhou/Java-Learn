@@ -150,7 +150,7 @@ public class DefaultStompSession implements ConnectionHandlingStompSession {
 	 * and outgoing messages to and from {@code byte[]} based on object type, or
 	 * expected object type, and the "content-type" header.
 	 * <p>By default, {@link SimpleMessageConverter} is configured.
-	 * @param messageConverter the message converter to use
+	 * @param messageConverter the message com.mayzhou.runtimeAnnotations.excelkit.converter to use
 	 */
 	public void setMessageConverter(MessageConverter messageConverter) {
 		Assert.notNull(messageConverter, "MessageConverter must not be null");
@@ -268,7 +268,7 @@ public class DefaultStompSession implements ConnectionHandlingStompSession {
 			if (message == null) {
 				throw new MessageConversionException("Unable to convert payload with type='" +
 						payload.getClass().getName() + "', contentType='" + accessor.getContentType() +
-						"', converter=[" + getMessageConverter() + "]");
+						"', com.mayzhou.runtimeAnnotations.excelkit.converter=[" + getMessageConverter() + "]");
 			}
 		}
 		return message;
@@ -466,7 +466,7 @@ public class DefaultStompSession implements ConnectionHandlingStompSession {
 		}
 		Object object = getMessageConverter().fromMessage(message, resolvedType);
 		if (object == null) {
-			throw new MessageConversionException("No suitable converter for payload type [" + payloadType +
+			throw new MessageConversionException("No suitable com.mayzhou.runtimeAnnotations.excelkit.converter for payload type [" + payloadType +
 					"] from handler type [" + handler.getClass() + "]");
 		}
 		handler.handleFrame(headers, object);

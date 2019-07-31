@@ -766,7 +766,7 @@ public class WebMvcConfigurationSupport implements ApplicationContextAware, Serv
 	/**
 	 * Override this method to extend or modify the list of converters after it has
 	 * been configured. This may be useful for example to allow default converters
-	 * to be registered and then insert a custom converter through this method.
+	 * to be registered and then insert a custom com.mayzhou.runtimeAnnotations.excelkit.converter through this method.
 	 * @param converters the list of configured converters to extend
 	 * @since 4.1.3
 	 */

@@ -19,7 +19,7 @@ package org.springframework.core.convert.converter;
 import org.springframework.lang.Nullable;
 
 /**
- * A converter converts a source object of type {@code S} to a target of type {@code T}.
+ * A com.mayzhou.runtimeAnnotations.excelkit.converter converts a source object of type {@code S} to a target of type {@code T}.
  *
  * <p>Implementations of this interface are thread-safe and can be shared.
  *

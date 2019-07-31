@@ -11,7 +11,7 @@
 		<websocket:simple-broker />
 
 		<websocket:message-converters register-defaults="false">
-			<bean class="org.springframework.messaging.converter.StringMessageConverter"/>
+			<bean class="org.springframework.messaging.com.mayzhou.runtimeAnnotations.excelkit.converter.StringMessageConverter"/>
 		</websocket:message-converters>
 
 	</websocket:message-broker>

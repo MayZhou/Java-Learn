@@ -83,7 +83,7 @@ public class FormattingConversionServiceFactoryBean
 
 
 	/**
-	 * Configure the set of custom converter objects that should be added.
+	 * Configure the set of custom com.mayzhou.runtimeAnnotations.excelkit.converter objects that should be added.
 	 * @param converters instances of any of the following:
 	 * {@link org.springframework.core.convert.converter.Converter},
 	 * {@link org.springframework.core.convert.converter.ConverterFactory},

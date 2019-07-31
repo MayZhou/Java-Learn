@@ -153,7 +153,7 @@ example shows:
 Note the use of the generic method: `public <T> T getValue(Class<T> desiredResultType)`.
 Using this method removes the need to cast the value of the expression to the desired
 result type. An `EvaluationException` is thrown if the value cannot be cast to the
-type `T` or converted by using the registered type converter.
+type `T` or converted by using the registered type com.mayzhou.runtimeAnnotations.excelkit.converter.
 
 The more common usage of SpEL is to provide an expression string that is evaluated
 against a specific object instance (called the root object). The following example shows

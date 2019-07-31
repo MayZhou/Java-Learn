@@ -43,7 +43,7 @@ import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 
 /**
- * Message converter that uses Jackson 2.x to convert messages to and from JSON.
+ * Message com.mayzhou.runtimeAnnotations.excelkit.converter that uses Jackson 2.x to convert messages to and from JSON.
  * Maps an object to a {@link BytesMessage}, or to a {@link TextMessage} if the
  * {@link #setTargetType targetType} is set to {@link MessageType#TEXT}.
  * Converts from a {@link TextMessage} or {@link BytesMessage} to an object.
@@ -108,8 +108,8 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	/**
 	 * Specify whether {@link #toMessage(Object, Session)} should marshal to a
 	 * {@link BytesMessage} or a {@link TextMessage}.
-	 * <p>The default is {@link MessageType#BYTES}, i.e. this converter marshals to
-	 * a {@link BytesMessage}. Note that the default version of this converter
+	 * <p>The default is {@link MessageType#BYTES}, i.e. this com.mayzhou.runtimeAnnotations.excelkit.converter marshals to
+	 * a {@link BytesMessage}. Note that the default version of this com.mayzhou.runtimeAnnotations.excelkit.converter
 	 * supports {@link MessageType#BYTES} and {@link MessageType#TEXT} only.
 	 * @see MessageType#BYTES
 	 * @see MessageType#TEXT
@@ -470,7 +470,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	/**
 	 * Determine a Jackson serialization view based on the given conversion hint.
 	 * @param conversionHint the conversion hint Object as passed into the
-	 * converter for the current conversion attempt
+	 * com.mayzhou.runtimeAnnotations.excelkit.converter for the current conversion attempt
 	 * @return the serialization view class, or {@code null} if none
 	 */
 	@Nullable

@@ -1,6 +1,6 @@
 /**
  * Provides implementations of {@link org.springframework.http.codec.ClientCodecConfigurer}
- * and {@link org.springframework.http.codec.ServerCodecConfigurer} based on the converter
+ * and {@link org.springframework.http.codec.ServerCodecConfigurer} based on the com.mayzhou.runtimeAnnotations.excelkit.converter
  * implementations from {@code org.springframework.http.codec.json} and co.
  */
 @NonNullApi

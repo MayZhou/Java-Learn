@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+        "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+<!-- DTD(Document Type Definition)文档类型定义-->
+<!-- 文档类型定义是确保文档正确的一个重要机制，但他不是必须的-->
+<!-- XML文档的正文包含根元素，例如web-app-->
+<web-app>
+    <!-- 元素可以有子元素，文本或者两者皆有， welcome-file就是welcome-file-list 的子元素-->
+    <welcome-file-list >
+        <welcome-file>文本</welcome-file>
+        <welcome-file><![CDATA[
+        ]]></welcome-file>
+    </welcome-file-list>
+</web-app>
+
+ <!-- XML解释器分为DOM（Document Object Model）文档对象模型树型解释器和SAX（Simple API for XML）流机制解释器-->
+<!--DOM消耗内存，因为是整个文档-->
+<!--SAX,不关注上下文-->
+        <!-- DTD(Document Type Definition)文档类型定义-->

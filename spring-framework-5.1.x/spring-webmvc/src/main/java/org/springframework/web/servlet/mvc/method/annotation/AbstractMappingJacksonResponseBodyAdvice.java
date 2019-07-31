@@ -64,7 +64,7 @@ public abstract class AbstractMappingJacksonResponseBodyAdvice implements Respon
 	}
 
 	/**
-	 * Invoked only if the converter type is {@code MappingJackson2HttpMessageConverter}.
+	 * Invoked only if the com.mayzhou.runtimeAnnotations.excelkit.converter type is {@code MappingJackson2HttpMessageConverter}.
 	 */
 	protected abstract void beforeBodyWriteInternal(MappingJacksonValue bodyContainer, MediaType contentType,
 			MethodParameter returnType, ServerHttpRequest request, ServerHttpResponse response);

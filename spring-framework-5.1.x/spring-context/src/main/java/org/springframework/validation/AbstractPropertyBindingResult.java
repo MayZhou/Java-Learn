@@ -123,7 +123,7 @@ public abstract class AbstractPropertyBindingResult extends AbstractBindingResul
 			}
 		}
 		if (this.conversionService != null) {
-			// Try custom converter...
+			// Try custom com.mayzhou.runtimeAnnotations.excelkit.converter...
 			TypeDescriptor fieldDesc = getPropertyAccessor().getPropertyTypeDescriptor(fixedField);
 			TypeDescriptor strDesc = TypeDescriptor.valueOf(String.class);
 			if (fieldDesc != null && this.conversionService.canConvert(fieldDesc, strDesc)) {

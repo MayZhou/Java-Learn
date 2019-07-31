@@ -46,7 +46,7 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
- * Jackson 2.x converter tests.
+ * Jackson 2.x com.mayzhou.runtimeAnnotations.excelkit.converter tests.
  *
  * @author Rossen Stoyanchev
  * @author Sebastien Deleuze

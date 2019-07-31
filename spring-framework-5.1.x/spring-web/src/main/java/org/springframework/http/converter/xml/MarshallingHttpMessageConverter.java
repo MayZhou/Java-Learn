@@ -31,11 +31,11 @@ import org.springframework.util.Assert;
  * Implementation of {@link org.springframework.http.converter.HttpMessageConverter HttpMessageConverter}
  * that can read and write XML using Spring's {@link Marshaller} and {@link Unmarshaller} abstractions.
  *
- * <p>This converter requires a {@code Marshaller} and {@code Unmarshaller} before it can be used.
+ * <p>This com.mayzhou.runtimeAnnotations.excelkit.converter requires a {@code Marshaller} and {@code Unmarshaller} before it can be used.
  * These can be injected by the {@linkplain #MarshallingHttpMessageConverter(Marshaller) constructor}
  * or {@linkplain #setMarshaller(Marshaller) bean properties}.
  *
- * <p>By default, this converter supports {@code text/xml} and {@code application/xml}. This can be
+ * <p>By default, this com.mayzhou.runtimeAnnotations.excelkit.converter supports {@code text/xml} and {@code application/xml}. This can be
  * overridden by setting the {@link #setSupportedMediaTypes(java.util.List) supportedMediaTypes} property.
  *
  * @author Arjen Poutsma
@@ -89,14 +89,14 @@ public class MarshallingHttpMessageConverter extends AbstractXmlHttpMessageConve
 
 
 	/**
-	 * Set the {@link Marshaller} to be used by this message converter.
+	 * Set the {@link Marshaller} to be used by this message com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 */
 	public void setMarshaller(Marshaller marshaller) {
 		this.marshaller = marshaller;
 	}
 
 	/**
-	 * Set the {@link Unmarshaller} to be used by this message converter.
+	 * Set the {@link Unmarshaller} to be used by this message com.mayzhou.runtimeAnnotations.excelkit.converter.
 	 */
 	public void setUnmarshaller(Unmarshaller unmarshaller) {
 		this.unmarshaller = unmarshaller;

@@ -54,7 +54,7 @@ public class Constants {
 
 
 	/**
-	 * Create a new Constants converter class wrapping the given class.
+	 * Create a new Constants com.mayzhou.runtimeAnnotations.excelkit.converter class wrapping the given class.
 	 * <p>All <b>public</b> static final variables will be exposed, whatever their type.
 	 * @param clazz the class to analyze
 	 * @throws IllegalArgumentException if the supplied {@code clazz} is {@code null}

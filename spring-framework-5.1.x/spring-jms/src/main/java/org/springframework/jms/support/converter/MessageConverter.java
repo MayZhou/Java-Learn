@@ -21,7 +21,7 @@ import javax.jms.Message;
 import javax.jms.Session;
 
 /**
- * Strategy interface that specifies a converter between Java objects and JMS messages.
+ * Strategy interface that specifies a com.mayzhou.runtimeAnnotations.excelkit.converter between Java objects and JMS messages.
  *
  * <p>Check out {@link SimpleMessageConverter} for a default implementation,
  * converting between the 'standard' message payloads and JMS Message types.

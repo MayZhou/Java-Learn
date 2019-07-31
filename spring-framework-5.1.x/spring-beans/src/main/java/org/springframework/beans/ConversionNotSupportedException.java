@@ -21,7 +21,7 @@ import java.beans.PropertyChangeEvent;
 import org.springframework.lang.Nullable;
 
 /**
- * Exception thrown when no suitable editor or converter can be found for a bean property.
+ * Exception thrown when no suitable editor or com.mayzhou.runtimeAnnotations.excelkit.converter can be found for a bean property.
  *
  * @author Arjen Poutsma
  * @author Juergen Hoeller

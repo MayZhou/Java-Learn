@@ -30,7 +30,7 @@ import org.springframework.util.Assert;
  * <a href="https://github.com/FasterXML/jackson-dataformats-binary/tree/master/smile">
  * the dedicated Jackson 2.x extension</a>.
  *
- * <p>By default, this converter supports {@code "application/x-jackson-smile"} media type.
+ * <p>By default, this com.mayzhou.runtimeAnnotations.excelkit.converter supports {@code "application/x-jackson-smile"} media type.
  * This can be overridden by setting the {@link #setSupportedMediaTypes supportedMediaTypes} property.
  *
  * <p>The default constructor uses the default configuration provided by {@link Jackson2ObjectMapperBuilder}.

@@ -129,7 +129,7 @@ public class JmsNamespaceHandlerTests {
 		assertEquals("Wrong message listener", MessageListenerAdapter.class, messageListener.getClass());
 		MessageListenerAdapter adapter = (MessageListenerAdapter) messageListener;
 		DirectFieldAccessor adapterFieldAccessor = new DirectFieldAccessor(adapter);
-		assertEquals("Message converter not set properly", context.getBean("testMessageConverter"),
+		assertEquals("Message com.mayzhou.runtimeAnnotations.excelkit.converter not set properly", context.getBean("testMessageConverter"),
 				adapterFieldAccessor.getPropertyValue("messageConverter"));
 		assertEquals("Wrong delegate", context.getBean("testBean1"),
 				adapterFieldAccessor.getPropertyValue("delegate"));
@@ -150,7 +150,7 @@ public class JmsNamespaceHandlerTests {
 				context.getBean(EXPLICIT_CONNECTION_FACTORY), container.getConnectionFactory());
 		assertEquals("explicit destination resolver not set",
 				context.getBean("testDestinationResolver"), container.getDestinationResolver());
-		assertEquals("explicit message converter not set",
+		assertEquals("explicit message com.mayzhou.runtimeAnnotations.excelkit.converter not set",
 				context.getBean("testMessageConverter"), container.getMessageConverter());
 		assertEquals("Wrong pub/sub", true, container.isPubSubDomain());
 		assertEquals("Wrong durable flag", true, container.isSubscriptionDurable());
@@ -173,7 +173,7 @@ public class JmsNamespaceHandlerTests {
 				factory.createListenerContainer(createDummyEndpoint());
 		assertEquals("explicit resource adapter not set",
 				context.getBean("testResourceAdapter"),container.getResourceAdapter());
-		assertEquals("explicit message converter not set",
+		assertEquals("explicit message com.mayzhou.runtimeAnnotations.excelkit.converter not set",
 				context.getBean("testMessageConverter"), container.getActivationSpecConfig().getMessageConverter());
 		assertEquals("Wrong pub/sub", true, container.isPubSubDomain());
 		assertEquals("wrong concurrency", 5, container.getActivationSpecConfig().getMaxConcurrency());
